@@ -30,7 +30,11 @@ All builds are available on MyGet:
 
 ## NUKE Example
 
+    using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 
+    await DotCoverToCobertura(new DotCoverConversionSettings()
+        .SetInputFile(OutputDirectory / "coverage.xml")
+        .SetOutputFile(OutputDirectory / "cobertura_coverage.xml"));
 
 ---
 [License](./LICENSE.md)
