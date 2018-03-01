@@ -223,7 +223,9 @@ class Build : NukeBuild
                 .SetLogLevel(DocFxLogLevel.Verbose));
 
             File.Delete(SolutionDirectory / "index.md");
-            Directory.Delete(SolutionDirectory / "api", true);
+            Directory.Delete(SolutionDirectory / "core", true);
+            Directory.Delete(SolutionDirectory / "cli", true);
+            Directory.Delete(SolutionDirectory / "nuke", true);
             Directory.Delete(SolutionDirectory / "obj", true);
         });
 

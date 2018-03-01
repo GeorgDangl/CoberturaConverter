@@ -1,0 +1,12 @@
+- name: Home
+  href: index.md
+- name: Core
+  href: core/
+- name: NUKE Tool
+  href: nuke/
+- name: CLI Tool
+  href: cli/
+- name: DanglDocu
+  href: https://docs.dangl-it.com
+- name: GitHub
+  href: https://github.com/GeorgDangl/Dangl.AVA
