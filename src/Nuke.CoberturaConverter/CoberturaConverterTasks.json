@@ -5,9 +5,9 @@
     "Distributed under the MIT License.",
     "https://github.com/GeorgDangl/CoberturaConverter/blob/develop/LICENSE.md"
   ],
-  "name": "GitHub",
+  "name": "CoberturaConverter",
   "officialUrl": "https://github.com/GeorgDangl/CoberturaConverter",
-  "help": "This class provides different tasks to work with GitHub repositories.",
+  "help": "This class provides different tasks to convert coverage reports.",
   "dataClasses": [
     {
       "name": "DotCoverConversionSettings",

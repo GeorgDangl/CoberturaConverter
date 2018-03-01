@@ -21,7 +21,7 @@ using System.Text;
 namespace Nuke.CoberturaConverter
 {
     #region DotCoverConversionSettings
-    /// <summary><p>Used within <see cref="GitHubTasks"/>.</p></summary>
+    /// <summary><p>Used within <see cref="CoberturaConverterTasks"/>.</p></summary>
     [PublicAPI]
     [ExcludeFromCodeCoverage]
     [Serializable]
@@ -40,7 +40,7 @@ namespace Nuke.CoberturaConverter
     }
     #endregion
     #region OpenCoverConversionSettings
-    /// <summary><p>Used within <see cref="GitHubTasks"/>.</p></summary>
+    /// <summary><p>Used within <see cref="CoberturaConverterTasks"/>.</p></summary>
     [PublicAPI]
     [ExcludeFromCodeCoverage]
     [Serializable]
@@ -59,7 +59,7 @@ namespace Nuke.CoberturaConverter
     }
     #endregion
     #region DotCoverConversionSettingsExtensions
-    /// <summary><p>Used within <see cref="GitHubTasks"/>.</p></summary>
+    /// <summary><p>Used within <see cref="CoberturaConverterTasks"/>.</p></summary>
     [PublicAPI]
     [ExcludeFromCodeCoverage]
     public static partial class DotCoverConversionSettingsExtensions
@@ -103,7 +103,7 @@ namespace Nuke.CoberturaConverter
     }
     #endregion
     #region OpenCoverConversionSettingsExtensions
-    /// <summary><p>Used within <see cref="GitHubTasks"/>.</p></summary>
+    /// <summary><p>Used within <see cref="CoberturaConverterTasks"/>.</p></summary>
     [PublicAPI]
     [ExcludeFromCodeCoverage]
     public static partial class OpenCoverConversionSettingsExtensions
