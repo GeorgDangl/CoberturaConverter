@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="492" TotalStatements="500" CoveragePercent="98" ReportType="DetailedXml" DotCoverVersion="2018.1">
+  <FileIndices>
+    <File Index="1" Name="D:\Visual Studio Projects\Dangl.Common\src\Dangl.Common\BindableBase.cs" ChecksumAlgorithm="SHA1" Checksum="7D1D98B7648BFDE79281DEE2242E9B5C5D60A8CA" />
+    <File Index="2" Name="D:\Visual Studio Projects\Dangl.Common\src\Dangl.Common\StringEncryptionExtensions.cs" ChecksumAlgorithm="SHA1" Checksum="3E729E58B5E3238E3B9EE6114ECB55B170141273" />
+    <File Index="3" Name="D:\Visual Studio Projects\Dangl.Common\src\Dangl.Common\StringExtensions.cs" ChecksumAlgorithm="SHA1" Checksum="19F517365FE37343DFA1BCAED09A35B8B807DD7C" />
+    <File Index="4" Name="D:\Visual Studio Projects\Dangl.Common\src\Dangl.Common\TrulyObservableCollection.cs" ChecksumAlgorithm="SHA1" Checksum="04B486AB90C1AAADAF14BEB13D5831281D430FDC" />
+  </FileIndices>
+  <Assembly Name="Dangl.Common" CoveredStatements="246" TotalStatements="250" CoveragePercent="98">
+    <Namespace Name="Dangl" CoveredStatements="246" TotalStatements="250" CoveragePercent="98">
+      <Type Name="BindableBase" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+        <Method Name="Dispose():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="141" Column="13" EndLine="141" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="142" Column="9" EndLine="142" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="OnDispose():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="149" Column="9" EndLine="149" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="150" Column="13" EndLine="150" EndColumn="36" Covered="True" />
+          <Statement FileIndex="1" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="OnPropertyChanged(System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="130" Column="9" EndLine="130" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="131" Column="13" EndLine="131" EndColumn="87" Covered="True" />
+          <Statement FileIndex="1" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.Collections.Specialized.NotifyCollectionChangedEventHandler,System.String):System.Boolean" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="1" Line="106" Column="9" EndLine="106" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="107" Column="13" EndLine="107" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="108" Column="13" EndLine="108" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="109" Column="17" EndLine="109" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="111" Column="13" EndLine="111" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="112" Column="13" EndLine="112" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="113" Column="17" EndLine="113" EndColumn="62" Covered="True" />
+          <Statement FileIndex="1" Line="114" Column="13" EndLine="114" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="115" Column="13" EndLine="115" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="116" Column="13" EndLine="116" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="118" Column="17" EndLine="118" EndColumn="62" Covered="True" />
+          <Statement FileIndex="1" Line="119" Column="13" EndLine="119" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="120" Column="13" EndLine="120" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="121" Column="13" EndLine="121" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="122" Column="9" EndLine="122" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.ComponentModel.PropertyChangedEventHandler,System.String):System.Boolean" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="1" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="69" Column="13" EndLine="69" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="70" Column="13" EndLine="70" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="71" Column="17" EndLine="71" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="73" Column="13" EndLine="73" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="74" Column="13" EndLine="74" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="75" Column="17" EndLine="75" EndColumn="60" Covered="True" />
+          <Statement FileIndex="1" Line="76" Column="13" EndLine="76" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="77" Column="13" EndLine="77" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="78" Column="13" EndLine="78" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="79" Column="13" EndLine="79" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="80" Column="17" EndLine="80" EndColumn="60" Covered="True" />
+          <Statement FileIndex="1" Line="81" Column="13" EndLine="81" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="82" Column="13" EndLine="82" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="83" Column="13" EndLine="83" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.String):System.Boolean" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="1" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="39" Column="13" EndLine="39" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="40" Column="13" EndLine="40" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="41" Column="17" EndLine="41" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="43" Column="13" EndLine="43" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="44" Column="13" EndLine="44" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="45" Column="13" EndLine="45" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="StringEncryptionExtensions" CoveredStatements="98" TotalStatements="102" CoveragePercent="96">
+        <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;StringToByteArray&gt;b__7_0(System.Int32):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="2" Line="156" Column="29" EndLine="156" EndColumn="39" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass7_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;StringToByteArray&gt;b__1(System.Int32):System.Byte" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="2" Line="157" Column="30" EndLine="157" EndColumn="69" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="DecryptOldVersionWithoutIterationCount(System.String,System.String):System.String" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="2" Line="147" Column="9" EndLine="147" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="149" Column="13" EndLine="149" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="150" Column="13" EndLine="150" EndColumn="76" Covered="True" />
+          <Statement FileIndex="2" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="DecryptString(System.String,System.String):System.String" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="2" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="74" Column="13" EndLine="74" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="75" Column="13" EndLine="75" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="76" Column="17" EndLine="76" EndColumn="72" Covered="True" />
+          <Statement FileIndex="2" Line="78" Column="13" EndLine="78" EndColumn="34" Covered="True" />
+          <Statement FileIndex="2" Line="79" Column="13" EndLine="79" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="80" Column="17" EndLine="80" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="82" Column="13" EndLine="82" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="DecryptString(System.String,System.String,System.Boolean):System.String" CoveredStatements="46" TotalStatements="50" CoveragePercent="92">
+          <Statement FileIndex="2" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="87" Column="13" EndLine="87" EndColumn="54" Covered="True" />
+          <Statement FileIndex="2" Line="88" Column="13" EndLine="88" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="89" Column="13" EndLine="89" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="91" Column="17" EndLine="91" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="92" Column="21" EndLine="92" EndColumn="92" Covered="True" />
+          <Statement FileIndex="2" Line="94" Column="17" EndLine="94" EndColumn="22" Covered="False" />
+          <Statement FileIndex="2" Line="94" Column="23" EndLine="94" EndColumn="24" Covered="False" />
+          <Statement FileIndex="2" Line="94" Column="63" EndLine="94" EndColumn="64" Covered="False" />
+          <Statement FileIndex="2" Line="95" Column="13" EndLine="95" EndColumn="14" Covered="False" />
+          <Statement FileIndex="2" Line="96" Column="13" EndLine="96" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="97" Column="13" EndLine="97" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="98" Column="17" EndLine="98" EndColumn="146" Covered="True" />
+          <Statement FileIndex="2" Line="100" Column="13" EndLine="100" EndColumn="96" Covered="True" />
+          <Statement FileIndex="2" Line="101" Column="13" EndLine="101" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="102" Column="17" EndLine="102" EndColumn="128" Covered="True" />
+          <Statement FileIndex="2" Line="104" Column="13" EndLine="104" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="105" Column="13" EndLine="105" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="106" Column="13" EndLine="106" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="107" Column="17" EndLine="107" EndColumn="101" Covered="True" />
+          <Statement FileIndex="2" Line="109" Column="13" EndLine="109" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="110" Column="13" EndLine="110" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="111" Column="13" EndLine="111" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="112" Column="17" EndLine="112" EndColumn="109" Covered="True" />
+          <Statement FileIndex="2" Line="114" Column="13" EndLine="114" EndColumn="45" Covered="True" />
+          <Statement FileIndex="2" Line="115" Column="13" EndLine="115" EndColumn="77" Covered="True" />
+          <Statement FileIndex="2" Line="116" Column="20" EndLine="116" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="118" Column="17" EndLine="118" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="119" Column="17" EndLine="119" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="120" Column="17" EndLine="120" EndColumn="65" Covered="True" />
+          <Statement FileIndex="2" Line="121" Column="17" EndLine="121" EndColumn="144" Covered="True" />
+          <Statement FileIndex="2" Line="122" Column="17" EndLine="122" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="123" Column="17" EndLine="123" EndColumn="62" Covered="True" />
+          <Statement FileIndex="2" Line="124" Column="17" EndLine="124" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="125" Column="17" EndLine="125" EndColumn="36" Covered="True" />
+          <Statement FileIndex="2" Line="126" Column="17" EndLine="126" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="127" Column="21" EndLine="127" EndColumn="53" Covered="True" />
+          <Statement FileIndex="2" Line="128" Column="17" EndLine="128" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="129" Column="17" EndLine="129" EndColumn="88" Covered="True" />
+          <Statement FileIndex="2" Line="131" Column="17" EndLine="131" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="132" Column="28" EndLine="132" EndColumn="114" Covered="True" />
+          <Statement FileIndex="2" Line="133" Column="21" EndLine="133" EndColumn="22" Covered="True" />
+          <Statement FileIndex="2" Line="134" Column="25" EndLine="134" EndColumn="82" Covered="True" />
+          <Statement FileIndex="2" Line="135" Column="25" EndLine="135" EndColumn="110" Covered="True" />
+          <Statement FileIndex="2" Line="136" Column="25" EndLine="136" EndColumn="95" Covered="True" />
+          <Statement FileIndex="2" Line="139" Column="17" EndLine="139" EndColumn="47" Covered="True" />
+          <Statement FileIndex="2" Line="140" Column="17" EndLine="140" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="141" Column="21" EndLine="141" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="144" Column="9" EndLine="144" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Encrypt(System.String,System.String,System.Int32):System.String" CoveredStatements="34" TotalStatements="34" CoveragePercent="100">
+          <Statement FileIndex="2" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="27" Column="13" EndLine="27" EndColumn="35" Covered="True" />
+          <Statement FileIndex="2" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="29" Column="17" EndLine="29" EndColumn="68" Covered="True" />
+          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="34" Covered="True" />
+          <Statement FileIndex="2" Line="32" Column="13" EndLine="32" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="33" Column="17" EndLine="33" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="35" Column="13" EndLine="35" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="36" Column="13" EndLine="36" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="37" Column="17" EndLine="37" EndColumn="140" Covered="True" />
+          <Statement FileIndex="2" Line="39" Column="13" EndLine="39" EndColumn="68" Covered="True" />
+          <Statement FileIndex="2" Line="40" Column="13" EndLine="40" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="41" Column="13" EndLine="41" EndColumn="72" Covered="True" />
+          <Statement FileIndex="2" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="43" Column="13" EndLine="43" EndColumn="123" Covered="True" />
+          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="36" Covered="True" />
+          <Statement FileIndex="2" Line="45" Column="13" EndLine="45" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="46" Column="13" EndLine="46" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="47" Column="13" EndLine="47" EndColumn="37" Covered="True" />
+          <Statement FileIndex="2" Line="48" Column="13" EndLine="48" EndColumn="30" Covered="True" />
+          <Statement FileIndex="2" Line="49" Column="13" EndLine="49" EndColumn="42" Covered="True" />
+          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="54" Covered="True" />
+          <Statement FileIndex="2" Line="51" Column="20" EndLine="51" EndColumn="57" Covered="True" />
+          <Statement FileIndex="2" Line="52" Column="13" EndLine="52" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="53" Column="24" EndLine="53" EndColumn="111" Covered="True" />
+          <Statement FileIndex="2" Line="54" Column="17" EndLine="54" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="55" Column="21" EndLine="55" EndColumn="82" Covered="True" />
+          <Statement FileIndex="2" Line="56" Column="21" EndLine="56" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="57" Column="21" EndLine="57" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="58" Column="21" EndLine="58" EndColumn="92" Covered="True" />
+          <Statement FileIndex="2" Line="59" Column="21" EndLine="59" EndColumn="96" Covered="True" />
+          <Statement FileIndex="2" Line="60" Column="21" EndLine="60" EndColumn="78" Covered="True" />
+          <Statement FileIndex="2" Line="61" Column="21" EndLine="61" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="9" EndLine="64" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="StringToByteArray(System.String):System.Byte[]" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="2" Line="154" Column="9" EndLine="154" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="155" Column="13" EndLine="158" EndColumn="28" Covered="True" />
+          <Statement FileIndex="2" Line="159" Column="9" EndLine="159" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="StringExtensions" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+        <Method Name="Compress(System.String):System.String" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="3" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="58" Column="13" EndLine="58" EndColumn="57" Covered="True" />
+          <Statement FileIndex="3" Line="59" Column="13" EndLine="59" EndColumn="41" Covered="True" />
+          <Statement FileIndex="3" Line="60" Column="20" EndLine="60" EndColumn="86" Covered="True" />
+          <Statement FileIndex="3" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="62" Column="17" EndLine="62" EndColumn="59" Covered="True" />
+          <Statement FileIndex="3" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="64" Column="13" EndLine="64" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="65" Column="13" EndLine="65" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="66" Column="13" EndLine="66" EndColumn="65" Covered="True" />
+          <Statement FileIndex="3" Line="67" Column="13" EndLine="67" EndColumn="65" Covered="True" />
+          <Statement FileIndex="3" Line="68" Column="13" EndLine="68" EndColumn="87" Covered="True" />
+          <Statement FileIndex="3" Line="69" Column="13" EndLine="69" EndColumn="87" Covered="True" />
+          <Statement FileIndex="3" Line="70" Column="13" EndLine="70" EndColumn="53" Covered="True" />
+          <Statement FileIndex="3" Line="71" Column="9" EndLine="71" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Decompress(System.String):System.String" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="3" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="80" Column="13" EndLine="80" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="81" Column="20" EndLine="81" EndColumn="47" Covered="True" />
+          <Statement FileIndex="3" Line="82" Column="13" EndLine="82" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="83" Column="17" EndLine="83" EndColumn="67" Covered="True" />
+          <Statement FileIndex="3" Line="84" Column="17" EndLine="84" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="85" Column="17" EndLine="85" EndColumn="50" Covered="True" />
+          <Statement FileIndex="3" Line="86" Column="17" EndLine="86" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="87" Column="24" EndLine="87" EndColumn="80" Covered="True" />
+          <Statement FileIndex="3" Line="88" Column="17" EndLine="88" EndColumn="18" Covered="True" />
+          <Statement FileIndex="3" Line="89" Column="21" EndLine="89" EndColumn="56" Covered="True" />
+          <Statement FileIndex="3" Line="90" Column="17" EndLine="90" EndColumn="18" Covered="True" />
+          <Statement FileIndex="3" Line="91" Column="17" EndLine="91" EndColumn="56" Covered="True" />
+          <Statement FileIndex="3" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="FromBase64(System.String):System.String" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="48" Column="13" EndLine="48" EndColumn="78" Covered="True" />
+          <Statement FileIndex="3" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Sanitize(System.String):System.String" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="3" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="13" EndLine="21" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="33" EndLine="21" EndColumn="45" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="13" EndLine="22" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="23" Column="13" EndLine="23" EndColumn="53" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="13" EndLine="24" EndColumn="20" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="34" EndLine="24" EndColumn="42" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="22" EndLine="24" EndColumn="30" Covered="True" />
+          <Statement FileIndex="3" Line="25" Column="13" EndLine="25" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="26" Column="17" EndLine="26" EndColumn="58" Covered="True" />
+          <Statement FileIndex="3" Line="27" Column="13" EndLine="27" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="31" EndLine="24" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ToBase64(System.String):System.String" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="38" Column="13" EndLine="38" EndColumn="75" Covered="True" />
+          <Statement FileIndex="3" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="TrulyObservableCollection&lt;T&gt;" CoveredStatements="50" TotalStatements="50" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="29" Column="9" EndLine="29" EndColumn="43" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="31" Column="13" EndLine="31" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name=".ctor(System.Collections.Generic.IEnumerable&lt;T&gt;):System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="4" Line="40" Column="15" EndLine="40" EndColumn="31" Covered="True" />
+          <Statement FileIndex="4" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="42" Column="13" EndLine="42" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="13" EndLine="43" EndColumn="20" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="46" EndLine="43" EndColumn="50" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="22" EndLine="43" EndColumn="42" Covered="True" />
+          <Statement FileIndex="4" Line="44" Column="13" EndLine="44" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="17" EndLine="45" EndColumn="46" Covered="True" />
+          <Statement FileIndex="4" Line="46" Column="17" EndLine="46" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="47" Column="21" EndLine="47" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="48" Column="17" EndLine="48" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="49" Column="13" EndLine="49" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="43" EndLine="43" EndColumn="45" Covered="True" />
+          <Statement FileIndex="4" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="FullObservableCollectionCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs):System.Void" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <Statement FileIndex="4" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="54" Column="13" EndLine="54" EndColumn="36" Covered="True" />
+          <Statement FileIndex="4" Line="55" Column="13" EndLine="55" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="17" EndLine="56" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="38" EndLine="56" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="26" EndLine="56" EndColumn="34" Covered="True" />
+          <Statement FileIndex="4" Line="57" Column="17" EndLine="57" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="58" Column="21" EndLine="58" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="59" Column="21" EndLine="59" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="60" Column="25" EndLine="60" EndColumn="96" Covered="True" />
+          <Statement FileIndex="4" Line="61" Column="21" EndLine="61" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="62" Column="17" EndLine="62" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="35" EndLine="56" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="64" Column="13" EndLine="64" EndColumn="36" Covered="True" />
+          <Statement FileIndex="4" Line="65" Column="13" EndLine="65" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="17" EndLine="66" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="38" EndLine="66" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="26" EndLine="66" EndColumn="34" Covered="True" />
+          <Statement FileIndex="4" Line="67" Column="17" EndLine="67" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="68" Column="21" EndLine="68" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="69" Column="21" EndLine="69" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="70" Column="25" EndLine="70" EndColumn="96" Covered="True" />
+          <Statement FileIndex="4" Line="71" Column="21" EndLine="71" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="72" Column="17" EndLine="72" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="35" EndLine="66" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="73" Column="13" EndLine="73" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="78" Column="13" EndLine="78" EndColumn="165" Covered="True" />
+          <Statement FileIndex="4" Line="79" Column="13" EndLine="79" EndColumn="39" Covered="True" />
+          <Statement FileIndex="4" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Dangl.Common" CoveredStatements="246" TotalStatements="250" CoveragePercent="98">
+    <Namespace Name="Dangl" CoveredStatements="246" TotalStatements="250" CoveragePercent="98">
+      <Type Name="BindableBase" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+        <Method Name="Dispose():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="141" Column="13" EndLine="141" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="142" Column="9" EndLine="142" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="OnDispose():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="149" Column="9" EndLine="149" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="150" Column="13" EndLine="150" EndColumn="36" Covered="True" />
+          <Statement FileIndex="1" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="OnPropertyChanged(System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="130" Column="9" EndLine="130" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="131" Column="13" EndLine="131" EndColumn="87" Covered="True" />
+          <Statement FileIndex="1" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.Collections.Specialized.NotifyCollectionChangedEventHandler,System.String):System.Boolean" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="1" Line="106" Column="9" EndLine="106" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="107" Column="13" EndLine="107" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="108" Column="13" EndLine="108" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="109" Column="17" EndLine="109" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="111" Column="13" EndLine="111" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="112" Column="13" EndLine="112" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="113" Column="17" EndLine="113" EndColumn="62" Covered="True" />
+          <Statement FileIndex="1" Line="114" Column="13" EndLine="114" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="115" Column="13" EndLine="115" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="116" Column="13" EndLine="116" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="118" Column="17" EndLine="118" EndColumn="62" Covered="True" />
+          <Statement FileIndex="1" Line="119" Column="13" EndLine="119" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="120" Column="13" EndLine="120" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="121" Column="13" EndLine="121" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="122" Column="9" EndLine="122" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.ComponentModel.PropertyChangedEventHandler,System.String):System.Boolean" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Statement FileIndex="1" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="69" Column="13" EndLine="69" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="70" Column="13" EndLine="70" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="71" Column="17" EndLine="71" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="73" Column="13" EndLine="73" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="74" Column="13" EndLine="74" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="75" Column="17" EndLine="75" EndColumn="60" Covered="True" />
+          <Statement FileIndex="1" Line="76" Column="13" EndLine="76" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="77" Column="13" EndLine="77" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="78" Column="13" EndLine="78" EndColumn="33" Covered="True" />
+          <Statement FileIndex="1" Line="79" Column="13" EndLine="79" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="80" Column="17" EndLine="80" EndColumn="60" Covered="True" />
+          <Statement FileIndex="1" Line="81" Column="13" EndLine="81" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="82" Column="13" EndLine="82" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="83" Column="13" EndLine="83" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;T&gt;(T,T,System.String):System.Boolean" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="1" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="39" Column="13" EndLine="39" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="40" Column="13" EndLine="40" EndColumn="14" Covered="True" />
+          <Statement FileIndex="1" Line="41" Column="17" EndLine="41" EndColumn="30" Covered="True" />
+          <Statement FileIndex="1" Line="43" Column="13" EndLine="43" EndColumn="29" Covered="True" />
+          <Statement FileIndex="1" Line="44" Column="13" EndLine="44" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="45" Column="13" EndLine="45" EndColumn="25" Covered="True" />
+          <Statement FileIndex="1" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="StringEncryptionExtensions" CoveredStatements="98" TotalStatements="102" CoveragePercent="96">
+        <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;StringToByteArray&gt;b__7_0(System.Int32):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="2" Line="156" Column="29" EndLine="156" EndColumn="39" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass7_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;StringToByteArray&gt;b__1(System.Int32):System.Byte" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="2" Line="157" Column="30" EndLine="157" EndColumn="69" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="DecryptOldVersionWithoutIterationCount(System.String,System.String):System.String" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="2" Line="147" Column="9" EndLine="147" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="149" Column="13" EndLine="149" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="150" Column="13" EndLine="150" EndColumn="76" Covered="True" />
+          <Statement FileIndex="2" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="DecryptString(System.String,System.String):System.String" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="2" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="74" Column="13" EndLine="74" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="75" Column="13" EndLine="75" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="76" Column="17" EndLine="76" EndColumn="72" Covered="True" />
+          <Statement FileIndex="2" Line="78" Column="13" EndLine="78" EndColumn="34" Covered="True" />
+          <Statement FileIndex="2" Line="79" Column="13" EndLine="79" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="80" Column="17" EndLine="80" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="82" Column="13" EndLine="82" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="DecryptString(System.String,System.String,System.Boolean):System.String" CoveredStatements="46" TotalStatements="50" CoveragePercent="92">
+          <Statement FileIndex="2" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="87" Column="13" EndLine="87" EndColumn="54" Covered="True" />
+          <Statement FileIndex="2" Line="88" Column="13" EndLine="88" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="89" Column="13" EndLine="89" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="91" Column="17" EndLine="91" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="92" Column="21" EndLine="92" EndColumn="92" Covered="True" />
+          <Statement FileIndex="2" Line="94" Column="17" EndLine="94" EndColumn="22" Covered="False" />
+          <Statement FileIndex="2" Line="94" Column="23" EndLine="94" EndColumn="24" Covered="False" />
+          <Statement FileIndex="2" Line="94" Column="63" EndLine="94" EndColumn="64" Covered="False" />
+          <Statement FileIndex="2" Line="95" Column="13" EndLine="95" EndColumn="14" Covered="False" />
+          <Statement FileIndex="2" Line="96" Column="13" EndLine="96" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="97" Column="13" EndLine="97" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="98" Column="17" EndLine="98" EndColumn="146" Covered="True" />
+          <Statement FileIndex="2" Line="100" Column="13" EndLine="100" EndColumn="96" Covered="True" />
+          <Statement FileIndex="2" Line="101" Column="13" EndLine="101" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="102" Column="17" EndLine="102" EndColumn="128" Covered="True" />
+          <Statement FileIndex="2" Line="104" Column="13" EndLine="104" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="105" Column="13" EndLine="105" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="106" Column="13" EndLine="106" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="107" Column="17" EndLine="107" EndColumn="101" Covered="True" />
+          <Statement FileIndex="2" Line="109" Column="13" EndLine="109" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="110" Column="13" EndLine="110" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="111" Column="13" EndLine="111" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="112" Column="17" EndLine="112" EndColumn="109" Covered="True" />
+          <Statement FileIndex="2" Line="114" Column="13" EndLine="114" EndColumn="45" Covered="True" />
+          <Statement FileIndex="2" Line="115" Column="13" EndLine="115" EndColumn="77" Covered="True" />
+          <Statement FileIndex="2" Line="116" Column="20" EndLine="116" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="118" Column="17" EndLine="118" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="119" Column="17" EndLine="119" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="120" Column="17" EndLine="120" EndColumn="65" Covered="True" />
+          <Statement FileIndex="2" Line="121" Column="17" EndLine="121" EndColumn="144" Covered="True" />
+          <Statement FileIndex="2" Line="122" Column="17" EndLine="122" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="123" Column="17" EndLine="123" EndColumn="62" Covered="True" />
+          <Statement FileIndex="2" Line="124" Column="17" EndLine="124" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="125" Column="17" EndLine="125" EndColumn="36" Covered="True" />
+          <Statement FileIndex="2" Line="126" Column="17" EndLine="126" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="127" Column="21" EndLine="127" EndColumn="53" Covered="True" />
+          <Statement FileIndex="2" Line="128" Column="17" EndLine="128" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="129" Column="17" EndLine="129" EndColumn="88" Covered="True" />
+          <Statement FileIndex="2" Line="131" Column="17" EndLine="131" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="132" Column="28" EndLine="132" EndColumn="114" Covered="True" />
+          <Statement FileIndex="2" Line="133" Column="21" EndLine="133" EndColumn="22" Covered="True" />
+          <Statement FileIndex="2" Line="134" Column="25" EndLine="134" EndColumn="82" Covered="True" />
+          <Statement FileIndex="2" Line="135" Column="25" EndLine="135" EndColumn="110" Covered="True" />
+          <Statement FileIndex="2" Line="136" Column="25" EndLine="136" EndColumn="95" Covered="True" />
+          <Statement FileIndex="2" Line="139" Column="17" EndLine="139" EndColumn="47" Covered="True" />
+          <Statement FileIndex="2" Line="140" Column="17" EndLine="140" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="141" Column="21" EndLine="141" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="144" Column="9" EndLine="144" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Encrypt(System.String,System.String,System.Int32):System.String" CoveredStatements="34" TotalStatements="34" CoveragePercent="100">
+          <Statement FileIndex="2" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="27" Column="13" EndLine="27" EndColumn="35" Covered="True" />
+          <Statement FileIndex="2" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="29" Column="17" EndLine="29" EndColumn="68" Covered="True" />
+          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="34" Covered="True" />
+          <Statement FileIndex="2" Line="32" Column="13" EndLine="32" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="33" Column="17" EndLine="33" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="35" Column="13" EndLine="35" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="36" Column="13" EndLine="36" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="37" Column="17" EndLine="37" EndColumn="140" Covered="True" />
+          <Statement FileIndex="2" Line="39" Column="13" EndLine="39" EndColumn="68" Covered="True" />
+          <Statement FileIndex="2" Line="40" Column="13" EndLine="40" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="41" Column="13" EndLine="41" EndColumn="72" Covered="True" />
+          <Statement FileIndex="2" Line="42" Column="13" EndLine="42" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="43" Column="13" EndLine="43" EndColumn="123" Covered="True" />
+          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="36" Covered="True" />
+          <Statement FileIndex="2" Line="45" Column="13" EndLine="45" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="46" Column="13" EndLine="46" EndColumn="39" Covered="True" />
+          <Statement FileIndex="2" Line="47" Column="13" EndLine="47" EndColumn="37" Covered="True" />
+          <Statement FileIndex="2" Line="48" Column="13" EndLine="48" EndColumn="30" Covered="True" />
+          <Statement FileIndex="2" Line="49" Column="13" EndLine="49" EndColumn="42" Covered="True" />
+          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="54" Covered="True" />
+          <Statement FileIndex="2" Line="51" Column="20" EndLine="51" EndColumn="57" Covered="True" />
+          <Statement FileIndex="2" Line="52" Column="13" EndLine="52" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="53" Column="24" EndLine="53" EndColumn="111" Covered="True" />
+          <Statement FileIndex="2" Line="54" Column="17" EndLine="54" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="55" Column="21" EndLine="55" EndColumn="82" Covered="True" />
+          <Statement FileIndex="2" Line="56" Column="21" EndLine="56" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="57" Column="21" EndLine="57" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="58" Column="21" EndLine="58" EndColumn="92" Covered="True" />
+          <Statement FileIndex="2" Line="59" Column="21" EndLine="59" EndColumn="96" Covered="True" />
+          <Statement FileIndex="2" Line="60" Column="21" EndLine="60" EndColumn="78" Covered="True" />
+          <Statement FileIndex="2" Line="61" Column="21" EndLine="61" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="9" EndLine="64" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="StringToByteArray(System.String):System.Byte[]" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="2" Line="154" Column="9" EndLine="154" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="155" Column="13" EndLine="158" EndColumn="28" Covered="True" />
+          <Statement FileIndex="2" Line="159" Column="9" EndLine="159" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="StringExtensions" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+        <Method Name="Compress(System.String):System.String" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="3" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="58" Column="13" EndLine="58" EndColumn="57" Covered="True" />
+          <Statement FileIndex="3" Line="59" Column="13" EndLine="59" EndColumn="41" Covered="True" />
+          <Statement FileIndex="3" Line="60" Column="20" EndLine="60" EndColumn="86" Covered="True" />
+          <Statement FileIndex="3" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="62" Column="17" EndLine="62" EndColumn="59" Covered="True" />
+          <Statement FileIndex="3" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="64" Column="13" EndLine="64" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="65" Column="13" EndLine="65" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="66" Column="13" EndLine="66" EndColumn="65" Covered="True" />
+          <Statement FileIndex="3" Line="67" Column="13" EndLine="67" EndColumn="65" Covered="True" />
+          <Statement FileIndex="3" Line="68" Column="13" EndLine="68" EndColumn="87" Covered="True" />
+          <Statement FileIndex="3" Line="69" Column="13" EndLine="69" EndColumn="87" Covered="True" />
+          <Statement FileIndex="3" Line="70" Column="13" EndLine="70" EndColumn="53" Covered="True" />
+          <Statement FileIndex="3" Line="71" Column="9" EndLine="71" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Decompress(System.String):System.String" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="3" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="80" Column="13" EndLine="80" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="81" Column="20" EndLine="81" EndColumn="47" Covered="True" />
+          <Statement FileIndex="3" Line="82" Column="13" EndLine="82" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="83" Column="17" EndLine="83" EndColumn="67" Covered="True" />
+          <Statement FileIndex="3" Line="84" Column="17" EndLine="84" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="85" Column="17" EndLine="85" EndColumn="50" Covered="True" />
+          <Statement FileIndex="3" Line="86" Column="17" EndLine="86" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="87" Column="24" EndLine="87" EndColumn="80" Covered="True" />
+          <Statement FileIndex="3" Line="88" Column="17" EndLine="88" EndColumn="18" Covered="True" />
+          <Statement FileIndex="3" Line="89" Column="21" EndLine="89" EndColumn="56" Covered="True" />
+          <Statement FileIndex="3" Line="90" Column="17" EndLine="90" EndColumn="18" Covered="True" />
+          <Statement FileIndex="3" Line="91" Column="17" EndLine="91" EndColumn="56" Covered="True" />
+          <Statement FileIndex="3" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="FromBase64(System.String):System.String" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="48" Column="13" EndLine="48" EndColumn="78" Covered="True" />
+          <Statement FileIndex="3" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Sanitize(System.String):System.String" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="3" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="13" EndLine="21" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="33" EndLine="21" EndColumn="45" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="13" EndLine="22" EndColumn="60" Covered="True" />
+          <Statement FileIndex="3" Line="23" Column="13" EndLine="23" EndColumn="53" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="13" EndLine="24" EndColumn="20" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="34" EndLine="24" EndColumn="42" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="22" EndLine="24" EndColumn="30" Covered="True" />
+          <Statement FileIndex="3" Line="25" Column="13" EndLine="25" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="26" Column="17" EndLine="26" EndColumn="58" Covered="True" />
+          <Statement FileIndex="3" Line="27" Column="13" EndLine="27" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="31" EndLine="24" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ToBase64(System.String):System.String" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="38" Column="13" EndLine="38" EndColumn="75" Covered="True" />
+          <Statement FileIndex="3" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="TrulyObservableCollection&lt;T&gt;" CoveredStatements="50" TotalStatements="50" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="29" Column="9" EndLine="29" EndColumn="43" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="31" Column="13" EndLine="31" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name=".ctor(System.Collections.Generic.IEnumerable&lt;T&gt;):System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="4" Line="40" Column="15" EndLine="40" EndColumn="31" Covered="True" />
+          <Statement FileIndex="4" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="42" Column="13" EndLine="42" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="13" EndLine="43" EndColumn="20" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="46" EndLine="43" EndColumn="50" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="22" EndLine="43" EndColumn="42" Covered="True" />
+          <Statement FileIndex="4" Line="44" Column="13" EndLine="44" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="17" EndLine="45" EndColumn="46" Covered="True" />
+          <Statement FileIndex="4" Line="46" Column="17" EndLine="46" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="47" Column="21" EndLine="47" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="48" Column="17" EndLine="48" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="49" Column="13" EndLine="49" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="43" EndLine="43" EndColumn="45" Covered="True" />
+          <Statement FileIndex="4" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="FullObservableCollectionCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs):System.Void" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <Statement FileIndex="4" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="54" Column="13" EndLine="54" EndColumn="36" Covered="True" />
+          <Statement FileIndex="4" Line="55" Column="13" EndLine="55" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="17" EndLine="56" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="38" EndLine="56" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="26" EndLine="56" EndColumn="34" Covered="True" />
+          <Statement FileIndex="4" Line="57" Column="17" EndLine="57" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="58" Column="21" EndLine="58" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="59" Column="21" EndLine="59" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="60" Column="25" EndLine="60" EndColumn="96" Covered="True" />
+          <Statement FileIndex="4" Line="61" Column="21" EndLine="61" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="62" Column="17" EndLine="62" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="56" Column="35" EndLine="56" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="64" Column="13" EndLine="64" EndColumn="36" Covered="True" />
+          <Statement FileIndex="4" Line="65" Column="13" EndLine="65" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="17" EndLine="66" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="38" EndLine="66" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="26" EndLine="66" EndColumn="34" Covered="True" />
+          <Statement FileIndex="4" Line="67" Column="17" EndLine="67" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="68" Column="21" EndLine="68" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="69" Column="21" EndLine="69" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="70" Column="25" EndLine="70" EndColumn="96" Covered="True" />
+          <Statement FileIndex="4" Line="71" Column="21" EndLine="71" EndColumn="22" Covered="True" />
+          <Statement FileIndex="4" Line="72" Column="17" EndLine="72" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="66" Column="35" EndLine="66" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="73" Column="13" EndLine="73" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="78" Column="13" EndLine="78" EndColumn="165" Covered="True" />
+          <Statement FileIndex="4" Line="79" Column="13" EndLine="79" EndColumn="39" Covered="True" />
+          <Statement FileIndex="4" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>

@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="406" TotalStatements="406" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2018.1">
+  <FileIndices>
+    <File Index="1" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\CalculationResult.cs" ChecksumAlgorithm="SHA1" Checksum="F8568B03844EC970CC24E38D9AF4C0C46DE08144" />
+    <File Index="2" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\Calculator.cs" ChecksumAlgorithm="SHA1" Checksum="E25CE92AF27D3798BBF240423A2448324A5B56F0" />
+    <File Index="3" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\CalculatorErrorListener.cs" ChecksumAlgorithm="SHA1" Checksum="1116E1337B1BA8FFCFC09E59F1AF8DCCCDAE1B77" />
+    <File Index="4" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\CalculatorVisitor.cs" ChecksumAlgorithm="SHA1" Checksum="49C07CD606E737A1EF02AB5694A88A936F087D9E" />
+    <File Index="5" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\obj\Debug\net45\CalculatorParser.cs" ChecksumAlgorithm="SHA1" Checksum="07BEBEFCFA965A98ADC13EB839C0E3239F7580C5" />
+    <File Index="6" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\obj\Debug\netstandard1.1\CalculatorParser.cs" ChecksumAlgorithm="SHA1" Checksum="07BEBEFCFA965A98ADC13EB839C0E3239F7580C5" />
+  </FileIndices>
+  <Assembly Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+    <Namespace Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+      <Type Name="CalculationResult" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="59" EndLine="17" EndColumn="61" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorMessage():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="22" Column="38" EndLine="22" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorPosition():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="36" EndLine="17" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="get_IsValid():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="11" Column="31" EndLine="11" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_Result():System.Double" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="27" Column="32" EndLine="27" EndColumn="36" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorMessage(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="22" Column="43" EndLine="22" EndColumn="56" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorPosition(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="41" EndLine="17" EndColumn="54" Covered="True" />
+        </Method>
+        <Method Name="set_IsValid(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="11" Column="36" EndLine="11" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="set_Result(System.Double):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="27" Column="37" EndLine="27" EndColumn="50" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Calculator" CoveredStatements="45" TotalStatements="45" CoveragePercent="100">
+        <Method Name="Calculate(System.String):Dangl.Calculator.CalculationResult" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="2" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="CalculateResult(System.String,System.Boolean):Dangl.Calculator.CalculationResult" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+          <Statement FileIndex="2" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="32" Column="17" EndLine="36" EndColumn="19" Covered="True" />
+          <Statement FileIndex="2" Line="38" Column="13" EndLine="38" EndColumn="61" Covered="True" />
+          <Statement FileIndex="2" Line="39" Column="13" EndLine="39" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="40" Column="13" EndLine="40" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="41" Column="13" EndLine="41" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="42" Covered="True" />
+          <Statement FileIndex="2" Line="45" Column="13" EndLine="45" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="47" Column="13" EndLine="47" EndColumn="69" Covered="True" />
+          <Statement FileIndex="2" Line="48" Column="13" EndLine="48" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="49" Column="13" EndLine="49" EndColumn="51" Covered="True" />
+          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="51" Column="13" EndLine="51" EndColumn="62" Covered="True" />
+          <Statement FileIndex="2" Line="52" Column="13" EndLine="52" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="53" Column="13" EndLine="53" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="54" Column="13" EndLine="54" EndColumn="65" Covered="True" />
+          <Statement FileIndex="2" Line="55" Column="13" EndLine="55" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="56" Column="13" EndLine="56" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="57" Column="17" EndLine="57" EndColumn="33" Covered="True" />
+          <Statement FileIndex="2" Line="58" Column="13" EndLine="58" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="60" Column="13" EndLine="60" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="62" Column="17" EndLine="62" EndColumn="51" Covered="True" />
+          <Statement FileIndex="2" Line="63" Column="17" EndLine="63" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="22" EndLine="64" EndColumn="31" Covered="True" />
+          <Statement FileIndex="2" Line="65" Column="17" EndLine="65" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="66" Column="21" EndLine="66" EndColumn="57" Covered="True" />
+          <Statement FileIndex="2" Line="67" Column="17" EndLine="67" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="58" EndLine="64" EndColumn="61" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="33" EndLine="64" EndColumn="56" Covered="True" />
+          <Statement FileIndex="2" Line="68" Column="17" EndLine="68" EndColumn="59" Covered="True" />
+          <Statement FileIndex="2" Line="69" Column="17" EndLine="69" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="70" Column="17" EndLine="70" EndColumn="44" Covered="True" />
+          <Statement FileIndex="2" Line="71" Column="17" EndLine="71" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="72" Column="21" EndLine="72" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="73" Column="21" EndLine="73" EndColumn="63" Covered="True" />
+          <Statement FileIndex="2" Line="74" Column="17" EndLine="74" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="75" Column="17" EndLine="75" EndColumn="38" Covered="True" />
+          <Statement FileIndex="2" Line="77" Column="13" EndLine="85" EndColumn="15" Covered="True" />
+          <Statement FileIndex="2" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="CalculatorErrorListener" CoveredStatements="22" TotalStatements="22" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="53" EndLine="17" EndColumn="57" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="58" EndLine="22" EndColumn="60" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorLocation():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="22" Column="36" EndLine="22" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorMessage():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="27" Column="38" EndLine="27" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_IsValid():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="31" EndLine="17" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="ReportAmbiguity(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Boolean,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.ATNConfigSet):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="34" Column="13" EndLine="34" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReportAttemptingFullContext(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.SimulatorState):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="42" Column="13" EndLine="42" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="43" Column="9" EndLine="43" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReportContextSensitivity(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Int32,Antlr4.Runtime.Atn.SimulatorState):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="50" Column="13" EndLine="50" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorLocation(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="22" Column="41" EndLine="22" EndColumn="53" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorMessage(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="27" Column="43" EndLine="27" EndColumn="55" Covered="True" />
+        </Method>
+        <Method Name="set_IsValid(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="36" EndLine="17" EndColumn="48" Covered="True" />
+        </Method>
+        <Method Name="SyntaxError(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="3" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="58" Column="13" EndLine="58" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="59" Column="13" EndLine="59" EndColumn="86" Covered="True" />
+          <Statement FileIndex="3" Line="60" Column="13" EndLine="60" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="61" Column="9" EndLine="61" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="CalculatorVisitor" CoveredStatements="127" TotalStatements="127" CoveragePercent="100">
+        <Method Name="VisitAbs(Dangl.Calculator.Generated.CalculatorParser.AbsContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="15" Column="13" EndLine="15" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitAddSub(Dangl.Calculator.Generated.CalculatorParser.AddSubContext):System.Double" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="4" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="13" EndLine="20" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="22" Column="17" EndLine="22" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="24" Column="13" EndLine="24" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArccos(Dangl.Calculator.Generated.CalculatorParser.ArccosContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="29" Column="13" EndLine="29" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArccot(Dangl.Calculator.Generated.CalculatorParser.ArccotContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="34" Column="13" EndLine="34" EndColumn="73" Covered="True" />
+          <Statement FileIndex="4" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArcsin(Dangl.Calculator.Generated.CalculatorParser.ArcsinContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="39" Column="13" EndLine="39" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="40" Column="9" EndLine="40" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArctan(Dangl.Calculator.Generated.CalculatorParser.ArctanContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="43" Column="9" EndLine="43" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="44" Column="13" EndLine="44" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="9" EndLine="45" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArctan2(Dangl.Calculator.Generated.CalculatorParser.Arctan2Context):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="49" Column="13" EndLine="49" EndColumn="91" Covered="True" />
+          <Statement FileIndex="4" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCeil(Dangl.Calculator.Generated.CalculatorParser.CeilContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="54" Column="13" EndLine="54" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCos(Dangl.Calculator.Generated.CalculatorParser.CosContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="58" Column="9" EndLine="58" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="59" Column="13" EndLine="59" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="60" Column="9" EndLine="60" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCosh(Dangl.Calculator.Generated.CalculatorParser.CoshContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="64" Column="13" EndLine="64" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCot(Dangl.Calculator.Generated.CalculatorParser.CotContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="69" Column="13" EndLine="69" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitDeg(Dangl.Calculator.Generated.CalculatorParser.DegContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="74" Column="13" EndLine="74" EndColumn="70" Covered="True" />
+          <Statement FileIndex="4" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitEex(Dangl.Calculator.Generated.CalculatorParser.EexContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="79" Column="13" EndLine="79" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitEuler(Dangl.Calculator.Generated.CalculatorParser.EulerContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="88" Column="9" EndLine="88" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="89" Column="13" EndLine="89" EndColumn="27" Covered="True" />
+          <Statement FileIndex="4" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitExp(Dangl.Calculator.Generated.CalculatorParser.ExpContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="94" Column="13" EndLine="94" EndColumn="66" Covered="True" />
+          <Statement FileIndex="4" Line="95" Column="9" EndLine="95" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitExponent(Dangl.Calculator.Generated.CalculatorParser.ExponentContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="84" Column="13" EndLine="84" EndColumn="94" Covered="True" />
+          <Statement FileIndex="4" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitFloor(Dangl.Calculator.Generated.CalculatorParser.FloorContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="99" Column="13" EndLine="99" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitLn(Dangl.Calculator.Generated.CalculatorParser.LnContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="104" Column="13" EndLine="104" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitLog(Dangl.Calculator.Generated.CalculatorParser.LogContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="109" Column="13" EndLine="109" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="110" Column="9" EndLine="110" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitMod(Dangl.Calculator.Generated.CalculatorParser.ModContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="114" Column="13" EndLine="114" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="115" Column="9" EndLine="115" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitMulDiv(Dangl.Calculator.Generated.CalculatorParser.MulDivContext):System.Double" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="4" Line="118" Column="9" EndLine="118" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="119" Column="13" EndLine="119" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="120" Column="13" EndLine="120" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="121" Column="17" EndLine="121" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="123" Column="13" EndLine="123" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="124" Column="9" EndLine="124" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitNegExponent(Dangl.Calculator.Generated.CalculatorParser.NegExponentContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="127" Column="9" EndLine="127" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="128" Column="13" EndLine="128" EndColumn="95" Covered="True" />
+          <Statement FileIndex="4" Line="129" Column="9" EndLine="129" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitNumber(Dangl.Calculator.Generated.CalculatorParser.NumberContext):System.Double" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="133" Column="13" EndLine="133" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="134" Column="13" EndLine="134" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="135" Column="9" EndLine="135" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitParenthesis(Dangl.Calculator.Generated.CalculatorParser.ParenthesisContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="138" Column="9" EndLine="138" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="139" Column="13" EndLine="139" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitPi(Dangl.Calculator.Generated.CalculatorParser.PiContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="143" Column="9" EndLine="143" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="144" Column="13" EndLine="144" EndColumn="28" Covered="True" />
+          <Statement FileIndex="4" Line="145" Column="9" EndLine="145" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitPow(Dangl.Calculator.Generated.CalculatorParser.PowContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="148" Column="9" EndLine="148" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="149" Column="13" EndLine="149" EndColumn="89" Covered="True" />
+          <Statement FileIndex="4" Line="150" Column="9" EndLine="150" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRad(Dangl.Calculator.Generated.CalculatorParser.RadContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="153" Column="9" EndLine="153" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="154" Column="13" EndLine="154" EndColumn="68" Covered="True" />
+          <Statement FileIndex="4" Line="155" Column="9" EndLine="155" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRound(Dangl.Calculator.Generated.CalculatorParser.RoundContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="158" Column="9" EndLine="158" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="159" Column="13" EndLine="159" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="160" Column="9" EndLine="160" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRoundk(Dangl.Calculator.Generated.CalculatorParser.RoundkContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="163" Column="9" EndLine="163" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="164" Column="13" EndLine="164" EndColumn="108" Covered="True" />
+          <Statement FileIndex="4" Line="165" Column="9" EndLine="165" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSin(Dangl.Calculator.Generated.CalculatorParser.SinContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="168" Column="9" EndLine="168" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="169" Column="13" EndLine="169" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="170" Column="9" EndLine="170" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSinh(Dangl.Calculator.Generated.CalculatorParser.SinhContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="173" Column="9" EndLine="173" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="174" Column="13" EndLine="174" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="175" Column="9" EndLine="175" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqr(Dangl.Calculator.Generated.CalculatorParser.SqrContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="178" Column="9" EndLine="178" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="179" Column="13" EndLine="179" EndColumn="78" Covered="True" />
+          <Statement FileIndex="4" Line="180" Column="9" EndLine="180" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqRoot(Dangl.Calculator.Generated.CalculatorParser.SqRootContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="183" Column="9" EndLine="183" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="184" Column="13" EndLine="184" EndColumn="93" Covered="True" />
+          <Statement FileIndex="4" Line="185" Column="9" EndLine="185" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqrt(Dangl.Calculator.Generated.CalculatorParser.SqrtContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="188" Column="9" EndLine="188" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="189" Column="13" EndLine="189" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="190" Column="9" EndLine="190" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTan(Dangl.Calculator.Generated.CalculatorParser.TanContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="193" Column="9" EndLine="193" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="194" Column="13" EndLine="194" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="195" Column="9" EndLine="195" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTanh(Dangl.Calculator.Generated.CalculatorParser.TanhContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="198" Column="9" EndLine="198" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="199" Column="13" EndLine="199" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="200" Column="9" EndLine="200" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTrunc(Dangl.Calculator.Generated.CalculatorParser.TruncContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="203" Column="9" EndLine="203" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="204" Column="13" EndLine="204" EndColumn="63" Covered="True" />
+          <Statement FileIndex="4" Line="205" Column="9" EndLine="205" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitUnary(Dangl.Calculator.Generated.CalculatorParser.UnaryContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="208" Column="9" EndLine="208" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="209" Column="13" EndLine="209" EndColumn="53" Covered="True" />
+          <Statement FileIndex="4" Line="210" Column="9" EndLine="210" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitUnaryPlus(Dangl.Calculator.Generated.CalculatorParser.UnaryPlusContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="213" Column="9" EndLine="213" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="214" Column="13" EndLine="214" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="215" Column="9" EndLine="215" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitWhole(Dangl.Calculator.Generated.CalculatorParser.WholeContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="218" Column="9" EndLine="218" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="219" Column="13" EndLine="219" EndColumn="95" Covered="True" />
+          <Statement FileIndex="4" Line="220" Column="9" EndLine="220" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+    <Namespace Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+      <Type Name="CalculationResult" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="59" EndLine="17" EndColumn="61" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorMessage():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="22" Column="38" EndLine="22" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorPosition():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="36" EndLine="17" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="get_IsValid():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="11" Column="31" EndLine="11" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_Result():System.Double" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="27" Column="32" EndLine="27" EndColumn="36" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorMessage(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="22" Column="43" EndLine="22" EndColumn="56" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorPosition(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="17" Column="41" EndLine="17" EndColumn="54" Covered="True" />
+        </Method>
+        <Method Name="set_IsValid(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="11" Column="36" EndLine="11" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="set_Result(System.Double):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="27" Column="37" EndLine="27" EndColumn="50" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="Calculator" CoveredStatements="45" TotalStatements="45" CoveragePercent="100">
+        <Method Name="Calculate(System.String):Dangl.Calculator.CalculationResult" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="2" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="CalculateResult(System.String,System.Boolean):Dangl.Calculator.CalculationResult" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
+          <Statement FileIndex="2" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="52" Covered="True" />
+          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="32" Column="17" EndLine="36" EndColumn="19" Covered="True" />
+          <Statement FileIndex="2" Line="38" Column="13" EndLine="38" EndColumn="61" Covered="True" />
+          <Statement FileIndex="2" Line="39" Column="13" EndLine="39" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="40" Column="13" EndLine="40" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="41" Column="13" EndLine="41" EndColumn="60" Covered="True" />
+          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="42" Covered="True" />
+          <Statement FileIndex="2" Line="45" Column="13" EndLine="45" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="47" Column="13" EndLine="47" EndColumn="69" Covered="True" />
+          <Statement FileIndex="2" Line="48" Column="13" EndLine="48" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="49" Column="13" EndLine="49" EndColumn="51" Covered="True" />
+          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="51" Column="13" EndLine="51" EndColumn="62" Covered="True" />
+          <Statement FileIndex="2" Line="52" Column="13" EndLine="52" EndColumn="55" Covered="True" />
+          <Statement FileIndex="2" Line="53" Column="13" EndLine="53" EndColumn="67" Covered="True" />
+          <Statement FileIndex="2" Line="54" Column="13" EndLine="54" EndColumn="65" Covered="True" />
+          <Statement FileIndex="2" Line="55" Column="13" EndLine="55" EndColumn="43" Covered="True" />
+          <Statement FileIndex="2" Line="56" Column="13" EndLine="56" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="57" Column="17" EndLine="57" EndColumn="33" Covered="True" />
+          <Statement FileIndex="2" Line="58" Column="13" EndLine="58" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="60" Column="13" EndLine="60" EndColumn="40" Covered="True" />
+          <Statement FileIndex="2" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="62" Column="17" EndLine="62" EndColumn="51" Covered="True" />
+          <Statement FileIndex="2" Line="63" Column="17" EndLine="63" EndColumn="66" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="22" EndLine="64" EndColumn="31" Covered="True" />
+          <Statement FileIndex="2" Line="65" Column="17" EndLine="65" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="66" Column="21" EndLine="66" EndColumn="57" Covered="True" />
+          <Statement FileIndex="2" Line="67" Column="17" EndLine="67" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="58" EndLine="64" EndColumn="61" Covered="True" />
+          <Statement FileIndex="2" Line="64" Column="33" EndLine="64" EndColumn="56" Covered="True" />
+          <Statement FileIndex="2" Line="68" Column="17" EndLine="68" EndColumn="59" Covered="True" />
+          <Statement FileIndex="2" Line="69" Column="17" EndLine="69" EndColumn="75" Covered="True" />
+          <Statement FileIndex="2" Line="70" Column="17" EndLine="70" EndColumn="44" Covered="True" />
+          <Statement FileIndex="2" Line="71" Column="17" EndLine="71" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="72" Column="21" EndLine="72" EndColumn="73" Covered="True" />
+          <Statement FileIndex="2" Line="73" Column="21" EndLine="73" EndColumn="63" Covered="True" />
+          <Statement FileIndex="2" Line="74" Column="17" EndLine="74" EndColumn="18" Covered="True" />
+          <Statement FileIndex="2" Line="75" Column="17" EndLine="75" EndColumn="38" Covered="True" />
+          <Statement FileIndex="2" Line="77" Column="13" EndLine="85" EndColumn="15" Covered="True" />
+          <Statement FileIndex="2" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="CalculatorErrorListener" CoveredStatements="22" TotalStatements="22" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="53" EndLine="17" EndColumn="57" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="58" EndLine="22" EndColumn="60" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorLocation():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="22" Column="36" EndLine="22" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="get_ErrorMessage():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="27" Column="38" EndLine="27" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_IsValid():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="31" EndLine="17" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="ReportAmbiguity(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Boolean,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.ATNConfigSet):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="34" Column="13" EndLine="34" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReportAttemptingFullContext(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.SimulatorState):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="42" Column="13" EndLine="42" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="43" Column="9" EndLine="43" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReportContextSensitivity(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Int32,Antlr4.Runtime.Atn.SimulatorState):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="50" Column="13" EndLine="50" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorLocation(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="22" Column="41" EndLine="22" EndColumn="53" Covered="True" />
+        </Method>
+        <Method Name="set_ErrorMessage(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="27" Column="43" EndLine="27" EndColumn="55" Covered="True" />
+        </Method>
+        <Method Name="set_IsValid(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="17" Column="36" EndLine="17" EndColumn="48" Covered="True" />
+        </Method>
+        <Method Name="SyntaxError(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="3" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="58" Column="13" EndLine="58" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="59" Column="13" EndLine="59" EndColumn="86" Covered="True" />
+          <Statement FileIndex="3" Line="60" Column="13" EndLine="60" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="61" Column="9" EndLine="61" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="CalculatorVisitor" CoveredStatements="127" TotalStatements="127" CoveragePercent="100">
+        <Method Name="VisitAbs(Dangl.Calculator.Generated.CalculatorParser.AbsContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="15" Column="13" EndLine="15" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitAddSub(Dangl.Calculator.Generated.CalculatorParser.AddSubContext):System.Double" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="4" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="13" EndLine="20" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="22" Column="17" EndLine="22" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="24" Column="13" EndLine="24" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArccos(Dangl.Calculator.Generated.CalculatorParser.ArccosContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="29" Column="13" EndLine="29" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArccot(Dangl.Calculator.Generated.CalculatorParser.ArccotContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="34" Column="13" EndLine="34" EndColumn="73" Covered="True" />
+          <Statement FileIndex="4" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArcsin(Dangl.Calculator.Generated.CalculatorParser.ArcsinContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="39" Column="13" EndLine="39" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="40" Column="9" EndLine="40" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArctan(Dangl.Calculator.Generated.CalculatorParser.ArctanContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="43" Column="9" EndLine="43" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="44" Column="13" EndLine="44" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="9" EndLine="45" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitArctan2(Dangl.Calculator.Generated.CalculatorParser.Arctan2Context):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="49" Column="13" EndLine="49" EndColumn="91" Covered="True" />
+          <Statement FileIndex="4" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCeil(Dangl.Calculator.Generated.CalculatorParser.CeilContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="54" Column="13" EndLine="54" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCos(Dangl.Calculator.Generated.CalculatorParser.CosContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="58" Column="9" EndLine="58" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="59" Column="13" EndLine="59" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="60" Column="9" EndLine="60" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCosh(Dangl.Calculator.Generated.CalculatorParser.CoshContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="64" Column="13" EndLine="64" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitCot(Dangl.Calculator.Generated.CalculatorParser.CotContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="69" Column="13" EndLine="69" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitDeg(Dangl.Calculator.Generated.CalculatorParser.DegContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="74" Column="13" EndLine="74" EndColumn="70" Covered="True" />
+          <Statement FileIndex="4" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitEex(Dangl.Calculator.Generated.CalculatorParser.EexContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="79" Column="13" EndLine="79" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitEuler(Dangl.Calculator.Generated.CalculatorParser.EulerContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="88" Column="9" EndLine="88" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="89" Column="13" EndLine="89" EndColumn="27" Covered="True" />
+          <Statement FileIndex="4" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitExp(Dangl.Calculator.Generated.CalculatorParser.ExpContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="94" Column="13" EndLine="94" EndColumn="66" Covered="True" />
+          <Statement FileIndex="4" Line="95" Column="9" EndLine="95" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitExponent(Dangl.Calculator.Generated.CalculatorParser.ExponentContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="84" Column="13" EndLine="84" EndColumn="94" Covered="True" />
+          <Statement FileIndex="4" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitFloor(Dangl.Calculator.Generated.CalculatorParser.FloorContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="99" Column="13" EndLine="99" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitLn(Dangl.Calculator.Generated.CalculatorParser.LnContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="104" Column="13" EndLine="104" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitLog(Dangl.Calculator.Generated.CalculatorParser.LogContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="109" Column="13" EndLine="109" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="110" Column="9" EndLine="110" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitMod(Dangl.Calculator.Generated.CalculatorParser.ModContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="114" Column="13" EndLine="114" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="115" Column="9" EndLine="115" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitMulDiv(Dangl.Calculator.Generated.CalculatorParser.MulDivContext):System.Double" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="4" Line="118" Column="9" EndLine="118" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="119" Column="13" EndLine="119" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="120" Column="13" EndLine="120" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="121" Column="17" EndLine="121" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="123" Column="13" EndLine="123" EndColumn="80" Covered="True" />
+          <Statement FileIndex="4" Line="124" Column="9" EndLine="124" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitNegExponent(Dangl.Calculator.Generated.CalculatorParser.NegExponentContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="127" Column="9" EndLine="127" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="128" Column="13" EndLine="128" EndColumn="95" Covered="True" />
+          <Statement FileIndex="4" Line="129" Column="9" EndLine="129" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitNumber(Dangl.Calculator.Generated.CalculatorParser.NumberContext):System.Double" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="133" Column="13" EndLine="133" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="134" Column="13" EndLine="134" EndColumn="77" Covered="True" />
+          <Statement FileIndex="4" Line="135" Column="9" EndLine="135" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitParenthesis(Dangl.Calculator.Generated.CalculatorParser.ParenthesisContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="138" Column="9" EndLine="138" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="139" Column="13" EndLine="139" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitPi(Dangl.Calculator.Generated.CalculatorParser.PiContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="143" Column="9" EndLine="143" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="144" Column="13" EndLine="144" EndColumn="28" Covered="True" />
+          <Statement FileIndex="4" Line="145" Column="9" EndLine="145" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitPow(Dangl.Calculator.Generated.CalculatorParser.PowContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="148" Column="9" EndLine="148" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="149" Column="13" EndLine="149" EndColumn="89" Covered="True" />
+          <Statement FileIndex="4" Line="150" Column="9" EndLine="150" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRad(Dangl.Calculator.Generated.CalculatorParser.RadContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="153" Column="9" EndLine="153" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="154" Column="13" EndLine="154" EndColumn="68" Covered="True" />
+          <Statement FileIndex="4" Line="155" Column="9" EndLine="155" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRound(Dangl.Calculator.Generated.CalculatorParser.RoundContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="158" Column="9" EndLine="158" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="159" Column="13" EndLine="159" EndColumn="60" Covered="True" />
+          <Statement FileIndex="4" Line="160" Column="9" EndLine="160" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitRoundk(Dangl.Calculator.Generated.CalculatorParser.RoundkContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="163" Column="9" EndLine="163" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="164" Column="13" EndLine="164" EndColumn="108" Covered="True" />
+          <Statement FileIndex="4" Line="165" Column="9" EndLine="165" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSin(Dangl.Calculator.Generated.CalculatorParser.SinContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="168" Column="9" EndLine="168" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="169" Column="13" EndLine="169" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="170" Column="9" EndLine="170" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSinh(Dangl.Calculator.Generated.CalculatorParser.SinhContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="173" Column="9" EndLine="173" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="174" Column="13" EndLine="174" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="175" Column="9" EndLine="175" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqr(Dangl.Calculator.Generated.CalculatorParser.SqrContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="178" Column="9" EndLine="178" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="179" Column="13" EndLine="179" EndColumn="78" Covered="True" />
+          <Statement FileIndex="4" Line="180" Column="9" EndLine="180" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqRoot(Dangl.Calculator.Generated.CalculatorParser.SqRootContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="183" Column="9" EndLine="183" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="184" Column="13" EndLine="184" EndColumn="93" Covered="True" />
+          <Statement FileIndex="4" Line="185" Column="9" EndLine="185" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitSqrt(Dangl.Calculator.Generated.CalculatorParser.SqrtContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="188" Column="9" EndLine="188" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="189" Column="13" EndLine="189" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="190" Column="9" EndLine="190" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTan(Dangl.Calculator.Generated.CalculatorParser.TanContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="193" Column="9" EndLine="193" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="194" Column="13" EndLine="194" EndColumn="58" Covered="True" />
+          <Statement FileIndex="4" Line="195" Column="9" EndLine="195" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTanh(Dangl.Calculator.Generated.CalculatorParser.TanhContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="198" Column="9" EndLine="198" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="199" Column="13" EndLine="199" EndColumn="59" Covered="True" />
+          <Statement FileIndex="4" Line="200" Column="9" EndLine="200" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitTrunc(Dangl.Calculator.Generated.CalculatorParser.TruncContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="203" Column="9" EndLine="203" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="204" Column="13" EndLine="204" EndColumn="63" Covered="True" />
+          <Statement FileIndex="4" Line="205" Column="9" EndLine="205" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitUnary(Dangl.Calculator.Generated.CalculatorParser.UnaryContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="208" Column="9" EndLine="208" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="209" Column="13" EndLine="209" EndColumn="53" Covered="True" />
+          <Statement FileIndex="4" Line="210" Column="9" EndLine="210" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitUnaryPlus(Dangl.Calculator.Generated.CalculatorParser.UnaryPlusContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="213" Column="9" EndLine="213" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="214" Column="13" EndLine="214" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="215" Column="9" EndLine="215" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="VisitWhole(Dangl.Calculator.Generated.CalculatorParser.WholeContext):System.Double" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="218" Column="9" EndLine="218" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="219" Column="13" EndLine="219" EndColumn="95" Covered="True" />
+          <Statement FileIndex="4" Line="220" Column="9" EndLine="220" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
