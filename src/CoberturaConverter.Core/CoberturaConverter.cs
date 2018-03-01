@@ -3,7 +3,7 @@ using CoberturaConverter.Core.OpenCover;
 
 namespace CoberturaConverter.Core
 {
-    public class CoberturaConverter
+    public static class CoberturaConverter
     {
         public static Stream ConvertDotCoverToCobertura(Stream dotCoverDetailedXml)
         {
