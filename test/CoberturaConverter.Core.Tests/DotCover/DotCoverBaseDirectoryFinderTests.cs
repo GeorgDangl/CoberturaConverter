@@ -47,6 +47,10 @@ namespace CoberturaConverter.Core.Tests.DotCover
                     "D:\\Visual Studio Projects\\Dangl.Common\\src\\Dangl.Common\\StringEncryptionExtensions.cs",
                     "C:\\Visual Studio Projects\\Dangl.Common\\src\\Dangl.Common\\StringEncryptionExtensions.cs"
                 }
+            },
+            new object[]
+            {
+                string.Empty, new string[0]
             }
         };
     }

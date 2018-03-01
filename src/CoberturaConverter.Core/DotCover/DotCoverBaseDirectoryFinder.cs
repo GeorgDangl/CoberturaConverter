@@ -18,6 +18,11 @@ namespace CoberturaConverter.Core.DotCover
 
             var filePathList = filePaths.ToList();
 
+            if (!filePathList.Any())
+            {
+                return string.Empty;
+            }
+
             var initialFilePath = filePathList[0];
 
             string commonStart = string.Empty;
