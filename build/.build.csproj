@@ -30,4 +30,8 @@
     <None Remove="*.csproj.DotSettings;*.ref.*.txt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\Nuke.CoberturaConverter\Nuke.CoberturaConverter.csproj" />
+  </ItemGroup>
+
 </Project>

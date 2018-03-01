@@ -9,6 +9,7 @@ using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
 using Nuke.Core;
 using System.Xml.XPath;
+using Nuke.CoberturaConverter;
 using Nuke.Common.Tools.DocFx;
 using Nuke.Core.Tooling;
 using Nuke.Core.Utilities;
@@ -24,9 +25,8 @@ using Nuke.WebDocu;
 using static Nuke.Common.Tools.DocFx.DocFxTasks;
 using static Nuke.WebDocu.WebDocuTasks;
 using static Nuke.Common.ChangeLog.ChangelogTasks;
-using Nuke.Common.Tools.OpenCover;
-using static Nuke.Common.Tools.OpenCover.OpenCoverTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
+using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 
 class Build : NukeBuild
 {
@@ -107,7 +107,7 @@ class Build : NukeBuild
 
     Target Coverage => _ => _
         .DependsOn(Compile)
-        .Executes(() =>
+        .Executes<Task>(async () =>
         {
             var testProjects = GlobFiles(SolutionDirectory / "test", "*.csproj").ToList();
             var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
@@ -124,7 +124,8 @@ class Build : NukeBuild
                         .Add($"/TargetExecutable=\"{dotnetPath}\"")
                         .Add($"/TargetWorkingDir=\"{projectDirectory}\"")
                         .Add("/TargetArguments=\"xunit -nobuild\"")
-                        .Add("/Filters=\"+:CoberturaConverter;+:Nuke.CoberturaConverter;+:CoberturaConverter.CommandLine\"")
+                        //.Add("/Filters=\"+:CoberturaConverter.Core\"")
+                        .Add("/Filters=\"+:CoberturaConverter.Core\"")
                         .Add("/AttributeFilters=\"System.CodeDom.Compiler.GeneratedCodeAttribute\"")
                         .Add($"/Output=\"{OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"}\""));
                 ProcessTasks.StartProcess(toolSettings)
@@ -154,6 +155,7 @@ class Build : NukeBuild
             ProcessTasks.StartProcess(reportSettings)
                 .AssertZeroExitCode();
 
+            // This is the report that's pretty and visualized in Jenkins
             var reportGeneratorSettings = new ToolSettings()
                 .SetToolPath(ToolPathResolver.GetPackageExecutable("ReportGenerator", "tools/ReportGenerator.exe"))
                 .SetArgumentConfigurator(a => a
@@ -161,6 +163,15 @@ class Build : NukeBuild
                     .Add($"-targetdir:\"{OutputDirectory / "CoverageReport"}\""));
             ProcessTasks.StartProcess(reportGeneratorSettings)
                 .AssertZeroExitCode();
+
+
+            // This is the report in Cobertura format that integrates so nice in Jenkins
+            // dashboard and allows to extract more metrics and set build health based
+            // on coverage readings
+            await DotCoverToCobertura(new DotCoverConversionSettings()
+                .SetInputFile(OutputDirectory / "coverage.xml")
+                .SetOutputFile(OutputDirectory / "cobertura_coverage.xml"));
+
         });
 
     Target Push => _ => _
