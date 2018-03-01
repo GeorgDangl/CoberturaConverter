@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotCoverConverter
+namespace DotCoverConverter.CommandLine
 {
     public class Class1
     {
