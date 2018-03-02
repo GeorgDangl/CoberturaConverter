@@ -30,6 +30,20 @@ All builds are available on MyGet:
     https://www.myget.org/F/dangl/api/v2
     https://www.myget.org/F/dangl/api/v3/index.json
 
+## CLI Usage
+
+You can use the converter from the command line, it is available in the `CoberturaConverter.CommandLine`
+NuGet package under `/tools` both for **net471** and **netcoreapp2.0**. It is launched via:
+
+    CoberturaConverter.CommandLine.exe -i <InputFile> -o <OutputFile> -s <DotCover | OpenCover>
+
+| Parameter | Description |
+|-----------|-------------|
+| -i        | Path to the input file |
+| -o        | Path where to save the converted report to |
+| -s        | Source report format, can be either `DotCover` or `OpenCover` |
+| --help    | Display options |
+
 ## NUKE Example
 
 The package is available as `Dangl.Nuke.CoberturaConverter`.
