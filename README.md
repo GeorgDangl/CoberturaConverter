@@ -2,7 +2,7 @@
 
 [![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=CoberturaConverter.Tests)](https://jenkins.dangl.me/job/CoberturaConverter.Tests/)
 
-[![Built with Nuke](http://nuke.build/squared)]()
+[![Built with Nuke](http://nuke.build/rounded)](https://www.nuke.build)
 
 ![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)
 [![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)]()
