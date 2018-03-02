@@ -4,8 +4,8 @@
 
 [![Built with Nuke](http://nuke.build/rounded)](https://www.nuke.build)
 
-![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)
-[![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)]()
+[![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)](https://www.nuget.org/packages/CoberturaConverter.Core)
+[![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)](https://www.myget.org/feed/dangl/package/nuget/CoberturaConverter.Core)
 
 [Changelog](./CHANGELOG.md)
 
