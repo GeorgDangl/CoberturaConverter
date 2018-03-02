@@ -123,8 +123,7 @@ class Build : NukeBuild
                         .Add("cover")
                         .Add($"/TargetExecutable=\"{dotnetPath}\"")
                         .Add($"/TargetWorkingDir=\"{projectDirectory}\"")
-                        .Add("/TargetArguments=\"xunit -nobuild\"")
-                        //.Add("/Filters=\"+:CoberturaConverter.Core\"")
+                        .Add($"/TargetArguments=\"xunit -nobuild -xml \"\"{OutputDirectory / $"test_{snapshotIndex:00}.testresults"}\"\"\"")
                         .Add("/Filters=\"+:CoberturaConverter.Core\"")
                         .Add("/AttributeFilters=\"System.CodeDom.Compiler.GeneratedCodeAttribute\"")
                         .Add($"/Output=\"{OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"}\""));
