@@ -1,8 +1,46 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+    <!--
+      See https://www.natemcmaster.com/blog/2017/11/11/build-tools-in-nuget/
+      for a great description how NuSpec works with dotnet pack
+    -->
+
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0;net471</TargetFrameworks>
+    <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>(c) $([System.DateTime]::Now.Year) Georg Dangl</Copyright>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <NuspecFile>CoberturaConverter.CommandLine.nuspec</NuspecFile>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <IntermediatePackDir>$(MSBuildProjectDirectory)/bin/$(Configuration)/publish/</IntermediatePackDir>
+    <PublishDir>$(IntermediatePackDir)$(TargetFramework)/</PublishDir>
+    <NuspecProperties>
+      publishDir=$([MSBuild]::NormalizeDirectory($(IntermediatePackDir)));
+      version=$(Version);
+      releaseNotes=$(PackageReleaseNotes);
+      copyright=$(Copyright)
+    </NuspecProperties>
+  </PropertyGroup>
+
+  <!-- Executes /t:Publish for all target frameworks before packing-->
+  <Target Name="PublishAll" BeforeTargets="GenerateNuspec">
+    <ItemGroup>
+      <_TargetFramework Include="$(TargetFrameworks)" />
+    </ItemGroup>
+    <MSBuild Projects="$(MSBuildProjectFullPath)" Targets="Publish" Properties="TargetFramework=%(_TargetFramework.Identity)" />
+  </Target>
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.2.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CoberturaConverter.Core\CoberturaConverter.Core.csproj" />
