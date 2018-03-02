@@ -11,7 +11,7 @@
 
 This package aims to provide conversion of code coverage reports to the Cobertura format. Currently, it supports
 OpenCover and dotCover source formats.
-It can be either directly used via the `CoberturaConverter` NuGet package, as `Nuke.CoberturaConverter` for
+It can be either directly used via the `CoberturaConverter` NuGet package, as `Dangl.Nuke.CoberturaConverter` for
 the [NUKE Build](https://github.com/nuke-build/nuke) system or as command line tool via `CoberturaConverter.CommandLine`.
 
 This project is based on [Daniel Palmes OpenCoverToCobertura Converter](https://github.com/danielpalme/OpenCoverToCoberturaConverter),
