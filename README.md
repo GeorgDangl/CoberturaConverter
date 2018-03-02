@@ -32,6 +32,8 @@ All builds are available on MyGet:
 
 ## NUKE Example
 
+The package is available as `Dangl.Nuke.CoberturaConverter`.
+
     using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 
     await DotCoverToCobertura(s => s
