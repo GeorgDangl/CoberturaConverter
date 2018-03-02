@@ -2,8 +2,10 @@
 
 [![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=CoberturaConverter.Tests)](https://jenkins.dangl.me/job/CoberturaConverter.Tests/)
 
-![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.svg)
-[![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.svg)]()
+[![Built with Nuke](http://nuke.build/squared)]()
+
+![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)
+[![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)]()
 
 [Changelog](./CHANGELOG.md)
 
