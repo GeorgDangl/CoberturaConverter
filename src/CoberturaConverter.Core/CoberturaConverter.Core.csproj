@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Georg Dangl</Authors>
+    <Copyright>(c) $([System.DateTime]::Now.Year) Georg Dangl</Copyright>
+    <PackageProjectUrl>https://github.com/GeorgDangl/CoberturaConverter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>https://blog.dangl.me/media/1114/gd_icon_256.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+
+</Project>

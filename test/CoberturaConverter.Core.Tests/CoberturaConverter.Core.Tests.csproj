@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net471</TargetFrameworks>
+    <!-- Required, otherwise multiple 2.0.x frameworks lead to xUnit not discovering the framework to run in -->
+    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">2.0.5</RuntimeFrameworkVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0-beta1-build3919" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta1-build3919" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.4.0-beta1-build3919" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CoberturaConverter.Core\CoberturaConverter.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+
+</Project>

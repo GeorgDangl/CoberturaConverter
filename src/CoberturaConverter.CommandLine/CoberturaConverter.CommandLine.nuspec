@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CoberturaConverter.CommandLine</id>
+    <authors>Georg Dangl</authors>
+    <description>CoberturaConverter CLI Tool - Convert dotCover &amp; OpenCover to Cobertura</description>
+    <projectUrl>https://github.com/GeorgDangl/CoberturaConverter</projectUrl>-->
+    <iconUrl>https://blog.dangl.me/media/1114/gd_icon_256.png</iconUrl>
+    <version>$version$</version>
+    <releaseNotes>$releaseNotes$</releaseNotes>
+    <copyright>$copyright$</copyright>
+  </metadata>
+  <files>
+    <file src="$publishdir$\net471\**\*" target="tools/net471/" />
+    <file src="$publishdir$\netcoreapp2.0\**\*" target="tools/netcoreapp2.0/" />
+  </files>
+</package>

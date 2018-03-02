@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nuke-build/nuke/master/source/Nuke.CodeGeneration/schema.json",
+  "license": [
+    "Copyright Georg Dangl 2018.",
+    "Distributed under the MIT License.",
+    "https://github.com/GeorgDangl/CoberturaConverter/blob/develop/LICENSE.md"
+  ],
+  "name": "CoberturaConverter",
+  "officialUrl": "https://github.com/GeorgDangl/CoberturaConverter",
+  "help": "This class provides different tasks to convert coverage reports.",
+  "dataClasses": [
+    {
+      "name": "DotCoverConversionSettings",
+      "properties": [
+        {
+          "name": "InputFile",
+          "type": "string",
+          "assertion": "File",
+          "help": "Path pointing to a dotCover DetailedXML report"
+        },
+        {
+          "name": "OutputFile",
+          "type": "string",
+          "assertion": "NotNull",
+          "help": "Output file for the cobertura report"
+        }
+      ]
+    },
+    {
+      "name": "OpenCoverConversionSettings",
+      "properties": [
+        {
+          "name": "InputFile",
+          "type": "string",
+          "assertion": "File",
+          "help": "Path pointing to a OpenCover Xml report"
+        },
+        {
+          "name": "OutputFile",
+          "type": "string",
+          "assertion": "NotNull",
+          "help": "Output file for the cobertura report"
+        }
+      ]
+    }
+  ]
+}

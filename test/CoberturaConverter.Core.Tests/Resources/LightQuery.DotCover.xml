@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="215" TotalStatements="234" CoveragePercent="92" ReportType="DetailedXml" DotCoverVersion="2018.1">
+  <FileIndices>
+    <File Index="1" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\DefaultPaginationOptions.cs" ChecksumAlgorithm="SHA1" Checksum="3432E656E19D2DE691A6DB814D9085220C70510A" />
+    <File Index="2" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\ExpressionPropertyAccessor.cs" ChecksumAlgorithm="SHA1" Checksum="1089C49125434078C1C2D52C136B8B7984D6FB8F" />
+    <File Index="3" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\HttpResponseMessageData.cs" ChecksumAlgorithm="SHA1" Checksum="FBD59F55CE1BA574203514FB6DEB7F8415EECDE9" />
+    <File Index="4" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\PaginationBaseService.cs" ChecksumAlgorithm="SHA1" Checksum="C562534B73EA3C104D0EA78310274FE39F3EBF60" />
+    <File Index="5" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\PaginationResult.cs" ChecksumAlgorithm="SHA1" Checksum="FF425FA5655551B88478B56D8465E11EF4E05E5B" />
+    <File Index="6" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\QueryBuilder.cs" ChecksumAlgorithm="SHA1" Checksum="4CE4F2EF0D63DF0A3B59C28CCB8BD6E8328A0464" />
+    <File Index="7" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\ResponseDeserializationResult.cs" ChecksumAlgorithm="SHA1" Checksum="AB283CF1B1BCBEAD31FE83B2D715AC41DA249154" />
+    <File Index="8" Name="D:\Visual Studio Projects\LightQuery\src\LightQuery.Client\ResponseDeserializer.cs" ChecksumAlgorithm="SHA1" Checksum="4D55660449E5672EA41B12FBA9E5EED1D3892679" />
+  </FileIndices>
+  <Assembly Name="LightQuery.Client" CoveredStatements="215" TotalStatements="234" CoveragePercent="92">
+    <Namespace Name="LightQuery.Client" CoveredStatements="215" TotalStatements="234" CoveragePercent="92">
+      <Type Name="DefaultPaginationOptions" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="5" Column="41" EndLine="5" EndColumn="42" Covered="True" />
+          <Statement FileIndex="1" Line="6" Column="45" EndLine="6" EndColumn="47" Covered="True" />
+        </Method>
+        <Method Name="get_Page():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="5" Column="27" EndLine="5" EndColumn="31" Covered="True" />
+        </Method>
+        <Method Name="get_PageSize():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="6" Column="31" EndLine="6" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_SortDescending():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="8" Column="38" EndLine="8" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_SortProperty():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="7" Column="38" EndLine="7" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="set_Page(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="5" Column="32" EndLine="5" EndColumn="36" Covered="True" />
+        </Method>
+        <Method Name="set_PageSize(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="6" Column="36" EndLine="6" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="set_SortDescending(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="8" Column="43" EndLine="8" EndColumn="47" Covered="True" />
+        </Method>
+        <Method Name="set_SortProperty(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="7" Column="43" EndLine="7" EndColumn="47" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ExpressionPropertyAccessor" CoveredStatements="19" TotalStatements="22" CoveragePercent="86">
+        <Type Name="&lt;&gt;c__DisplayClass1_0&lt;T&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;PropertyExistsOnType&gt;b__0(System.Reflection.PropertyInfo):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="2" Line="32" Column="86" EndLine="32" EndColumn="109" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="GetPropertyNameFromExpression&lt;T,TKey&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;T,TKey&gt;&gt;):System.String" CoveredStatements="14" TotalStatements="17" CoveragePercent="82">
+          <Statement FileIndex="2" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="12" Column="13" EndLine="12" EndColumn="46" Covered="True" />
+          <Statement FileIndex="2" Line="13" Column="13" EndLine="13" EndColumn="48" Covered="True" />
+          <Statement FileIndex="2" Line="14" Column="13" EndLine="14" EndColumn="69" Covered="True" />
+          <Statement FileIndex="2" Line="15" Column="13" EndLine="15" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="16" Column="17" EndLine="16" EndColumn="62" Covered="True" />
+          <Statement FileIndex="2" Line="17" Column="13" EndLine="17" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="136" Covered="True" />
+          <Statement FileIndex="2" Line="19" Column="13" EndLine="19" EndColumn="14" Covered="False" />
+          <Statement FileIndex="2" Line="20" Column="17" EndLine="20" EndColumn="67" Covered="False" />
+          <Statement FileIndex="2" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="False" />
+          <Statement FileIndex="2" Line="22" Column="13" EndLine="22" EndColumn="58" Covered="True" />
+          <Statement FileIndex="2" Line="23" Column="13" EndLine="23" EndColumn="14" Covered="True" />
+          <Statement FileIndex="2" Line="24" Column="17" EndLine="24" EndColumn="61" Covered="True" />
+          <Statement FileIndex="2" Line="25" Column="17" EndLine="25" EndColumn="150" Covered="True" />
+          <Statement FileIndex="2" Line="27" Column="13" EndLine="27" EndColumn="34" Covered="True" />
+          <Statement FileIndex="2" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="PropertyExistsOnType&lt;T&gt;(System.String):System.Boolean" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="2" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="32" Column="13" EndLine="32" EndColumn="111" Covered="True" />
+          <Statement FileIndex="2" Line="33" Column="13" EndLine="33" EndColumn="35" Covered="True" />
+          <Statement FileIndex="2" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="HttpResponseMessageData" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Method Name="get_RequestedPage():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="8" Column="36" EndLine="8" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="get_Response():System.Net.Http.HttpResponseMessage" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="7" Column="47" EndLine="7" EndColumn="51" Covered="True" />
+        </Method>
+        <Method Name="set_RequestedPage(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="8" Column="41" EndLine="8" EndColumn="45" Covered="True" />
+        </Method>
+        <Method Name="set_Response(System.Net.Http.HttpResponseMessage):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="7" Column="52" EndLine="7" EndColumn="56" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="PaginationBaseService&lt;T&gt;" CoveredStatements="112" TotalStatements="124" CoveragePercent="90">
+        <Type Name="&lt;&lt;SetupQuerySubscription&gt;b__36_0&gt;d" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+          <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="8" CoveragePercent="63">
+            <Statement FileIndex="4" Line="86" Column="17" EndLine="86" EndColumn="18" Covered="True" />
+            <Statement FileIndex="4" Line="88" Column="21" EndLine="88" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="89" Column="25" EndLine="89" EndColumn="60" Covered="True" />
+            <Statement FileIndex="4" Line="90" Column="25" EndLine="90" EndColumn="57" Covered="True" />
+            <Statement FileIndex="4" Line="92" Column="21" EndLine="92" EndColumn="26" Covered="False" />
+            <Statement FileIndex="4" Line="93" Column="21" EndLine="93" EndColumn="22" Covered="False" />
+            <Statement FileIndex="4" Line="94" Column="25" EndLine="94" EndColumn="81" Covered="False" />
+            <Statement FileIndex="4" Line="96" Column="17" EndLine="96" EndColumn="18" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&lt;SetupQuerySubscription&gt;b__36_1&gt;d" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+            <Statement FileIndex="4" Line="98" Column="17" EndLine="98" EndColumn="18" Covered="True" />
+            <Statement FileIndex="4" Line="99" Column="21" EndLine="99" EndColumn="57" Covered="True" />
+            <Statement FileIndex="4" Line="100" Column="21" EndLine="104" EndColumn="23" Covered="True" />
+            <Statement FileIndex="4" Line="105" Column="21" EndLine="105" EndColumn="104" Covered="True" />
+            <Statement FileIndex="4" Line="106" Column="21" EndLine="106" EndColumn="46" Covered="True" />
+            <Statement FileIndex="4" Line="107" Column="21" EndLine="107" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="108" Column="25" EndLine="108" EndColumn="32" Covered="True" />
+            <Statement FileIndex="4" Line="110" Column="21" EndLine="110" EndColumn="61" Covered="True" />
+            <Statement FileIndex="4" Line="111" Column="21" EndLine="111" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="112" Column="25" EndLine="112" EndColumn="63" Covered="True" />
+            <Statement FileIndex="4" Line="113" Column="21" EndLine="113" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="114" Column="21" EndLine="114" EndColumn="70" Covered="True" />
+            <Statement FileIndex="4" Line="115" Column="21" EndLine="115" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="116" Column="25" EndLine="116" EndColumn="88" Covered="True" />
+            <Statement FileIndex="4" Line="117" Column="21" EndLine="117" EndColumn="22" Covered="True" />
+            <Statement FileIndex="4" Line="118" Column="17" EndLine="118" EndColumn="18" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor(System.String,System.Func&lt;System.String,System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;&gt;,LightQuery.Client.DefaultPaginationOptions):System.Void" CoveredStatements="23" TotalStatements="23" CoveragePercent="100">
+          <Statement FileIndex="4" Line="18" Column="9" EndLine="18" EndColumn="31" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="9" EndLine="19" EndColumn="36" Covered="True" />
+          <Statement FileIndex="4" Line="22" Column="9" EndLine="22" EndColumn="115" Covered="True" />
+          <Statement FileIndex="4" Line="23" Column="9" EndLine="23" EndColumn="98" Covered="True" />
+          <Statement FileIndex="4" Line="24" Column="9" EndLine="24" EndColumn="129" Covered="True" />
+          <Statement FileIndex="4" Line="25" Column="9" EndLine="25" EndColumn="105" Covered="True" />
+          <Statement FileIndex="4" Line="26" Column="9" EndLine="26" EndColumn="86" Covered="True" />
+          <Statement FileIndex="4" Line="29" Column="9" EndLine="29" EndColumn="148" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="31" Column="13" EndLine="31" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="32" Column="13" EndLine="32" EndColumn="99" Covered="True" />
+          <Statement FileIndex="4" Line="34" Column="13" EndLine="34" EndColumn="71" Covered="True" />
+          <Statement FileIndex="4" Line="35" Column="13" EndLine="35" EndColumn="67" Covered="True" />
+          <Statement FileIndex="4" Line="37" Column="13" EndLine="37" EndColumn="33" Covered="True" />
+          <Statement FileIndex="4" Line="38" Column="13" EndLine="38" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="39" Column="17" EndLine="39" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="40" Column="17" EndLine="40" EndColumn="45" Covered="True" />
+          <Statement FileIndex="4" Line="41" Column="17" EndLine="41" EndColumn="55" Covered="True" />
+          <Statement FileIndex="4" Line="42" Column="17" EndLine="42" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="43" Column="13" EndLine="43" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="44" Column="13" EndLine="44" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="13" EndLine="45" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="BuildUrl():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="4" Line="192" Column="9" EndLine="192" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="193" Column="13" EndLine="193" EndColumn="118" Covered="True" />
+          <Statement FileIndex="4" Line="194" Column="13" EndLine="194" EndColumn="44" Covered="True" />
+          <Statement FileIndex="4" Line="195" Column="13" EndLine="195" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="196" Column="9" EndLine="196" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="CheckSortPropertyValidity(System.String):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="4" Line="158" Column="9" EndLine="158" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="159" Column="13" EndLine="159" EndColumn="105" Covered="True" />
+          <Statement FileIndex="4" Line="160" Column="13" EndLine="160" EndColumn="39" Covered="True" />
+          <Statement FileIndex="4" Line="161" Column="13" EndLine="161" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="162" Column="17" EndLine="162" EndColumn="61" Covered="True" />
+          <Statement FileIndex="4" Line="163" Column="17" EndLine="163" EndColumn="137" Covered="True" />
+          <Statement FileIndex="4" Line="165" Column="9" EndLine="165" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Dispose():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="78" Column="13" EndLine="78" EndColumn="42" Covered="True" />
+          <Statement FileIndex="4" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ForceRefresh():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="199" Column="9" EndLine="199" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="200" Column="13" EndLine="200" EndColumn="45" Covered="True" />
+          <Statement FileIndex="4" Line="201" Column="13" EndLine="201" EndColumn="49" Covered="True" />
+          <Statement FileIndex="4" Line="202" Column="9" EndLine="202" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="get_BaseUrl():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="50" Column="34" EndLine="50" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_Page():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="58" Column="20" EndLine="58" EndColumn="25" Covered="True" />
+        </Method>
+        <Method Name="get_PageSize():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="64" Column="20" EndLine="64" EndColumn="29" Covered="True" />
+        </Method>
+        <Method Name="get_PaginationResult():System.IObservable&lt;LightQuery.Client.PaginationResult&lt;T&gt;&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="52" Column="68" EndLine="52" EndColumn="72" Covered="True" />
+        </Method>
+        <Method Name="get_RequestRunning():System.IObservable&lt;System.Boolean&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="54" Column="51" EndLine="54" EndColumn="55" Covered="True" />
+        </Method>
+        <Method Name="get_SortDescending():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="72" Column="20" EndLine="72" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_SortProperty():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="68" Column="39" EndLine="68" EndColumn="52" Covered="True" />
+        </Method>
+        <Method Name="GetQueryParameter(System.String):System.String" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
+          <Statement FileIndex="4" Line="174" Column="9" EndLine="174" EndColumn="10" Covered="False" />
+          <Statement FileIndex="4" Line="175" Column="13" EndLine="175" EndColumn="62" Covered="False" />
+          <Statement FileIndex="4" Line="176" Column="13" EndLine="176" EndColumn="14" Covered="False" />
+          <Statement FileIndex="4" Line="177" Column="17" EndLine="177" EndColumn="57" Covered="False" />
+          <Statement FileIndex="4" Line="179" Column="13" EndLine="179" EndColumn="25" Covered="False" />
+          <Statement FileIndex="4" Line="180" Column="9" EndLine="180" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="RemoveQueryParameter(System.String):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="4" Line="183" Column="9" EndLine="183" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="184" Column="13" EndLine="184" EndColumn="62" Covered="True" />
+          <Statement FileIndex="4" Line="185" Column="13" EndLine="185" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="186" Column="17" EndLine="186" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="187" Column="17" EndLine="187" EndColumn="28" Covered="True" />
+          <Statement FileIndex="4" Line="188" Column="13" EndLine="188" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="189" Column="9" EndLine="189" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="set_Page(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="59" Column="20" EndLine="59" EndColumn="65" Covered="True" />
+        </Method>
+        <Method Name="set_PageSize(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="65" Column="20" EndLine="65" EndColumn="69" Covered="True" />
+        </Method>
+        <Method Name="set_SortDescending(System.Boolean):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="4" Line="73" Column="20" EndLine="73" EndColumn="59" Covered="True" />
+        </Method>
+        <Method Name="SetProperty&lt;TProperty&gt;(TProperty,TProperty,System.String):System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="4" Line="122" Column="9" EndLine="122" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="123" Column="13" EndLine="123" EndColumn="41" Covered="True" />
+          <Statement FileIndex="4" Line="124" Column="13" EndLine="124" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="125" Column="17" EndLine="125" EndColumn="33" Covered="True" />
+          <Statement FileIndex="4" Line="126" Column="17" EndLine="126" EndColumn="91" Covered="True" />
+          <Statement FileIndex="4" Line="127" Column="17" EndLine="127" EndColumn="28" Covered="True" />
+          <Statement FileIndex="4" Line="128" Column="13" EndLine="128" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="129" Column="9" EndLine="129" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetQueryParameter(System.String,System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="4" Line="168" Column="9" EndLine="168" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="169" Column="13" EndLine="169" EndColumn="54" Covered="True" />
+          <Statement FileIndex="4" Line="170" Column="13" EndLine="170" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="171" Column="9" EndLine="171" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetSortProperty(System.String):System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="4" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="133" Column="13" EndLine="133" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="134" Column="13" EndLine="134" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="135" Column="17" EndLine="135" EndColumn="76" Covered="True" />
+          <Statement FileIndex="4" Line="136" Column="13" EndLine="136" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="138" Column="13" EndLine="138" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="139" Column="17" EndLine="139" EndColumn="57" Covered="True" />
+          <Statement FileIndex="4" Line="140" Column="17" EndLine="140" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="141" Column="13" EndLine="141" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="142" Column="9" EndLine="142" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetSortProperty&lt;TKey&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;T,TKey&gt;&gt;):System.Void" CoveredStatements="7" TotalStatements="10" CoveragePercent="70">
+          <Statement FileIndex="4" Line="145" Column="9" EndLine="145" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="146" Column="13" EndLine="146" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="147" Column="13" EndLine="147" EndColumn="14" Covered="False" />
+          <Statement FileIndex="4" Line="148" Column="17" EndLine="148" EndColumn="39" Covered="False" />
+          <Statement FileIndex="4" Line="149" Column="13" EndLine="149" EndColumn="14" Covered="False" />
+          <Statement FileIndex="4" Line="151" Column="13" EndLine="151" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="152" Column="17" EndLine="152" EndColumn="108" Covered="True" />
+          <Statement FileIndex="4" Line="153" Column="17" EndLine="153" EndColumn="48" Covered="True" />
+          <Statement FileIndex="4" Line="154" Column="13" EndLine="154" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="155" Column="9" EndLine="155" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetupQuerySubscription():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="4" Line="82" Column="9" EndLine="82" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="83" Column="13" EndLine="118" EndColumn="20" Covered="True" />
+          <Statement FileIndex="4" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="PaginationResult&lt;T&gt;" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Method Name="get_Data():System.Collections.Generic.List&lt;T&gt;" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="10" Column="31" EndLine="10" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_Page():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="7" Column="27" EndLine="7" EndColumn="31" Covered="True" />
+        </Method>
+        <Method Name="get_PageSize():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="8" Column="31" EndLine="8" EndColumn="35" Covered="True" />
+        </Method>
+        <Method Name="get_TotalCount():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="9" Column="33" EndLine="9" EndColumn="37" Covered="True" />
+        </Method>
+        <Method Name="set_Data(System.Collections.Generic.List&lt;T&gt;):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="10" Column="36" EndLine="10" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="set_Page(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="7" Column="32" EndLine="7" EndColumn="36" Covered="True" />
+        </Method>
+        <Method Name="set_PageSize(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="8" Column="36" EndLine="8" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="set_TotalCount(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="5" Line="9" Column="38" EndLine="9" EndColumn="42" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="QueryBuilder" CoveredStatements="31" TotalStatements="31" CoveragePercent="100">
+        <Method Name="Build(System.Int32,System.Int32,System.String,System.Boolean,System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;):System.String" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="6" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="11" Column="13" EndLine="11" EndColumn="27" Covered="True" />
+          <Statement FileIndex="6" Line="12" Column="13" EndLine="12" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="13" Column="17" EndLine="13" EndColumn="103" Covered="True" />
+          <Statement FileIndex="6" Line="15" Column="13" EndLine="15" EndColumn="31" Covered="True" />
+          <Statement FileIndex="6" Line="16" Column="13" EndLine="16" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="17" Column="17" EndLine="17" EndColumn="111" Covered="True" />
+          <Statement FileIndex="6" Line="19" Column="13" EndLine="22" EndColumn="75" Covered="True" />
+          <Statement FileIndex="6" Line="23" Column="13" EndLine="23" EndColumn="26" Covered="True" />
+          <Statement FileIndex="6" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="BuildAdditionalParameters(System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;):System.String" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Statement FileIndex="6" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="38" Column="13" EndLine="38" EndColumn="77" Covered="True" />
+          <Statement FileIndex="6" Line="39" Column="13" EndLine="39" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="40" Column="17" EndLine="40" EndColumn="37" Covered="True" />
+          <Statement FileIndex="6" Line="42" Column="13" EndLine="42" EndColumn="38" Covered="True" />
+          <Statement FileIndex="6" Line="43" Column="13" EndLine="43" EndColumn="20" Covered="True" />
+          <Statement FileIndex="6" Line="43" Column="39" EndLine="43" EndColumn="59" Covered="True" />
+          <Statement FileIndex="6" Line="43" Column="22" EndLine="43" EndColumn="35" Covered="True" />
+          <Statement FileIndex="6" Line="44" Column="13" EndLine="44" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="45" Column="17" EndLine="45" EndColumn="174" Covered="True" />
+          <Statement FileIndex="6" Line="46" Column="13" EndLine="46" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="43" Column="36" EndLine="43" EndColumn="38" Covered="True" />
+          <Statement FileIndex="6" Line="47" Column="13" EndLine="47" EndColumn="26" Covered="True" />
+          <Statement FileIndex="6" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="BuildSortParameter(System.String,System.Boolean):System.String" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="6" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="28" Column="13" EndLine="28" EndColumn="54" Covered="True" />
+          <Statement FileIndex="6" Line="29" Column="13" EndLine="29" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="30" Column="17" EndLine="30" EndColumn="37" Covered="True" />
+          <Statement FileIndex="6" Line="32" Column="13" EndLine="32" EndColumn="110" Covered="True" />
+          <Statement FileIndex="6" Line="33" Column="13" EndLine="33" EndColumn="30" Covered="True" />
+          <Statement FileIndex="6" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseDeserializationResult&lt;T&gt;" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+        <Method Name="get_DeserializedValue():T" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="7" Line="5" Column="38" EndLine="5" EndColumn="42" Covered="True" />
+        </Method>
+        <Method Name="get_NewPageSuggestion():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="7" Line="6" Column="40" EndLine="6" EndColumn="44" Covered="True" />
+        </Method>
+        <Method Name="set_DeserializedValue(T):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="7" Line="5" Column="43" EndLine="5" EndColumn="47" Covered="True" />
+        </Method>
+        <Method Name="set_NewPageSuggestion(System.Int32):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="7" Line="6" Column="45" EndLine="6" EndColumn="49" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseDeserializer&lt;T&gt;" CoveredStatements="27" TotalStatements="31" CoveragePercent="87">
+        <Type Name="&lt;DeserializeResponse&gt;d__0" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+            <Statement FileIndex="8" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+            <Statement FileIndex="8" Line="10" Column="13" EndLine="10" EndColumn="103" Covered="True" />
+            <Statement FileIndex="8" Line="11" Column="13" EndLine="11" EndColumn="14" Covered="True" />
+            <Statement FileIndex="8" Line="12" Column="17" EndLine="12" EndColumn="29" Covered="True" />
+            <Statement FileIndex="8" Line="14" Column="13" EndLine="14" EndColumn="91" Covered="True" />
+            <Statement FileIndex="8" Line="16" Column="13" EndLine="16" EndColumn="14" Covered="True" />
+            <Statement FileIndex="8" Line="17" Column="17" EndLine="17" EndColumn="112" Covered="True" />
+            <Statement FileIndex="8" Line="18" Column="17" EndLine="18" EndColumn="103" Covered="True" />
+            <Statement FileIndex="8" Line="19" Column="17" EndLine="23" EndColumn="19" Covered="True" />
+            <Statement FileIndex="8" Line="24" Column="17" EndLine="24" EndColumn="31" Covered="True" />
+            <Statement FileIndex="8" Line="26" Column="13" EndLine="26" EndColumn="18" Covered="True" />
+            <Statement FileIndex="8" Line="27" Column="13" EndLine="27" EndColumn="14" Covered="True" />
+            <Statement FileIndex="8" Line="28" Column="17" EndLine="28" EndColumn="29" Covered="True" />
+            <Statement FileIndex="8" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="CheckPaginationResponseIfPageOutOfRange(LightQuery.Client.PaginationResult&lt;T&gt;):System.Int32" CoveredStatements="13" TotalStatements="17" CoveragePercent="76">
+          <Statement FileIndex="8" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="39" Column="13" EndLine="39" EndColumn="49" Covered="True" />
+          <Statement FileIndex="8" Line="40" Column="13" EndLine="40" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="41" Column="17" EndLine="41" EndColumn="26" Covered="True" />
+          <Statement FileIndex="8" Line="43" Column="13" EndLine="43" EndColumn="44" Covered="True" />
+          <Statement FileIndex="8" Line="44" Column="13" EndLine="44" EndColumn="14" Covered="False" />
+          <Statement FileIndex="8" Line="45" Column="17" EndLine="45" EndColumn="26" Covered="False" />
+          <Statement FileIndex="8" Line="47" Column="13" EndLine="47" EndColumn="50" Covered="True" />
+          <Statement FileIndex="8" Line="48" Column="13" EndLine="48" EndColumn="14" Covered="False" />
+          <Statement FileIndex="8" Line="49" Column="17" EndLine="49" EndColumn="26" Covered="False" />
+          <Statement FileIndex="8" Line="51" Column="13" EndLine="51" EndColumn="93" Covered="True" />
+          <Statement FileIndex="8" Line="52" Column="13" EndLine="52" EndColumn="78" Covered="True" />
+          <Statement FileIndex="8" Line="53" Column="13" EndLine="53" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="54" Column="17" EndLine="54" EndColumn="37" Covered="True" />
+          <Statement FileIndex="8" Line="55" Column="13" EndLine="55" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="56" Column="13" EndLine="56" EndColumn="38" Covered="True" />
+          <Statement FileIndex="8" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>

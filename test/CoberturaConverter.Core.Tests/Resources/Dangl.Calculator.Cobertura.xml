@@ -1,0 +1,1821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="1" branch-rate="0.958333333333333" lines-covered="567" lines-valid="567" branches-covered="69" branches-valid="72" complexity="0" version="0" timestamp="1519914630">
+  <sources>
+    <source>D:\Visual Studio Projects\Dangl.Calculator</source>
+  </sources>
+  <packages>
+    <package name="Dangl.Calculator" line-rate="1" branch-rate="0.958333333333333" complexity="0">
+      <classes>
+        <class name="Dangl.Calculator.CalculationResult" filename="src\Dangl.Calculator\CalculationResult.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.Calculator" filename="src\Dangl.Calculator\Calculator.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="Calculate" signature="(System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+                <line number="18" hits="161" branch="false" />
+                <line number="19" hits="161" branch="false" />
+              </lines>
+            </method>
+            <method name="CalculateResult" signature="(System.String,System.Boolean)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="29" hits="177" branch="false" />
+                <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="2" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="38" hits="175" branch="false" />
+                <line number="39" hits="175" branch="false" />
+                <line number="40" hits="175" branch="false" />
+                <line number="41" hits="175" branch="false" />
+                <line number="44" hits="175" branch="false" />
+                <line number="45" hits="175" branch="false" />
+                <line number="47" hits="175" branch="false" />
+                <line number="48" hits="175" branch="false" />
+                <line number="49" hits="175" branch="false" />
+                <line number="50" hits="175" branch="false" />
+                <line number="51" hits="175" branch="false" />
+                <line number="52" hits="175" branch="false" />
+                <line number="53" hits="175" branch="false" />
+                <line number="54" hits="175" branch="false" />
+                <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+                <line number="56" hits="6" branch="false" />
+                <line number="57" hits="6" branch="false" />
+                <line number="58" hits="6" branch="false" />
+                <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+                <line number="61" hits="16" branch="false" />
+                <line number="62" hits="16" branch="false" />
+                <line number="63" hits="16" branch="false" />
+                <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="65" hits="78" branch="false" />
+                <line number="66" hits="78" branch="false" />
+                <line number="67" hits="78" branch="false" />
+                <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+                <line number="68" hits="16" branch="false" />
+                <line number="69" hits="16" branch="false" />
+                <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="71" hits="8" branch="false" />
+                <line number="72" hits="8" branch="false" />
+                <line number="73" hits="8" branch="false" />
+                <line number="74" hits="8" branch="false" />
+                <line number="75" hits="16" branch="false" />
+                <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+                <line number="86" hits="177" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+            <line number="18" hits="161" branch="false" />
+            <line number="19" hits="161" branch="false" />
+            <line number="29" hits="177" branch="false" />
+            <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="2" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="38" hits="175" branch="false" />
+            <line number="39" hits="175" branch="false" />
+            <line number="40" hits="175" branch="false" />
+            <line number="41" hits="175" branch="false" />
+            <line number="44" hits="175" branch="false" />
+            <line number="45" hits="175" branch="false" />
+            <line number="47" hits="175" branch="false" />
+            <line number="48" hits="175" branch="false" />
+            <line number="49" hits="175" branch="false" />
+            <line number="50" hits="175" branch="false" />
+            <line number="51" hits="175" branch="false" />
+            <line number="52" hits="175" branch="false" />
+            <line number="53" hits="175" branch="false" />
+            <line number="54" hits="175" branch="false" />
+            <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+            <line number="56" hits="6" branch="false" />
+            <line number="57" hits="6" branch="false" />
+            <line number="58" hits="6" branch="false" />
+            <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+            <line number="61" hits="16" branch="false" />
+            <line number="62" hits="16" branch="false" />
+            <line number="63" hits="16" branch="false" />
+            <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="65" hits="78" branch="false" />
+            <line number="66" hits="78" branch="false" />
+            <line number="67" hits="78" branch="false" />
+            <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+            <line number="68" hits="16" branch="false" />
+            <line number="69" hits="16" branch="false" />
+            <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="71" hits="8" branch="false" />
+            <line number="72" hits="8" branch="false" />
+            <line number="73" hits="8" branch="false" />
+            <line number="74" hits="8" branch="false" />
+            <line number="75" hits="16" branch="false" />
+            <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+            <line number="86" hits="177" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorErrorListener" filename="src\Dangl.Calculator\CalculatorErrorListener.cs" line-rate="1" branch-rate="0.5" complexity="0">
+          <methods>
+            <method name="ReportAmbiguity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Boolean,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.ATNConfigSet)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportAttemptingFullContext" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportContextSensitivity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Int32,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="SyntaxError" signature="(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)" line-rate="1" branch-rate="0.5">
+              <lines>
+                <line number="57" hits="21" branch="false" />
+                <line number="58" hits="21" branch="false" />
+                <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+                <line number="60" hits="21" branch="false" />
+                <line number="61" hits="21" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="184" branch="false" />
+                <line number="22" hits="184" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="57" hits="21" branch="false" />
+            <line number="58" hits="21" branch="false" />
+            <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+            <line number="60" hits="21" branch="false" />
+            <line number="61" hits="21" branch="false" />
+            <line number="17" hits="184" branch="false" />
+            <line number="22" hits="184" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorVisitor" filename="src\Dangl.Calculator\CalculatorVisitor.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="VisitAbs" signature="(Dangl.Calculator.Generated.CalculatorParser/AbsContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="14" hits="5" branch="false" />
+                <line number="15" hits="5" branch="false" />
+                <line number="16" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitAddSub" signature="(Dangl.Calculator.Generated.CalculatorParser/AddSubContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="37" branch="false" />
+                <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="33" branch="false" />
+                <line number="22" hits="33" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="37" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccos" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="28" hits="2" branch="false" />
+                <line number="29" hits="2" branch="false" />
+                <line number="30" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccot" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArcsin" signature="(Dangl.Calculator.Generated.CalculatorParser/ArcsinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="40" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan" signature="(Dangl.Calculator.Generated.CalculatorParser/ArctanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan2" signature="(Dangl.Calculator.Generated.CalculatorParser/Arctan2Context)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="48" hits="3" branch="false" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCeil" signature="(Dangl.Calculator.Generated.CalculatorParser/CeilContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="53" hits="2" branch="false" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCos" signature="(Dangl.Calculator.Generated.CalculatorParser/CosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCosh" signature="(Dangl.Calculator.Generated.CalculatorParser/CoshContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="63" hits="2" branch="false" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCot" signature="(Dangl.Calculator.Generated.CalculatorParser/CotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="68" hits="2" branch="false" />
+                <line number="69" hits="2" branch="false" />
+                <line number="70" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitDeg" signature="(Dangl.Calculator.Generated.CalculatorParser/DegContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="75" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEex" signature="(Dangl.Calculator.Generated.CalculatorParser/EexContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="78" hits="2" branch="false" />
+                <line number="79" hits="2" branch="false" />
+                <line number="80" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/ExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="83" hits="5" branch="false" />
+                <line number="84" hits="5" branch="false" />
+                <line number="85" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEuler" signature="(Dangl.Calculator.Generated.CalculatorParser/EulerContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="88" hits="3" branch="false" />
+                <line number="89" hits="3" branch="false" />
+                <line number="90" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExp" signature="(Dangl.Calculator.Generated.CalculatorParser/ExpContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="93" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitFloor" signature="(Dangl.Calculator.Generated.CalculatorParser/FloorContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="98" hits="5" branch="false" />
+                <line number="99" hits="5" branch="false" />
+                <line number="100" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLn" signature="(Dangl.Calculator.Generated.CalculatorParser/LnContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="103" hits="2" branch="false" />
+                <line number="104" hits="2" branch="false" />
+                <line number="105" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLog" signature="(Dangl.Calculator.Generated.CalculatorParser/LogContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="108" hits="2" branch="false" />
+                <line number="109" hits="2" branch="false" />
+                <line number="110" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMod" signature="(Dangl.Calculator.Generated.CalculatorParser/ModContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="113" hits="3" branch="false" />
+                <line number="114" hits="3" branch="false" />
+                <line number="115" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMulDiv" signature="(Dangl.Calculator.Generated.CalculatorParser/MulDivContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="118" hits="28" branch="false" />
+                <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="120" hits="20" branch="false" />
+                <line number="121" hits="20" branch="false" />
+                <line number="123" hits="8" branch="false" />
+                <line number="124" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNegExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/NegExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="127" hits="3" branch="false" />
+                <line number="128" hits="3" branch="false" />
+                <line number="129" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNumber" signature="(Dangl.Calculator.Generated.CalculatorParser/NumberContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="132" hits="260" branch="false" />
+                <line number="133" hits="260" branch="false" />
+                <line number="134" hits="260" branch="false" />
+                <line number="135" hits="260" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitParenthesis" signature="(Dangl.Calculator.Generated.CalculatorParser/ParenthesisContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="138" hits="71" branch="false" />
+                <line number="139" hits="71" branch="false" />
+                <line number="140" hits="71" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPi" signature="(Dangl.Calculator.Generated.CalculatorParser/PiContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="143" hits="13" branch="false" />
+                <line number="144" hits="13" branch="false" />
+                <line number="145" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPow" signature="(Dangl.Calculator.Generated.CalculatorParser/PowContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="148" hits="18" branch="false" />
+                <line number="149" hits="18" branch="false" />
+                <line number="150" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRad" signature="(Dangl.Calculator.Generated.CalculatorParser/RadContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="153" hits="2" branch="false" />
+                <line number="154" hits="2" branch="false" />
+                <line number="155" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRound" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="158" hits="2" branch="false" />
+                <line number="159" hits="2" branch="false" />
+                <line number="160" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRoundk" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundkContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="163" hits="2" branch="false" />
+                <line number="164" hits="2" branch="false" />
+                <line number="165" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSin" signature="(Dangl.Calculator.Generated.CalculatorParser/SinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="168" hits="3" branch="false" />
+                <line number="169" hits="3" branch="false" />
+                <line number="170" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSinh" signature="(Dangl.Calculator.Generated.CalculatorParser/SinhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="173" hits="2" branch="false" />
+                <line number="174" hits="2" branch="false" />
+                <line number="175" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqr" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="178" hits="6" branch="false" />
+                <line number="179" hits="6" branch="false" />
+                <line number="180" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqRoot" signature="(Dangl.Calculator.Generated.CalculatorParser/SqRootContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="183" hits="4" branch="false" />
+                <line number="184" hits="4" branch="false" />
+                <line number="185" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqrt" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrtContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="188" hits="2" branch="false" />
+                <line number="189" hits="2" branch="false" />
+                <line number="190" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTan" signature="(Dangl.Calculator.Generated.CalculatorParser/TanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="193" hits="2" branch="false" />
+                <line number="194" hits="2" branch="false" />
+                <line number="195" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTanh" signature="(Dangl.Calculator.Generated.CalculatorParser/TanhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="198" hits="2" branch="false" />
+                <line number="199" hits="2" branch="false" />
+                <line number="200" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTrunc" signature="(Dangl.Calculator.Generated.CalculatorParser/TruncContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="203" hits="3" branch="false" />
+                <line number="204" hits="3" branch="false" />
+                <line number="205" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnary" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="208" hits="20" branch="false" />
+                <line number="209" hits="20" branch="false" />
+                <line number="210" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnaryPlus" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryPlusContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="213" hits="3" branch="false" />
+                <line number="214" hits="3" branch="false" />
+                <line number="215" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitWhole" signature="(Dangl.Calculator.Generated.CalculatorParser/WholeContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="218" hits="3" branch="false" />
+                <line number="219" hits="3" branch="false" />
+                <line number="220" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="5" branch="false" />
+            <line number="15" hits="5" branch="false" />
+            <line number="16" hits="5" branch="false" />
+            <line number="19" hits="37" branch="false" />
+            <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="33" branch="false" />
+            <line number="22" hits="33" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="37" branch="false" />
+            <line number="28" hits="2" branch="false" />
+            <line number="29" hits="2" branch="false" />
+            <line number="30" hits="2" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="40" hits="2" branch="false" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="48" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="53" hits="2" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="2" branch="false" />
+            <line number="63" hits="2" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="68" hits="2" branch="false" />
+            <line number="69" hits="2" branch="false" />
+            <line number="70" hits="2" branch="false" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="75" hits="2" branch="false" />
+            <line number="78" hits="2" branch="false" />
+            <line number="79" hits="2" branch="false" />
+            <line number="80" hits="2" branch="false" />
+            <line number="83" hits="5" branch="false" />
+            <line number="84" hits="5" branch="false" />
+            <line number="85" hits="5" branch="false" />
+            <line number="88" hits="3" branch="false" />
+            <line number="89" hits="3" branch="false" />
+            <line number="90" hits="3" branch="false" />
+            <line number="93" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="98" hits="5" branch="false" />
+            <line number="99" hits="5" branch="false" />
+            <line number="100" hits="5" branch="false" />
+            <line number="103" hits="2" branch="false" />
+            <line number="104" hits="2" branch="false" />
+            <line number="105" hits="2" branch="false" />
+            <line number="108" hits="2" branch="false" />
+            <line number="109" hits="2" branch="false" />
+            <line number="110" hits="2" branch="false" />
+            <line number="113" hits="3" branch="false" />
+            <line number="114" hits="3" branch="false" />
+            <line number="115" hits="3" branch="false" />
+            <line number="118" hits="28" branch="false" />
+            <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="120" hits="20" branch="false" />
+            <line number="121" hits="20" branch="false" />
+            <line number="123" hits="8" branch="false" />
+            <line number="124" hits="28" branch="false" />
+            <line number="127" hits="3" branch="false" />
+            <line number="128" hits="3" branch="false" />
+            <line number="129" hits="3" branch="false" />
+            <line number="132" hits="260" branch="false" />
+            <line number="133" hits="260" branch="false" />
+            <line number="134" hits="260" branch="false" />
+            <line number="135" hits="260" branch="false" />
+            <line number="138" hits="71" branch="false" />
+            <line number="139" hits="71" branch="false" />
+            <line number="140" hits="71" branch="false" />
+            <line number="143" hits="13" branch="false" />
+            <line number="144" hits="13" branch="false" />
+            <line number="145" hits="13" branch="false" />
+            <line number="148" hits="18" branch="false" />
+            <line number="149" hits="18" branch="false" />
+            <line number="150" hits="18" branch="false" />
+            <line number="153" hits="2" branch="false" />
+            <line number="154" hits="2" branch="false" />
+            <line number="155" hits="2" branch="false" />
+            <line number="158" hits="2" branch="false" />
+            <line number="159" hits="2" branch="false" />
+            <line number="160" hits="2" branch="false" />
+            <line number="163" hits="2" branch="false" />
+            <line number="164" hits="2" branch="false" />
+            <line number="165" hits="2" branch="false" />
+            <line number="168" hits="3" branch="false" />
+            <line number="169" hits="3" branch="false" />
+            <line number="170" hits="3" branch="false" />
+            <line number="173" hits="2" branch="false" />
+            <line number="174" hits="2" branch="false" />
+            <line number="175" hits="2" branch="false" />
+            <line number="178" hits="6" branch="false" />
+            <line number="179" hits="6" branch="false" />
+            <line number="180" hits="6" branch="false" />
+            <line number="183" hits="4" branch="false" />
+            <line number="184" hits="4" branch="false" />
+            <line number="185" hits="4" branch="false" />
+            <line number="188" hits="2" branch="false" />
+            <line number="189" hits="2" branch="false" />
+            <line number="190" hits="2" branch="false" />
+            <line number="193" hits="2" branch="false" />
+            <line number="194" hits="2" branch="false" />
+            <line number="195" hits="2" branch="false" />
+            <line number="198" hits="2" branch="false" />
+            <line number="199" hits="2" branch="false" />
+            <line number="200" hits="2" branch="false" />
+            <line number="203" hits="3" branch="false" />
+            <line number="204" hits="3" branch="false" />
+            <line number="205" hits="3" branch="false" />
+            <line number="208" hits="20" branch="false" />
+            <line number="209" hits="20" branch="false" />
+            <line number="210" hits="20" branch="false" />
+            <line number="213" hits="3" branch="false" />
+            <line number="214" hits="3" branch="false" />
+            <line number="215" hits="3" branch="false" />
+            <line number="218" hits="3" branch="false" />
+            <line number="219" hits="3" branch="false" />
+            <line number="220" hits="3" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Dangl.Calculator" line-rate="1" branch-rate="0.958333333333333" complexity="0">
+      <classes>
+        <class name="Dangl.Calculator.CalculationResult" filename="src\Dangl.Calculator\CalculationResult.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.Calculator" filename="src\Dangl.Calculator\Calculator.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="Calculate" signature="(System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+                <line number="18" hits="161" branch="false" />
+                <line number="19" hits="161" branch="false" />
+              </lines>
+            </method>
+            <method name="CalculateResult" signature="(System.String,System.Boolean)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="29" hits="177" branch="false" />
+                <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="2" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="38" hits="175" branch="false" />
+                <line number="39" hits="175" branch="false" />
+                <line number="40" hits="175" branch="false" />
+                <line number="41" hits="175" branch="false" />
+                <line number="44" hits="175" branch="false" />
+                <line number="45" hits="175" branch="false" />
+                <line number="47" hits="175" branch="false" />
+                <line number="48" hits="175" branch="false" />
+                <line number="49" hits="175" branch="false" />
+                <line number="50" hits="175" branch="false" />
+                <line number="51" hits="175" branch="false" />
+                <line number="52" hits="175" branch="false" />
+                <line number="53" hits="175" branch="false" />
+                <line number="54" hits="175" branch="false" />
+                <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+                <line number="56" hits="6" branch="false" />
+                <line number="57" hits="6" branch="false" />
+                <line number="58" hits="6" branch="false" />
+                <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+                <line number="61" hits="16" branch="false" />
+                <line number="62" hits="16" branch="false" />
+                <line number="63" hits="16" branch="false" />
+                <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="65" hits="78" branch="false" />
+                <line number="66" hits="78" branch="false" />
+                <line number="67" hits="78" branch="false" />
+                <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+                <line number="68" hits="16" branch="false" />
+                <line number="69" hits="16" branch="false" />
+                <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="71" hits="8" branch="false" />
+                <line number="72" hits="8" branch="false" />
+                <line number="73" hits="8" branch="false" />
+                <line number="74" hits="8" branch="false" />
+                <line number="75" hits="16" branch="false" />
+                <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+                <line number="86" hits="177" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+            <line number="18" hits="161" branch="false" />
+            <line number="19" hits="161" branch="false" />
+            <line number="29" hits="177" branch="false" />
+            <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="2" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="38" hits="175" branch="false" />
+            <line number="39" hits="175" branch="false" />
+            <line number="40" hits="175" branch="false" />
+            <line number="41" hits="175" branch="false" />
+            <line number="44" hits="175" branch="false" />
+            <line number="45" hits="175" branch="false" />
+            <line number="47" hits="175" branch="false" />
+            <line number="48" hits="175" branch="false" />
+            <line number="49" hits="175" branch="false" />
+            <line number="50" hits="175" branch="false" />
+            <line number="51" hits="175" branch="false" />
+            <line number="52" hits="175" branch="false" />
+            <line number="53" hits="175" branch="false" />
+            <line number="54" hits="175" branch="false" />
+            <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+            <line number="56" hits="6" branch="false" />
+            <line number="57" hits="6" branch="false" />
+            <line number="58" hits="6" branch="false" />
+            <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+            <line number="61" hits="16" branch="false" />
+            <line number="62" hits="16" branch="false" />
+            <line number="63" hits="16" branch="false" />
+            <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="65" hits="78" branch="false" />
+            <line number="66" hits="78" branch="false" />
+            <line number="67" hits="78" branch="false" />
+            <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+            <line number="68" hits="16" branch="false" />
+            <line number="69" hits="16" branch="false" />
+            <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="71" hits="8" branch="false" />
+            <line number="72" hits="8" branch="false" />
+            <line number="73" hits="8" branch="false" />
+            <line number="74" hits="8" branch="false" />
+            <line number="75" hits="16" branch="false" />
+            <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+            <line number="86" hits="177" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorErrorListener" filename="src\Dangl.Calculator\CalculatorErrorListener.cs" line-rate="1" branch-rate="0.5" complexity="0">
+          <methods>
+            <method name="ReportAmbiguity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Boolean,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.ATNConfigSet)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportAttemptingFullContext" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportContextSensitivity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Int32,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="SyntaxError" signature="(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)" line-rate="1" branch-rate="0.5">
+              <lines>
+                <line number="57" hits="21" branch="false" />
+                <line number="58" hits="21" branch="false" />
+                <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+                <line number="60" hits="21" branch="false" />
+                <line number="61" hits="21" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="184" branch="false" />
+                <line number="22" hits="184" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="57" hits="21" branch="false" />
+            <line number="58" hits="21" branch="false" />
+            <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+            <line number="60" hits="21" branch="false" />
+            <line number="61" hits="21" branch="false" />
+            <line number="17" hits="184" branch="false" />
+            <line number="22" hits="184" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorVisitor" filename="src\Dangl.Calculator\CalculatorVisitor.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="VisitAbs" signature="(Dangl.Calculator.Generated.CalculatorParser/AbsContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="14" hits="5" branch="false" />
+                <line number="15" hits="5" branch="false" />
+                <line number="16" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitAddSub" signature="(Dangl.Calculator.Generated.CalculatorParser/AddSubContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="37" branch="false" />
+                <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="33" branch="false" />
+                <line number="22" hits="33" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="37" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccos" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="28" hits="2" branch="false" />
+                <line number="29" hits="2" branch="false" />
+                <line number="30" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccot" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArcsin" signature="(Dangl.Calculator.Generated.CalculatorParser/ArcsinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="40" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan" signature="(Dangl.Calculator.Generated.CalculatorParser/ArctanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan2" signature="(Dangl.Calculator.Generated.CalculatorParser/Arctan2Context)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="48" hits="3" branch="false" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCeil" signature="(Dangl.Calculator.Generated.CalculatorParser/CeilContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="53" hits="2" branch="false" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCos" signature="(Dangl.Calculator.Generated.CalculatorParser/CosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCosh" signature="(Dangl.Calculator.Generated.CalculatorParser/CoshContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="63" hits="2" branch="false" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCot" signature="(Dangl.Calculator.Generated.CalculatorParser/CotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="68" hits="2" branch="false" />
+                <line number="69" hits="2" branch="false" />
+                <line number="70" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitDeg" signature="(Dangl.Calculator.Generated.CalculatorParser/DegContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="75" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEex" signature="(Dangl.Calculator.Generated.CalculatorParser/EexContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="78" hits="2" branch="false" />
+                <line number="79" hits="2" branch="false" />
+                <line number="80" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/ExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="83" hits="5" branch="false" />
+                <line number="84" hits="5" branch="false" />
+                <line number="85" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEuler" signature="(Dangl.Calculator.Generated.CalculatorParser/EulerContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="88" hits="3" branch="false" />
+                <line number="89" hits="3" branch="false" />
+                <line number="90" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExp" signature="(Dangl.Calculator.Generated.CalculatorParser/ExpContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="93" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitFloor" signature="(Dangl.Calculator.Generated.CalculatorParser/FloorContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="98" hits="5" branch="false" />
+                <line number="99" hits="5" branch="false" />
+                <line number="100" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLn" signature="(Dangl.Calculator.Generated.CalculatorParser/LnContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="103" hits="2" branch="false" />
+                <line number="104" hits="2" branch="false" />
+                <line number="105" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLog" signature="(Dangl.Calculator.Generated.CalculatorParser/LogContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="108" hits="2" branch="false" />
+                <line number="109" hits="2" branch="false" />
+                <line number="110" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMod" signature="(Dangl.Calculator.Generated.CalculatorParser/ModContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="113" hits="3" branch="false" />
+                <line number="114" hits="3" branch="false" />
+                <line number="115" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMulDiv" signature="(Dangl.Calculator.Generated.CalculatorParser/MulDivContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="118" hits="28" branch="false" />
+                <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="120" hits="20" branch="false" />
+                <line number="121" hits="20" branch="false" />
+                <line number="123" hits="8" branch="false" />
+                <line number="124" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNegExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/NegExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="127" hits="3" branch="false" />
+                <line number="128" hits="3" branch="false" />
+                <line number="129" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNumber" signature="(Dangl.Calculator.Generated.CalculatorParser/NumberContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="132" hits="260" branch="false" />
+                <line number="133" hits="260" branch="false" />
+                <line number="134" hits="260" branch="false" />
+                <line number="135" hits="260" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitParenthesis" signature="(Dangl.Calculator.Generated.CalculatorParser/ParenthesisContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="138" hits="71" branch="false" />
+                <line number="139" hits="71" branch="false" />
+                <line number="140" hits="71" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPi" signature="(Dangl.Calculator.Generated.CalculatorParser/PiContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="143" hits="13" branch="false" />
+                <line number="144" hits="13" branch="false" />
+                <line number="145" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPow" signature="(Dangl.Calculator.Generated.CalculatorParser/PowContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="148" hits="18" branch="false" />
+                <line number="149" hits="18" branch="false" />
+                <line number="150" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRad" signature="(Dangl.Calculator.Generated.CalculatorParser/RadContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="153" hits="2" branch="false" />
+                <line number="154" hits="2" branch="false" />
+                <line number="155" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRound" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="158" hits="2" branch="false" />
+                <line number="159" hits="2" branch="false" />
+                <line number="160" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRoundk" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundkContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="163" hits="2" branch="false" />
+                <line number="164" hits="2" branch="false" />
+                <line number="165" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSin" signature="(Dangl.Calculator.Generated.CalculatorParser/SinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="168" hits="3" branch="false" />
+                <line number="169" hits="3" branch="false" />
+                <line number="170" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSinh" signature="(Dangl.Calculator.Generated.CalculatorParser/SinhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="173" hits="2" branch="false" />
+                <line number="174" hits="2" branch="false" />
+                <line number="175" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqr" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="178" hits="6" branch="false" />
+                <line number="179" hits="6" branch="false" />
+                <line number="180" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqRoot" signature="(Dangl.Calculator.Generated.CalculatorParser/SqRootContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="183" hits="4" branch="false" />
+                <line number="184" hits="4" branch="false" />
+                <line number="185" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqrt" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrtContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="188" hits="2" branch="false" />
+                <line number="189" hits="2" branch="false" />
+                <line number="190" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTan" signature="(Dangl.Calculator.Generated.CalculatorParser/TanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="193" hits="2" branch="false" />
+                <line number="194" hits="2" branch="false" />
+                <line number="195" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTanh" signature="(Dangl.Calculator.Generated.CalculatorParser/TanhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="198" hits="2" branch="false" />
+                <line number="199" hits="2" branch="false" />
+                <line number="200" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTrunc" signature="(Dangl.Calculator.Generated.CalculatorParser/TruncContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="203" hits="3" branch="false" />
+                <line number="204" hits="3" branch="false" />
+                <line number="205" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnary" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="208" hits="20" branch="false" />
+                <line number="209" hits="20" branch="false" />
+                <line number="210" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnaryPlus" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryPlusContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="213" hits="3" branch="false" />
+                <line number="214" hits="3" branch="false" />
+                <line number="215" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitWhole" signature="(Dangl.Calculator.Generated.CalculatorParser/WholeContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="218" hits="3" branch="false" />
+                <line number="219" hits="3" branch="false" />
+                <line number="220" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="5" branch="false" />
+            <line number="15" hits="5" branch="false" />
+            <line number="16" hits="5" branch="false" />
+            <line number="19" hits="37" branch="false" />
+            <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="33" branch="false" />
+            <line number="22" hits="33" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="37" branch="false" />
+            <line number="28" hits="2" branch="false" />
+            <line number="29" hits="2" branch="false" />
+            <line number="30" hits="2" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="40" hits="2" branch="false" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="48" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="53" hits="2" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="2" branch="false" />
+            <line number="63" hits="2" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="68" hits="2" branch="false" />
+            <line number="69" hits="2" branch="false" />
+            <line number="70" hits="2" branch="false" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="75" hits="2" branch="false" />
+            <line number="78" hits="2" branch="false" />
+            <line number="79" hits="2" branch="false" />
+            <line number="80" hits="2" branch="false" />
+            <line number="83" hits="5" branch="false" />
+            <line number="84" hits="5" branch="false" />
+            <line number="85" hits="5" branch="false" />
+            <line number="88" hits="3" branch="false" />
+            <line number="89" hits="3" branch="false" />
+            <line number="90" hits="3" branch="false" />
+            <line number="93" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="98" hits="5" branch="false" />
+            <line number="99" hits="5" branch="false" />
+            <line number="100" hits="5" branch="false" />
+            <line number="103" hits="2" branch="false" />
+            <line number="104" hits="2" branch="false" />
+            <line number="105" hits="2" branch="false" />
+            <line number="108" hits="2" branch="false" />
+            <line number="109" hits="2" branch="false" />
+            <line number="110" hits="2" branch="false" />
+            <line number="113" hits="3" branch="false" />
+            <line number="114" hits="3" branch="false" />
+            <line number="115" hits="3" branch="false" />
+            <line number="118" hits="28" branch="false" />
+            <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="120" hits="20" branch="false" />
+            <line number="121" hits="20" branch="false" />
+            <line number="123" hits="8" branch="false" />
+            <line number="124" hits="28" branch="false" />
+            <line number="127" hits="3" branch="false" />
+            <line number="128" hits="3" branch="false" />
+            <line number="129" hits="3" branch="false" />
+            <line number="132" hits="260" branch="false" />
+            <line number="133" hits="260" branch="false" />
+            <line number="134" hits="260" branch="false" />
+            <line number="135" hits="260" branch="false" />
+            <line number="138" hits="71" branch="false" />
+            <line number="139" hits="71" branch="false" />
+            <line number="140" hits="71" branch="false" />
+            <line number="143" hits="13" branch="false" />
+            <line number="144" hits="13" branch="false" />
+            <line number="145" hits="13" branch="false" />
+            <line number="148" hits="18" branch="false" />
+            <line number="149" hits="18" branch="false" />
+            <line number="150" hits="18" branch="false" />
+            <line number="153" hits="2" branch="false" />
+            <line number="154" hits="2" branch="false" />
+            <line number="155" hits="2" branch="false" />
+            <line number="158" hits="2" branch="false" />
+            <line number="159" hits="2" branch="false" />
+            <line number="160" hits="2" branch="false" />
+            <line number="163" hits="2" branch="false" />
+            <line number="164" hits="2" branch="false" />
+            <line number="165" hits="2" branch="false" />
+            <line number="168" hits="3" branch="false" />
+            <line number="169" hits="3" branch="false" />
+            <line number="170" hits="3" branch="false" />
+            <line number="173" hits="2" branch="false" />
+            <line number="174" hits="2" branch="false" />
+            <line number="175" hits="2" branch="false" />
+            <line number="178" hits="6" branch="false" />
+            <line number="179" hits="6" branch="false" />
+            <line number="180" hits="6" branch="false" />
+            <line number="183" hits="4" branch="false" />
+            <line number="184" hits="4" branch="false" />
+            <line number="185" hits="4" branch="false" />
+            <line number="188" hits="2" branch="false" />
+            <line number="189" hits="2" branch="false" />
+            <line number="190" hits="2" branch="false" />
+            <line number="193" hits="2" branch="false" />
+            <line number="194" hits="2" branch="false" />
+            <line number="195" hits="2" branch="false" />
+            <line number="198" hits="2" branch="false" />
+            <line number="199" hits="2" branch="false" />
+            <line number="200" hits="2" branch="false" />
+            <line number="203" hits="3" branch="false" />
+            <line number="204" hits="3" branch="false" />
+            <line number="205" hits="3" branch="false" />
+            <line number="208" hits="20" branch="false" />
+            <line number="209" hits="20" branch="false" />
+            <line number="210" hits="20" branch="false" />
+            <line number="213" hits="3" branch="false" />
+            <line number="214" hits="3" branch="false" />
+            <line number="215" hits="3" branch="false" />
+            <line number="218" hits="3" branch="false" />
+            <line number="219" hits="3" branch="false" />
+            <line number="220" hits="3" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Dangl.Calculator" line-rate="1" branch-rate="0.958333333333333" complexity="0">
+      <classes>
+        <class name="Dangl.Calculator.CalculationResult" filename="src\Dangl.Calculator\CalculationResult.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.Calculator" filename="src\Dangl.Calculator\Calculator.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="Calculate" signature="(System.String)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="161" branch="false" />
+                <line number="18" hits="161" branch="false" />
+                <line number="19" hits="161" branch="false" />
+              </lines>
+            </method>
+            <method name="CalculateResult" signature="(System.String,System.Boolean)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="29" hits="177" branch="false" />
+                <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+                <line number="31" hits="2" branch="false" />
+                <line number="32" hits="2" branch="false" />
+                <line number="38" hits="175" branch="false" />
+                <line number="39" hits="175" branch="false" />
+                <line number="40" hits="175" branch="false" />
+                <line number="41" hits="175" branch="false" />
+                <line number="44" hits="175" branch="false" />
+                <line number="45" hits="175" branch="false" />
+                <line number="47" hits="175" branch="false" />
+                <line number="48" hits="175" branch="false" />
+                <line number="49" hits="175" branch="false" />
+                <line number="50" hits="175" branch="false" />
+                <line number="51" hits="175" branch="false" />
+                <line number="52" hits="175" branch="false" />
+                <line number="53" hits="175" branch="false" />
+                <line number="54" hits="175" branch="false" />
+                <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+                <line number="56" hits="6" branch="false" />
+                <line number="57" hits="6" branch="false" />
+                <line number="58" hits="6" branch="false" />
+                <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+                <line number="61" hits="16" branch="false" />
+                <line number="62" hits="16" branch="false" />
+                <line number="63" hits="16" branch="false" />
+                <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="65" hits="78" branch="false" />
+                <line number="66" hits="78" branch="false" />
+                <line number="67" hits="78" branch="false" />
+                <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+                <line number="68" hits="16" branch="false" />
+                <line number="69" hits="16" branch="false" />
+                <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="71" hits="8" branch="false" />
+                <line number="72" hits="8" branch="false" />
+                <line number="73" hits="8" branch="false" />
+                <line number="74" hits="8" branch="false" />
+                <line number="75" hits="16" branch="false" />
+                <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+                <line number="86" hits="177" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="161" branch="false" />
+            <line number="18" hits="161" branch="false" />
+            <line number="19" hits="161" branch="false" />
+            <line number="29" hits="177" branch="false" />
+            <line number="30" hits="177" branch="true" condition-coverage="100% (2/2)" />
+            <line number="31" hits="2" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="38" hits="175" branch="false" />
+            <line number="39" hits="175" branch="false" />
+            <line number="40" hits="175" branch="false" />
+            <line number="41" hits="175" branch="false" />
+            <line number="44" hits="175" branch="false" />
+            <line number="45" hits="175" branch="false" />
+            <line number="47" hits="175" branch="false" />
+            <line number="48" hits="175" branch="false" />
+            <line number="49" hits="175" branch="false" />
+            <line number="50" hits="175" branch="false" />
+            <line number="51" hits="175" branch="false" />
+            <line number="52" hits="175" branch="false" />
+            <line number="53" hits="175" branch="false" />
+            <line number="54" hits="175" branch="false" />
+            <line number="55" hits="175" branch="true" condition-coverage="100% (2/2)" />
+            <line number="56" hits="6" branch="false" />
+            <line number="57" hits="6" branch="false" />
+            <line number="58" hits="6" branch="false" />
+            <line number="60" hits="175" branch="true" condition-coverage="100% (4/4)" />
+            <line number="61" hits="16" branch="false" />
+            <line number="62" hits="16" branch="false" />
+            <line number="63" hits="16" branch="false" />
+            <line number="64" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="65" hits="78" branch="false" />
+            <line number="66" hits="78" branch="false" />
+            <line number="67" hits="78" branch="false" />
+            <line number="64" hits="78" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="94" branch="true" condition-coverage="100% (2/2)" />
+            <line number="68" hits="16" branch="false" />
+            <line number="69" hits="16" branch="false" />
+            <line number="70" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="71" hits="8" branch="false" />
+            <line number="72" hits="8" branch="false" />
+            <line number="73" hits="8" branch="false" />
+            <line number="74" hits="8" branch="false" />
+            <line number="75" hits="16" branch="false" />
+            <line number="77" hits="159" branch="true" condition-coverage="100% (6/6)" />
+            <line number="86" hits="177" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorErrorListener" filename="src\Dangl.Calculator\CalculatorErrorListener.cs" line-rate="1" branch-rate="0.5" complexity="0">
+          <methods>
+            <method name="ReportAmbiguity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Boolean,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.ATNConfigSet)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportAttemptingFullContext" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,Antlr4.Runtime.Sharpen.BitSet,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ReportContextSensitivity" signature="(Antlr4.Runtime.Parser,Antlr4.Runtime.Dfa.DFA,System.Int32,System.Int32,System.Int32,Antlr4.Runtime.Atn.SimulatorState)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="SyntaxError" signature="(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)" line-rate="1" branch-rate="0.5">
+              <lines>
+                <line number="57" hits="21" branch="false" />
+                <line number="58" hits="21" branch="false" />
+                <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+                <line number="60" hits="21" branch="false" />
+                <line number="61" hits="21" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="17" hits="184" branch="false" />
+                <line number="22" hits="184" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="57" hits="21" branch="false" />
+            <line number="58" hits="21" branch="false" />
+            <line number="59" hits="21" branch="true" condition-coverage="50% (1/2)" />
+            <line number="60" hits="21" branch="false" />
+            <line number="61" hits="21" branch="false" />
+            <line number="17" hits="184" branch="false" />
+            <line number="22" hits="184" branch="false" />
+          </lines>
+        </class>
+        <class name="Dangl.Calculator.CalculatorVisitor" filename="src\Dangl.Calculator\CalculatorVisitor.cs" line-rate="1" branch-rate="1" complexity="0">
+          <methods>
+            <method name="VisitAbs" signature="(Dangl.Calculator.Generated.CalculatorParser/AbsContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="14" hits="5" branch="false" />
+                <line number="15" hits="5" branch="false" />
+                <line number="16" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitAddSub" signature="(Dangl.Calculator.Generated.CalculatorParser/AddSubContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="19" hits="37" branch="false" />
+                <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="33" branch="false" />
+                <line number="22" hits="33" branch="false" />
+                <line number="24" hits="4" branch="false" />
+                <line number="25" hits="37" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccos" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="28" hits="2" branch="false" />
+                <line number="29" hits="2" branch="false" />
+                <line number="30" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArccot" signature="(Dangl.Calculator.Generated.CalculatorParser/ArccotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArcsin" signature="(Dangl.Calculator.Generated.CalculatorParser/ArcsinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="40" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan" signature="(Dangl.Calculator.Generated.CalculatorParser/ArctanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="43" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitArctan2" signature="(Dangl.Calculator.Generated.CalculatorParser/Arctan2Context)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="48" hits="3" branch="false" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCeil" signature="(Dangl.Calculator.Generated.CalculatorParser/CeilContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="53" hits="2" branch="false" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCos" signature="(Dangl.Calculator.Generated.CalculatorParser/CosContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCosh" signature="(Dangl.Calculator.Generated.CalculatorParser/CoshContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="63" hits="2" branch="false" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitCot" signature="(Dangl.Calculator.Generated.CalculatorParser/CotContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="68" hits="2" branch="false" />
+                <line number="69" hits="2" branch="false" />
+                <line number="70" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitDeg" signature="(Dangl.Calculator.Generated.CalculatorParser/DegContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="75" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEex" signature="(Dangl.Calculator.Generated.CalculatorParser/EexContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="78" hits="2" branch="false" />
+                <line number="79" hits="2" branch="false" />
+                <line number="80" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/ExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="83" hits="5" branch="false" />
+                <line number="84" hits="5" branch="false" />
+                <line number="85" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitEuler" signature="(Dangl.Calculator.Generated.CalculatorParser/EulerContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="88" hits="3" branch="false" />
+                <line number="89" hits="3" branch="false" />
+                <line number="90" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitExp" signature="(Dangl.Calculator.Generated.CalculatorParser/ExpContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="93" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitFloor" signature="(Dangl.Calculator.Generated.CalculatorParser/FloorContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="98" hits="5" branch="false" />
+                <line number="99" hits="5" branch="false" />
+                <line number="100" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLn" signature="(Dangl.Calculator.Generated.CalculatorParser/LnContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="103" hits="2" branch="false" />
+                <line number="104" hits="2" branch="false" />
+                <line number="105" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitLog" signature="(Dangl.Calculator.Generated.CalculatorParser/LogContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="108" hits="2" branch="false" />
+                <line number="109" hits="2" branch="false" />
+                <line number="110" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMod" signature="(Dangl.Calculator.Generated.CalculatorParser/ModContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="113" hits="3" branch="false" />
+                <line number="114" hits="3" branch="false" />
+                <line number="115" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitMulDiv" signature="(Dangl.Calculator.Generated.CalculatorParser/MulDivContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="118" hits="28" branch="false" />
+                <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+                <line number="120" hits="20" branch="false" />
+                <line number="121" hits="20" branch="false" />
+                <line number="123" hits="8" branch="false" />
+                <line number="124" hits="28" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNegExponent" signature="(Dangl.Calculator.Generated.CalculatorParser/NegExponentContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="127" hits="3" branch="false" />
+                <line number="128" hits="3" branch="false" />
+                <line number="129" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitNumber" signature="(Dangl.Calculator.Generated.CalculatorParser/NumberContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="132" hits="260" branch="false" />
+                <line number="133" hits="260" branch="false" />
+                <line number="134" hits="260" branch="false" />
+                <line number="135" hits="260" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitParenthesis" signature="(Dangl.Calculator.Generated.CalculatorParser/ParenthesisContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="138" hits="71" branch="false" />
+                <line number="139" hits="71" branch="false" />
+                <line number="140" hits="71" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPi" signature="(Dangl.Calculator.Generated.CalculatorParser/PiContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="143" hits="13" branch="false" />
+                <line number="144" hits="13" branch="false" />
+                <line number="145" hits="13" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitPow" signature="(Dangl.Calculator.Generated.CalculatorParser/PowContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="148" hits="18" branch="false" />
+                <line number="149" hits="18" branch="false" />
+                <line number="150" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRad" signature="(Dangl.Calculator.Generated.CalculatorParser/RadContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="153" hits="2" branch="false" />
+                <line number="154" hits="2" branch="false" />
+                <line number="155" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRound" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="158" hits="2" branch="false" />
+                <line number="159" hits="2" branch="false" />
+                <line number="160" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitRoundk" signature="(Dangl.Calculator.Generated.CalculatorParser/RoundkContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="163" hits="2" branch="false" />
+                <line number="164" hits="2" branch="false" />
+                <line number="165" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSin" signature="(Dangl.Calculator.Generated.CalculatorParser/SinContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="168" hits="3" branch="false" />
+                <line number="169" hits="3" branch="false" />
+                <line number="170" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSinh" signature="(Dangl.Calculator.Generated.CalculatorParser/SinhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="173" hits="2" branch="false" />
+                <line number="174" hits="2" branch="false" />
+                <line number="175" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqr" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="178" hits="6" branch="false" />
+                <line number="179" hits="6" branch="false" />
+                <line number="180" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqRoot" signature="(Dangl.Calculator.Generated.CalculatorParser/SqRootContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="183" hits="4" branch="false" />
+                <line number="184" hits="4" branch="false" />
+                <line number="185" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitSqrt" signature="(Dangl.Calculator.Generated.CalculatorParser/SqrtContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="188" hits="2" branch="false" />
+                <line number="189" hits="2" branch="false" />
+                <line number="190" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTan" signature="(Dangl.Calculator.Generated.CalculatorParser/TanContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="193" hits="2" branch="false" />
+                <line number="194" hits="2" branch="false" />
+                <line number="195" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTanh" signature="(Dangl.Calculator.Generated.CalculatorParser/TanhContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="198" hits="2" branch="false" />
+                <line number="199" hits="2" branch="false" />
+                <line number="200" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitTrunc" signature="(Dangl.Calculator.Generated.CalculatorParser/TruncContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="203" hits="3" branch="false" />
+                <line number="204" hits="3" branch="false" />
+                <line number="205" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnary" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="208" hits="20" branch="false" />
+                <line number="209" hits="20" branch="false" />
+                <line number="210" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitUnaryPlus" signature="(Dangl.Calculator.Generated.CalculatorParser/UnaryPlusContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="213" hits="3" branch="false" />
+                <line number="214" hits="3" branch="false" />
+                <line number="215" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="VisitWhole" signature="(Dangl.Calculator.Generated.CalculatorParser/WholeContext)" line-rate="1" branch-rate="1">
+              <lines>
+                <line number="218" hits="3" branch="false" />
+                <line number="219" hits="3" branch="false" />
+                <line number="220" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1">
+              <lines />
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="5" branch="false" />
+            <line number="15" hits="5" branch="false" />
+            <line number="16" hits="5" branch="false" />
+            <line number="19" hits="37" branch="false" />
+            <line number="20" hits="37" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="33" branch="false" />
+            <line number="22" hits="33" branch="false" />
+            <line number="24" hits="4" branch="false" />
+            <line number="25" hits="37" branch="false" />
+            <line number="28" hits="2" branch="false" />
+            <line number="29" hits="2" branch="false" />
+            <line number="30" hits="2" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="40" hits="2" branch="false" />
+            <line number="43" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="48" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="53" hits="2" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="2" branch="false" />
+            <line number="63" hits="2" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="68" hits="2" branch="false" />
+            <line number="69" hits="2" branch="false" />
+            <line number="70" hits="2" branch="false" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="75" hits="2" branch="false" />
+            <line number="78" hits="2" branch="false" />
+            <line number="79" hits="2" branch="false" />
+            <line number="80" hits="2" branch="false" />
+            <line number="83" hits="5" branch="false" />
+            <line number="84" hits="5" branch="false" />
+            <line number="85" hits="5" branch="false" />
+            <line number="88" hits="3" branch="false" />
+            <line number="89" hits="3" branch="false" />
+            <line number="90" hits="3" branch="false" />
+            <line number="93" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="98" hits="5" branch="false" />
+            <line number="99" hits="5" branch="false" />
+            <line number="100" hits="5" branch="false" />
+            <line number="103" hits="2" branch="false" />
+            <line number="104" hits="2" branch="false" />
+            <line number="105" hits="2" branch="false" />
+            <line number="108" hits="2" branch="false" />
+            <line number="109" hits="2" branch="false" />
+            <line number="110" hits="2" branch="false" />
+            <line number="113" hits="3" branch="false" />
+            <line number="114" hits="3" branch="false" />
+            <line number="115" hits="3" branch="false" />
+            <line number="118" hits="28" branch="false" />
+            <line number="119" hits="28" branch="true" condition-coverage="100% (2/2)" />
+            <line number="120" hits="20" branch="false" />
+            <line number="121" hits="20" branch="false" />
+            <line number="123" hits="8" branch="false" />
+            <line number="124" hits="28" branch="false" />
+            <line number="127" hits="3" branch="false" />
+            <line number="128" hits="3" branch="false" />
+            <line number="129" hits="3" branch="false" />
+            <line number="132" hits="260" branch="false" />
+            <line number="133" hits="260" branch="false" />
+            <line number="134" hits="260" branch="false" />
+            <line number="135" hits="260" branch="false" />
+            <line number="138" hits="71" branch="false" />
+            <line number="139" hits="71" branch="false" />
+            <line number="140" hits="71" branch="false" />
+            <line number="143" hits="13" branch="false" />
+            <line number="144" hits="13" branch="false" />
+            <line number="145" hits="13" branch="false" />
+            <line number="148" hits="18" branch="false" />
+            <line number="149" hits="18" branch="false" />
+            <line number="150" hits="18" branch="false" />
+            <line number="153" hits="2" branch="false" />
+            <line number="154" hits="2" branch="false" />
+            <line number="155" hits="2" branch="false" />
+            <line number="158" hits="2" branch="false" />
+            <line number="159" hits="2" branch="false" />
+            <line number="160" hits="2" branch="false" />
+            <line number="163" hits="2" branch="false" />
+            <line number="164" hits="2" branch="false" />
+            <line number="165" hits="2" branch="false" />
+            <line number="168" hits="3" branch="false" />
+            <line number="169" hits="3" branch="false" />
+            <line number="170" hits="3" branch="false" />
+            <line number="173" hits="2" branch="false" />
+            <line number="174" hits="2" branch="false" />
+            <line number="175" hits="2" branch="false" />
+            <line number="178" hits="6" branch="false" />
+            <line number="179" hits="6" branch="false" />
+            <line number="180" hits="6" branch="false" />
+            <line number="183" hits="4" branch="false" />
+            <line number="184" hits="4" branch="false" />
+            <line number="185" hits="4" branch="false" />
+            <line number="188" hits="2" branch="false" />
+            <line number="189" hits="2" branch="false" />
+            <line number="190" hits="2" branch="false" />
+            <line number="193" hits="2" branch="false" />
+            <line number="194" hits="2" branch="false" />
+            <line number="195" hits="2" branch="false" />
+            <line number="198" hits="2" branch="false" />
+            <line number="199" hits="2" branch="false" />
+            <line number="200" hits="2" branch="false" />
+            <line number="203" hits="3" branch="false" />
+            <line number="204" hits="3" branch="false" />
+            <line number="205" hits="3" branch="false" />
+            <line number="208" hits="20" branch="false" />
+            <line number="209" hits="20" branch="false" />
+            <line number="210" hits="20" branch="false" />
+            <line number="213" hits="3" branch="false" />
+            <line number="214" hits="3" branch="false" />
+            <line number="215" hits="3" branch="false" />
+            <line number="218" hits="3" branch="false" />
+            <line number="219" hits="3" branch="false" />
+            <line number="220" hits="3" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
