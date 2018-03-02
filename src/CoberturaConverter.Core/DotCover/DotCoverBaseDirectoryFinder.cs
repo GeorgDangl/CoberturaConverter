@@ -14,8 +14,6 @@ namespace CoberturaConverter.Core.DotCover
                 throw new ArgumentNullException(nameof(filePaths));
             }
 
-            // TODO Check Google, there's for sure a much more efficient way to do this
-
             var filePathList = filePaths.ToList();
 
             if (!filePathList.Any())

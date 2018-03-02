@@ -67,8 +67,8 @@ namespace CoberturaConverter.Core.OpenCover
             rootElement.Add(new XAttribute("lines-valid", totalLines.ToString(CultureInfo.InvariantCulture)));
             rootElement.Add(new XAttribute("branches-covered", coveredBranches.ToString(CultureInfo.InvariantCulture)));
             rootElement.Add(new XAttribute("branches-valid", totalBranches.ToString(CultureInfo.InvariantCulture)));
-            rootElement.Add(new XAttribute("complexity", 0)); // TODO
-            rootElement.Add(new XAttribute("version", 0)); // TODO
+            rootElement.Add(new XAttribute("complexity", 0));
+            rootElement.Add(new XAttribute("version", 0));
             rootElement.Add(new XAttribute("timestamp", ((long) (DateTime.Now - new DateTime(1970, 1, 1)).TotalSeconds).ToString(CultureInfo.InvariantCulture)));
 
             return rootElement;
@@ -194,7 +194,7 @@ namespace CoberturaConverter.Core.OpenCover
                 new XAttribute(
                     "branch-rate",
                     branchRate.ToString(CultureInfo.InvariantCulture)));
-            packageElement.Add(new XAttribute("complexity", 0)); // TODO
+            packageElement.Add(new XAttribute("complexity", 0));
 
             coveredLines += packageCoveredLines;
             totalLines += packageTotalLines;
@@ -272,7 +272,7 @@ namespace CoberturaConverter.Core.OpenCover
                 new XAttribute(
                     "branch-rate",
                     branchRate.ToString(CultureInfo.InvariantCulture)));
-            classElement.Add(new XAttribute("complexity", 0)); // TODO
+            classElement.Add(new XAttribute("complexity", 0));
 
             coveredLines += classCoveredLines;
             totalLines += classTotalLines;

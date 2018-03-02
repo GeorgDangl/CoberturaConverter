@@ -54,35 +54,5 @@ namespace CoberturaConverter.Core.Tests
             var resourceStream = assembly.GetManifestResourceStream(resourceName);
             return resourceStream;
         }
-
-        /* // TODO Decide if the BaseDirFinder does work in practice
-        /// <summary>
-        /// dotCover only saves absolute file paths while Cobertura expects a root directory
-        /// and relative file paths. Since this can not be accurately determined in case there are
-        /// multiple base paths
-        /// </summary>
-        /// <param name="dotCoverTestFile"></param>
-        /// <returns></returns>
-        public static string GetBaseDirForDotCoverReport(TestFile dotCoverTestFile)
-        {
-            string baseDir;
-            switch (dotCoverTestFile)
-            {
-                case TestFile.DanglCalculatorDotCover:
-                    baseDir = "D:\\Visual Studio Projects\\Dangl.Calculator";
-                    break;
-                case TestFile.DanglCommonDotCover:
-                    baseDir = "D:\\Visual Studio Projects\\Dangl.Common";
-                    break;
-                case TestFile.LightQueryDotCover:
-                    baseDir = "D:\\Visual Studio Projects\\LightQuery";
-                    break;
-                default:
-                    throw new NotImplementedException();
-            }
-
-            return baseDir;
-        }
-        */
     }
 }
