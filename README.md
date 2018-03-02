@@ -32,7 +32,7 @@ All builds are available on MyGet:
 
     using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 
-    await DotCoverToCobertura(new DotCoverConversionSettings()
+    await DotCoverToCobertura(s => s
         .SetInputFile(OutputDirectory / "coverage.xml")
         .SetOutputFile(OutputDirectory / "cobertura_coverage.xml"));
 

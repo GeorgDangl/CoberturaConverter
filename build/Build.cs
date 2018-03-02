@@ -167,7 +167,7 @@ class Build : NukeBuild
             // This is the report in Cobertura format that integrates so nice in Jenkins
             // dashboard and allows to extract more metrics and set build health based
             // on coverage readings
-            await DotCoverToCobertura(new DotCoverConversionSettings()
+            await DotCoverToCobertura(s => s
                 .SetInputFile(OutputDirectory / "coverage.xml")
                 .SetOutputFile(OutputDirectory / "cobertura_coverage.xml"));
 
