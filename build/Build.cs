@@ -69,7 +69,8 @@ class Build : NukeBuild
             .Executes(() =>
             {
                 DotNetBuild(s => DefaultDotNetBuild
-                    .SetFileVersion(GitVersion.AssemblySemVer));
+                .SetFileVersion(GitVersion.GetNormalizedFileVersion())
+                .SetAssemblyVersion(GitVersion.AssemblySemVer));
             });
 
     Target Pack => _ => _
