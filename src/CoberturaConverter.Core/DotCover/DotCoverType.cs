@@ -9,5 +9,6 @@ namespace CoberturaConverter.Core.DotCover
         public int TotalStatements { get; set; }
         public decimal CoveragePercent { get; set; }
         public List<DotCoverMethod> Methods { get; set; }
+        public List<DotCoverType> NestedTypes { get; set; }
     }
 }

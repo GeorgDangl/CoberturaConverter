@@ -23,7 +23,8 @@ namespace CoberturaConverter.Core.DotCover
 
             if (_xDoc.Root.Name.LocalName != "Root")
             {
-                throw new ArgumentException("The DotCover report is expected to have a root element with name \"Root\".");
+                throw new ArgumentException(
+                    "The DotCover report is expected to have a root element with name \"Root\".");
             }
 
             _root = _xDoc.Root;
@@ -89,7 +90,7 @@ namespace CoberturaConverter.Core.DotCover
                 CoveredStatements = namespaceElement.GetAttributeIntValue("CoveredStatements"),
                 TotalStatements = namespaceElement.GetAttributeIntValue("TotalStatements"),
                 Name = namespaceElement.GetAttributeStringValue("Name"),
-                Types = namespaceElement.Elements()
+                Types = namespaceElement.Descendants()
                     .Where(e => e.Name.LocalName == "Type")
                     .Select(GetTypeFromElement)
                     .ToList()
@@ -108,6 +109,10 @@ namespace CoberturaConverter.Core.DotCover
                 Methods = typeElement.Elements()
                     .Where(e => e.Name.LocalName == "Method")
                     .Select(GetMethodFromElement)
+                    .ToList(),
+                NestedTypes = typeElement.Elements()
+                    .Where(e => e.Name.LocalName == "Type")
+                    .Select(GetTypeFromElement)
                     .ToList()
             };
             return dotCoverType;
