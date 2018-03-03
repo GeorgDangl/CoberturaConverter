@@ -87,7 +87,9 @@ namespace CoberturaConverter.Core.DotCover
                 coberturaClasses.AddRange(coberturaClassesInNamespace);
             }
 
-            return coberturaClasses;
+            return coberturaClasses
+                .Where(c => !string.IsNullOrWhiteSpace(c.FileName))
+                .ToList();
         }
 
         private CoberturaClass GetCoberturaClassFromDotCoverType(DotCoverType dotCoverType, string namespaceName)

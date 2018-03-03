@@ -52,9 +52,12 @@ namespace CoberturaConverter.Core.Tests.DotCover
                 var conversionResult = converter.ConvertToCobertura();
 
                 var classes = conversionResult.Packages
-                    .SelectMany(p => p.Classes);
+                    .SelectMany(p => p.Classes)
+                    .ToList();
 
                 Assert.All(classes, c => Assert.False(string.IsNullOrWhiteSpace(c.FileName)));
+                Assert.Equal(2, classes.Count);
+                Assert.All(classes, c => Assert.NotEqual("TypeWithoutStatements", c.Name)); // This type should not be in the Cobertura report due to missing filename
             }
         }
     }

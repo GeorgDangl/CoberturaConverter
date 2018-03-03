@@ -92,7 +92,10 @@ namespace CoberturaConverter.Core.Tests.DotCover
 
                 var types = @namespace.Types;
 
-                Assert.Equal(2, types.Count);
+                Assert.Equal(3, types.Count);
+
+                var typeWithoutStatements = types.First(t => t.Name == "TypeWithoutStatements");
+                Assert.Empty(typeWithoutStatements.Methods.SelectMany(m => m.Statements));
             }
         }
     }

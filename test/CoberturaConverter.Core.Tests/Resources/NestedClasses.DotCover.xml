@@ -12,6 +12,7 @@
           </Method>
         </Type>
       </Type>
+      <Type Name="TypeWithoutStatements" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
     </Namespace>
   </Assembly>
 </Root>
