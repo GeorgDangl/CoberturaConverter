@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="406" TotalStatements="406" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2018.1">
+  <FileIndices>
+    <File Index="1" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\CalculationResult.cs" ChecksumAlgorithm="SHA1" Checksum="F8568B03844EC970CC24E38D9AF4C0C46DE08144" />
+  </FileIndices>
+  <Assembly Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+    <Namespace Name="Dangl.Calculator" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+      <Type Name="CalculationResult" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Type Name="InnerResult" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Method Name=".ctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="17" Column="59" EndLine="17" EndColumn="61" Covered="True" />
+          </Method>
+        </Type>
+      </Type>
+      <Type Name="TypeWithoutStatements" CoveredStatements="9" TotalStatements="9" CoveragePercent="100" />
+    </Namespace>
+  </Assembly>
+</Root>

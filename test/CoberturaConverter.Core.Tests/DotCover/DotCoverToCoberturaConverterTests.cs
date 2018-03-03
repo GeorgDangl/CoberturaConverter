@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using CoberturaConverter.Core.DotCover;
 using DotCoverConverter.Core.Tests;
 using Xunit;
@@ -36,6 +37,27 @@ namespace CoberturaConverter.Core.Tests.DotCover
                 var conversionResult = converter.ConvertToCobertura();
                 Assert.NotNull(conversionResult);
                 Assert.NotEmpty(conversionResult.Packages);
+            }
+        }
+
+        [Fact]
+        public void PutsFilenameOnNestedType()
+        {
+            using (var xmlStream = TestFilesFactory.GetTestFileStream(TestFile.NestedClassesDotCover))
+            {
+                var parser = new DotCoverParser(xmlStream);
+                var dotCoverReport = parser.ParseDotCoverReport();
+
+                var converter = new DotCoverToCoberturaConverter(dotCoverReport);
+                var conversionResult = converter.ConvertToCobertura();
+
+                var classes = conversionResult.Packages
+                    .SelectMany(p => p.Classes)
+                    .ToList();
+
+                Assert.All(classes, c => Assert.False(string.IsNullOrWhiteSpace(c.FileName)));
+                Assert.Equal(2, classes.Count);
+                Assert.All(classes, c => Assert.NotEqual("TypeWithoutStatements", c.Name)); // This type should not be in the Cobertura report due to missing filename
             }
         }
     }

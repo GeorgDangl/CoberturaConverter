@@ -10,6 +10,7 @@
         DanglCommonOpenCover,
         LightQueryCobertura,
         LightQueryDotCover,
-        LightQueryOpenCover
+        LightQueryOpenCover,
+        NestedClassesDotCover
     }
 }

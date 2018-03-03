@@ -39,6 +39,9 @@ namespace CoberturaConverter.Core.Tests
                 case TestFile.LightQueryOpenCover:
                     fileName = "LightQuery.OpenCover.xml";
                     break;
+                case TestFile.NestedClassesDotCover:
+                    fileName = "NestedClasses.DotCover.xml";
+                    break;
 
                 default:
                     throw new NotImplementedException();

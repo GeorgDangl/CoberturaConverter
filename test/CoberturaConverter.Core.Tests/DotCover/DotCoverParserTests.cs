@@ -75,5 +75,28 @@ namespace CoberturaConverter.Core.Tests.DotCover
                 Assert.Single(dotCoverReport.Assemblies.First().Namespaces);
             }
         }
+
+        [Fact]
+        public void ParsesFileWithNestedClasses()
+        {
+            var testFile = TestFile.NestedClassesDotCover;
+            using (var xmlStream = TestFilesFactory.GetTestFileStream(testFile))
+            {
+                var parser = new DotCoverParser(xmlStream);
+                var dotCoverReport = parser.ParseDotCoverReport();
+
+                Assert.Single(dotCoverReport.Files);
+
+                var assembly = dotCoverReport.Assemblies.Single();
+                var @namespace = assembly.Namespaces.Single();
+
+                var types = @namespace.Types;
+
+                Assert.Equal(3, types.Count);
+
+                var typeWithoutStatements = types.First(t => t.Name == "TypeWithoutStatements");
+                Assert.Empty(typeWithoutStatements.Methods.SelectMany(m => m.Statements));
+            }
+        }
     }
 }

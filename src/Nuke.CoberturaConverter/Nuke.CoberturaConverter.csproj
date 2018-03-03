@@ -9,6 +9,7 @@
     <PackageProjectUrl>https://github.com/GeorgDangl/CoberturaConverter</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <Description>NUKE tool to convert coverage reports to Cobertura</Description>
   </PropertyGroup>
 
   <ItemGroup>

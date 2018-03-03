@@ -100,7 +100,12 @@ namespace CoberturaConverter.Core.Cobertura
             foreach (var @class in package.Classes)
             {
                 var classElement = GetClassElement(@class);
-                classesElement.Add(classElement);
+                if (classElement.Attributes().Any(a => a.Name.LocalName == "filename"))
+                {
+                    // "filename" is a required attribute
+                    // Skipping classes where it could not be determined
+                    classesElement.Add(classElement);
+                }
             }
 
             return classesElement;

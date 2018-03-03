@@ -8,6 +8,7 @@
     <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://blog.dangl.me/media/1114/gd_icon_256.png</PackageIconUrl>
+    <Description>Library to convert coverage reports to Cobertura</Description>
   </PropertyGroup>
 
   <PropertyGroup>

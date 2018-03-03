@@ -87,7 +87,9 @@ namespace CoberturaConverter.Core.DotCover
                 coberturaClasses.AddRange(coberturaClassesInNamespace);
             }
 
-            return coberturaClasses;
+            return coberturaClasses
+                .Where(c => !string.IsNullOrWhiteSpace(c.FileName))
+                .ToList();
         }
 
         private CoberturaClass GetCoberturaClassFromDotCoverType(DotCoverType dotCoverType, string namespaceName)
@@ -124,6 +126,18 @@ namespace CoberturaConverter.Core.DotCover
                 .FirstOrDefault();
             if (fileIndex == default) // Luckily, default int (0) is not used as file index by dotCover
             {
+                if (dotCoverType.NestedTypes != null)
+                {
+                    foreach (var nestedType in dotCoverType.NestedTypes)
+                    {
+                        var nestedTypeFileName = GetRelativeFilenameForDotCoverType(nestedType);
+                        if (nestedTypeFileName != null)
+                        {
+                            return nestedTypeFileName;
+                        }
+                    }
+                }
+
                 return null;
             }
 
