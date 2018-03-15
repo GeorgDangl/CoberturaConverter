@@ -102,8 +102,10 @@ class Build : NukeBuild
             {
                 var projectDirectory = Path.GetDirectoryName(testProject);
                 string testFile = OutputDirectory / $"test_{testRun++}.testresults";
+                // This is so that the global dotnet is used instead of the one that comes with NUKE
+                var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
 
-                StartProcess(DotNetPath, "xunit " +
+                StartProcess(dotnetPath, "xunit " +
                                          "-nobuild " +
                                          $"-xml {testFile.DoubleQuoteIfNeeded()}",
                         workingDirectory: projectDirectory)
@@ -124,11 +126,13 @@ class Build : NukeBuild
             {
                 var testProject = testProjects[i];
                 var projectDirectory = Path.GetDirectoryName(testProject);
+                // This is so that the global dotnet is used instead of the one that comes with NUKE
+                var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
                 var snapshotIndex = i;
 
                 string xUnitOutputDirectory = OutputDirectory / $"test_{snapshotIndex:00}.testresults";
                 DotCoverCover(c => c
-                    .SetTargetExecutable(DotNetPath)
+                    .SetTargetExecutable(dotnetPath)
                     .SetTargetWorkingDirectory(projectDirectory)
                     .SetTargetArguments($"xunit -nobuild -xml {xUnitOutputDirectory.DoubleQuoteIfNeeded()}")
                     .SetFilters("+:CoberturaConverter.Core")
