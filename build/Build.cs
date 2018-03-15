@@ -11,6 +11,7 @@ using Nuke.Core;
 using System.Xml.XPath;
 using Nuke.CoberturaConverter;
 using Nuke.Common.Tools.DocFx;
+using Nuke.Common.Tools.DotCover;
 using Nuke.Core.Tooling;
 using Nuke.Core.Utilities;
 using Nuke.Core.Utilities.Collections;
@@ -28,6 +29,7 @@ using static Nuke.Common.ChangeLog.ChangelogTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
 using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 using static Nuke.Core.Tooling.ProcessTasks;
+using static Nuke.Common.Tools.DotCover.DotCoverTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
 using Nuke.Common.Tools.ReportGenerator;
 
@@ -117,49 +119,34 @@ class Build : NukeBuild
         .Executes(() =>
         {
             var testProjects = GlobFiles(SolutionDirectory / "test", "*.csproj").ToList();
-            var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
             for (var i = 0; i < testProjects.Count; i++)
             {
                 var testProject = testProjects[i];
-
                 var projectDirectory = Path.GetDirectoryName(testProject);
                 var snapshotIndex = i;
-                var toolSettings = new ToolSettings()
-                    .SetToolPath(ToolPathResolver.GetPackageExecutable("JetBrains.dotCover.CommandLineTools", "tools/dotCover.exe"))
-                    .SetArgumentConfigurator(a => a
-                        .Add("cover")
-                        .Add($"/TargetExecutable=\"{dotnetPath}\"")
-                        .Add($"/TargetWorkingDir=\"{projectDirectory}\"")
-                        .Add($"/TargetArguments=\"xunit -nobuild -xml \"\"{OutputDirectory / $"test_{snapshotIndex:00}.testresults"}\"\"\"")
-                        .Add("/Filters=\"+:CoberturaConverter.Core\"")
-                        .Add("/AttributeFilters=\"System.CodeDom.Compiler.GeneratedCodeAttribute\"")
-                        .Add($"/Output=\"{OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"}\""));
-                StartProcess(toolSettings)
-                    .AssertZeroExitCode();
+
+                string xUnitOutputDirectory = OutputDirectory / $"test_{snapshotIndex:00}.testresults";
+                DotCoverCover(c => c
+                    .SetTargetExecutable(DotNetPath)
+                    .SetTargetWorkingDirectory(projectDirectory)
+                    .SetTargetArguments($"xunit -nobuild -xml {xUnitOutputDirectory.DoubleQuoteIfNeeded()}")
+                    .SetFilters("+:CoberturaConverter.Core")
+                    .SetAttributeFilters("System.CodeDom.Compiler.GeneratedCodeAttribute")
+                    .SetOutputFile(OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"));
             }
 
             var snapshots = testProjects.Select((t, i) => OutputDirectory / $"coverage{i:00}.snapshot")
                 .Select(p => p.ToString())
                 .Aggregate((c, n) => c + ";" + n);
 
-            var mergeSettings = new ToolSettings()
-                .SetToolPath(ToolPathResolver.GetPackageExecutable("JetBrains.dotCover.CommandLineTools", "tools/dotCover.exe"))
-                .SetArgumentConfigurator(a => a
-                    .Add("merge")
-                    .Add($"/Source=\"{snapshots}\"")
-                    .Add($"/Output=\"{OutputDirectory / "coverage.snapshot"}\""));
-            StartProcess(mergeSettings)
-                .AssertZeroExitCode();
+            DotCoverMerge(c => c
+                .SetSource(snapshots)
+                .SetOutputFile(OutputDirectory / "coverage.snapshot"));
 
-            var reportSettings = new ToolSettings()
-                .SetToolPath(ToolPathResolver.GetPackageExecutable("JetBrains.dotCover.CommandLineTools", "tools/dotCover.exe"))
-                .SetArgumentConfigurator(a => a
-                    .Add("report")
-                    .Add($"/Source=\"{OutputDirectory / "coverage.snapshot"}\"")
-                    .Add($"/Output=\"{OutputDirectory / "coverage.xml"}\"")
-                    .Add("/ReportType=\"DetailedXML\""));
-            StartProcess(reportSettings)
-                .AssertZeroExitCode();
+            DotCoverReport(c => c
+                .SetSource(OutputDirectory / "coverage.snapshot")
+                .SetOutputFile(OutputDirectory / "coverage.xml")
+                .SetReportType(DotCoverReportType.DetailedXml));
 
             // This is the report that's pretty and visualized in Jenkins
             ReportGenerator(c => c
