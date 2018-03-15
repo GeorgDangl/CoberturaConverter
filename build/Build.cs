@@ -27,6 +27,7 @@ using static Nuke.WebDocu.WebDocuTasks;
 using static Nuke.Common.ChangeLog.ChangelogTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
 using static Nuke.CoberturaConverter.CoberturaConverterTasks;
+using static Nuke.Core.Tooling.ProcessTasks;
 
 class Build : NukeBuild
 {
@@ -94,15 +95,15 @@ class Build : NukeBuild
             foreach (var testProject in testProjects)
             {
                 var projectDirectory = Path.GetDirectoryName(testProject);
-                var dotnetXunitSettings = new DotNetSettings()
-                    // Need to set it here, otherwise it takes the one from NUKEs .tmp directory
-                    .SetToolPath(ToolPathResolver.GetPathExecutable("dotnet"))
-                    .SetWorkingDirectory(projectDirectory)
-                    .SetArgumentConfigurator(c => c.Add("xunit")
-                        .Add("-nobuild")
-                        .Add("-xml {value}", "\"" + OutputDirectory / $"test_{testRun++}.testresults" + "\""));
-                ProcessTasks.StartProcess(dotnetXunitSettings)
-                    .AssertZeroExitCode();
+                string testFile = OutputDirectory / $"test_{testRun++}.testresults";
+
+                StartProcess(DotNetPath, "xunit " +
+                                         "-nobuild " +
+                                         $"-xml {testFile.DoubleQuoteIfNeeded()}",
+                        workingDirectory: projectDirectory)
+                    // AssertWairForExit() instead of AssertZeroExitCode()
+                    // because we want to continue all tests even if some fail
+                    .AssertWaitForExit();
             }
 
             PrependFrameworkToTestresults();
