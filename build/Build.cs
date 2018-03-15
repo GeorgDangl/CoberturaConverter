@@ -32,7 +32,7 @@ using static Nuke.Core.Tooling.ProcessTasks;
 class Build : NukeBuild
 {
     // Console application entry. Also defines the default target.
-    public static int Main () => Execute<Build>(x => x.Compile);
+    public static int Main() => Execute<Build>(x => x.Compile);
 
     // Auto-injection fields:
 
@@ -49,32 +49,33 @@ class Build : NukeBuild
     [Parameter] string GitHubAuthenticationToken;
 
     string DocFxFile => SolutionDirectory / "docfx.json";
+
     // This is used to to infer which dotnet sdk version to use when generating DocFX metadata
     string DocFxDotNetSdkVersion = "2.1.4";
     string ChangeLogFile => RootDirectory / "CHANGELOG.md";
 
     Target Clean => _ => _
-            .Executes(() =>
-            {
-                DeleteDirectories(GlobDirectories(SourceDirectory, "**/bin", "**/obj"));
-                EnsureCleanDirectory(OutputDirectory);
-            });
+        .Executes(() =>
+        {
+            DeleteDirectories(GlobDirectories(SourceDirectory, "**/bin", "**/obj"));
+            EnsureCleanDirectory(OutputDirectory);
+        });
 
     Target Restore => _ => _
-            .DependsOn(Clean)
-            .Executes(() =>
-            {
-                DotNetRestore(s => DefaultDotNetRestore);
-            });
+        .DependsOn(Clean)
+        .Executes(() =>
+        {
+            DotNetRestore(s => DefaultDotNetRestore);
+        });
 
     Target Compile => _ => _
-            .DependsOn(Restore)
-            .Executes(() =>
-            {
-                DotNetBuild(s => DefaultDotNetBuild
+        .DependsOn(Restore)
+        .Executes(() =>
+        {
+            DotNetBuild(s => DefaultDotNetBuild
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
                 .SetAssemblyVersion(GitVersion.AssemblySemVer));
-            });
+        });
 
     Target Pack => _ => _
         .DependsOn(Compile)
@@ -131,7 +132,7 @@ class Build : NukeBuild
                         .Add("/Filters=\"+:CoberturaConverter.Core\"")
                         .Add("/AttributeFilters=\"System.CodeDom.Compiler.GeneratedCodeAttribute\"")
                         .Add($"/Output=\"{OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"}\""));
-                ProcessTasks.StartProcess(toolSettings)
+                StartProcess(toolSettings)
                     .AssertZeroExitCode();
             }
 
@@ -145,7 +146,7 @@ class Build : NukeBuild
                     .Add("merge")
                     .Add($"/Source=\"{snapshots}\"")
                     .Add($"/Output=\"{OutputDirectory / "coverage.snapshot"}\""));
-            ProcessTasks.StartProcess(mergeSettings)
+            StartProcess(mergeSettings)
                 .AssertZeroExitCode();
 
             var reportSettings = new ToolSettings()
@@ -155,7 +156,7 @@ class Build : NukeBuild
                     .Add($"/Source=\"{OutputDirectory / "coverage.snapshot"}\"")
                     .Add($"/Output=\"{OutputDirectory / "coverage.xml"}\"")
                     .Add("/ReportType=\"DetailedXML\""));
-            ProcessTasks.StartProcess(reportSettings)
+            StartProcess(reportSettings)
                 .AssertZeroExitCode();
 
             // This is the report that's pretty and visualized in Jenkins
@@ -293,12 +294,12 @@ class Build : NukeBuild
             var frameworkName = GetFrameworkNameFromFilename(testResultFile);
             var xDoc = XDocument.Load(testResultFile);
 
-            foreach (var testType in ((IEnumerable)xDoc.XPathEvaluate("//test/@type")).OfType<XAttribute>())
+            foreach (var testType in ((IEnumerable) xDoc.XPathEvaluate("//test/@type")).OfType<XAttribute>())
             {
                 testType.Value = frameworkName + "+" + testType.Value;
             }
 
-            foreach (var testName in ((IEnumerable)xDoc.XPathEvaluate("//test/@name")).OfType<XAttribute>())
+            foreach (var testName in ((IEnumerable) xDoc.XPathEvaluate("//test/@name")).OfType<XAttribute>())
             {
                 testName.Value = frameworkName + "+" + testName.Value;
             }
