@@ -28,6 +28,8 @@ using static Nuke.Common.ChangeLog.ChangelogTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
 using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 using static Nuke.Core.Tooling.ProcessTasks;
+using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
+using Nuke.Common.Tools.ReportGenerator;
 
 class Build : NukeBuild
 {
@@ -160,14 +162,9 @@ class Build : NukeBuild
                 .AssertZeroExitCode();
 
             // This is the report that's pretty and visualized in Jenkins
-            var reportGeneratorSettings = new ToolSettings()
-                .SetToolPath(ToolPathResolver.GetPackageExecutable("ReportGenerator", "tools/ReportGenerator.exe"))
-                .SetArgumentConfigurator(a => a
-                    .Add($"-reports:\"{OutputDirectory / "coverage.xml"}\"")
-                    .Add($"-targetdir:\"{OutputDirectory / "CoverageReport"}\""));
-            ProcessTasks.StartProcess(reportGeneratorSettings)
-                .AssertZeroExitCode();
-
+            ReportGenerator(c => c
+                .SetReports(OutputDirectory / "coverage.xml")
+                .SetTargetDirectory(OutputDirectory / "CoverageReport"));
 
             // This is the report in Cobertura format that integrates so nice in Jenkins
             // dashboard and allows to extract more metrics and set build health based
