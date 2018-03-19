@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
-    <PackageReference Include="xunit" Version="2.4.0-beta.1.build3955" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.1.build3955" />
-    <DotNetCliToolReference Include="dotnet-xunit" Version="2.4.0-beta.1.build3955" />
+    <PackageReference Include="xunit" Version="2.4.0-beta.1.build3945" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.1.build3945" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.4.0-beta.1.build3945" />
   </ItemGroup>
 
   <ItemGroup>
