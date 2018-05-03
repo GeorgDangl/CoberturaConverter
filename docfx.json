@@ -51,7 +51,7 @@
       ],
       "dest": "./cli",
       "properties": {
-        "TargetFramework": "netstandard2.0"
+        "TargetFramework": "netcoreapp2.0"
       }
     }
   ],
