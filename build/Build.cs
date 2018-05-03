@@ -5,10 +5,10 @@ using Nuke.Common.Tools.DotCover;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
 using Nuke.Common.Tools.ReportGenerator;
-using Nuke.Core;
-using Nuke.Core.Tooling;
-using Nuke.Core.Utilities;
-using Nuke.Core.Utilities.Collections;
+using Nuke.Common;
+using Nuke.Common.Tooling;
+using Nuke.Common.Utilities;
+using Nuke.Common.Utilities.Collections;
 using Nuke.GitHub;
 using Nuke.WebDocu;
 using System;
@@ -25,10 +25,10 @@ using static Nuke.Common.Tools.DocFx.DocFxTasks;
 using static Nuke.Common.Tools.DotCover.DotCoverTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
-using static Nuke.Core.EnvironmentInfo;
-using static Nuke.Core.IO.FileSystemTasks;
-using static Nuke.Core.IO.PathConstruction;
-using static Nuke.Core.Tooling.ProcessTasks;
+using static Nuke.Common.EnvironmentInfo;
+using static Nuke.Common.IO.FileSystemTasks;
+using static Nuke.Common.IO.PathConstruction;
+using static Nuke.Common.Tooling.ProcessTasks;
 using static Nuke.GitHub.ChangeLogExtensions;
 using static Nuke.GitHub.GitHubTasks;
 using static Nuke.WebDocu.WebDocuTasks;
@@ -269,7 +269,7 @@ class Build : NukeBuild
         .Executes(() =>
         {
             GenerateCode(
-                metadataDirectory: RootDirectory / "src" / "Nuke.CoberturaConverter",
+                specificationDirectory: RootDirectory / "src" / "Nuke.CoberturaConverter",
                 generationBaseDirectory: RootDirectory / "src" / "Nuke.CoberturaConverter",
                 baseNamespace: "Nuke.CoberturaConverter"
             );
