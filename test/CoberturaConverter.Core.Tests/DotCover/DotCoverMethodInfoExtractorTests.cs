@@ -18,6 +18,8 @@ namespace CoberturaConverter.Core.Tests.DotCover
         [InlineData("get_ErrorMessage()", "get_ErrorMessage", "()")]
         [InlineData("get_ErrorMessage", "get_ErrorMessage", "")]
         [InlineData("Calculate(System.String):Dangl.Calculator.CalculationResult", "Calculate", "(System.String)")]
+        [InlineData("Attribute<MyCompany::Simplifiable>():Simplifiable", "Attribute<MyCompany::Simplifiable>", "()")]
+        [InlineData("MethodName(Foo::Bar):void", "MethodName", "(Foo::Bar)")]
         public void ExtractSignatures(string dotCoverMethodName, string expectedName, string expectedSignature)
         {
             var actual = DotCoverMethodInfoExtractor.GetMethodInfoFromDotCoverMethod(dotCoverMethodName);
