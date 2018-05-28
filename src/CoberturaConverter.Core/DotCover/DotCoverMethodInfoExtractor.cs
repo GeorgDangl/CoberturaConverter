@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace CoberturaConverter.Core.DotCover
 {
@@ -12,13 +13,17 @@ namespace CoberturaConverter.Core.DotCover
                 throw new ArgumentNullException(nameof(dotCoverMethodName));
             }
 
-            var methodDefinition = dotCoverMethodName
-                .Split(':')
+            // The regex should only match on single but not on double colons, eg it should match:
+            // MethodName():void -> "MethodName()" and "void"
+            // but not for double colons:
+            // MethodName(Foo::Bar):void -> "MethodName(Foo::Bar)" and "void"
+            var methodDefinition = Regex.Split(dotCoverMethodName, "(?<!:):(?!:)")
                 .First();
+
             var delimiterIndex = methodDefinition.IndexOf('(');
             if (delimiterIndex < 0)
             {
-                // The delimiter index should indate at which position
+                // The delimiter index should indicate at which position
                 // the opening bracket of the method starts, so that the
                 // method info can be split into name an signature, e.g.:
                 // name: 'GetMethodInfoFromDotCoverMethod'
