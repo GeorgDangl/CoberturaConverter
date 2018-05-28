@@ -15,6 +15,8 @@ namespace CoberturaConverter.Core.Tests.DotCover
         [Theory]
         [InlineData(".ctor():System.Void", ".ctor", "()")]
         [InlineData("get_ErrorMessage():System.String", "get_ErrorMessage", "()")]
+        [InlineData("get_ErrorMessage()", "get_ErrorMessage", "()")]
+        [InlineData("get_ErrorMessage", "get_ErrorMessage", "")]
         [InlineData("Calculate(System.String):Dangl.Calculator.CalculationResult", "Calculate", "(System.String)")]
         public void ExtractSignatures(string dotCoverMethodName, string expectedName, string expectedSignature)
         {

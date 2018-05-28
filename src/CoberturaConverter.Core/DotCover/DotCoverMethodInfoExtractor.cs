@@ -16,6 +16,15 @@ namespace CoberturaConverter.Core.DotCover
                 .Split(':')
                 .First();
             var delimiterIndex = methodDefinition.IndexOf('(');
+            if (delimiterIndex < 0)
+            {
+                // The delimiter index should indate at which position
+                // the opening bracket of the method starts, so that the
+                // method info can be split into name an signature, e.g.:
+                // name: 'GetMethodInfoFromDotCoverMethod'
+                // signature: '(string dotCoverMethodName)'
+                delimiterIndex = methodDefinition.Length;
+            }
             var name = methodDefinition.Substring(0, delimiterIndex);
             var signature = methodDefinition.Substring(delimiterIndex);
             return (name, signature);
