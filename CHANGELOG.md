@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v1.1.2:
+- Bugfix: dotCover failed when method did contain double colons `::` (see #1)
+
 ## v1.1.1:
 - Bugfix: dotCover failed when method name did not contain any parentheses `(` (see #1)
 
