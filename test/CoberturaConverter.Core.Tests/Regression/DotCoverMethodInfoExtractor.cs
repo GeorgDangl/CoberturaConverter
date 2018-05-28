@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Linq;
 using CoberturaConverter.Core.DotCover;
 using Xunit;
 
@@ -17,6 +15,10 @@ namespace CoberturaConverter.Core.Tests.Regression
                 var dotCoverReport = parser.ParseDotCoverReport();
                 Assert.NotNull(dotCoverReport);
                 Assert.NotEmpty(dotCoverReport.Assemblies);
+                Assert.NotEmpty(dotCoverReport.Assemblies
+                    .SelectMany(a => a.Namespaces)
+                .SelectMany(n => n.Types)
+                .SelectMany(t => t.Methods));
             }
         }
     }
