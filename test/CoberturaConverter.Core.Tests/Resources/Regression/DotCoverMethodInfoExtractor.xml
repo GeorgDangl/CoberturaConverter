@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="406" TotalStatements="406" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2018.1">
+  <FileIndices>
+    <File Index="1" Name="D:\Visual Studio Projects\Dangl.Calculator\src\Dangl.Calculator\CalculationResult.cs" ChecksumAlgorithm="SHA1" Checksum="F8568B03844EC970CC24E38D9AF4C0C46DE08144" />
+  </FileIndices>
+  <Assembly Name="Regression" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+    <Namespace Name="Regression" CoveredStatements="203" TotalStatements="203" CoveragePercent="100">
+      <Type Name="StringConvert" CoveredStatements="0" TotalStatements="13" CoveragePercent="0">
+        <Constructor Name="StringConvert()" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        <Method Name="ManagedToUnmanaged(basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;*,string):basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;*" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+        <Method Name="UnmanagedToManaged(basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;*):string" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+      </Type>
+      <Type Name="TransverseMercator" CoveredStatements="0" TotalStatements="49" CoveragePercent="0">
+        <Constructor Name="TransverseMercator()" CoveredStatements="0" TotalStatements="8" CoveragePercent="0" />
+        <Constructor Name="TransverseMercator(double,double,double)" CoveredStatements="0" TotalStatements="12" CoveragePercent="0" />
+        <Property Name="CentralScale:double" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="Flattening:double" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Property Name="MajorRadius:double" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </Property>
+        <Method Name="!TransverseMercator():void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <Method Name="~TransverseMercator():void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        <Method Name="Dispose(bool):void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        <Method Name="Forward(double,double,double,out double,out double):void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <Method Name="Forward(double,double,double,out double,out double,out double,out double):void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+        <Method Name="Reverse(double,double,double,out double,out double):void" CoveredStatements="0" TotalStatements="4" CoveragePercent="0" />
+        <Method Name="Reverse(double,double,double,out double,out double,out double,out double):void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0" />
+      </Type>
+      <Type Name="DistanceBearingElevation" CoveredStatements="0" TotalStatements="11" CoveragePercent="0">
+        <Constructor Name="DistanceBearingElevation(double,double,double)" CoveredStatements="0" TotalStatements="5" CoveragePercent="0" />
+        <AutoProperty Name="Bearing:double" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <AutoProperty Name="Distance:double" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+        <AutoProperty Name="Elevation:double" CoveredStatements="0" TotalStatements="2" CoveragePercent="0">
+          <PropertyGetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+          <PropertySetter CoveredStatements="0" TotalStatements="1" CoveragePercent="0" />
+        </AutoProperty>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
