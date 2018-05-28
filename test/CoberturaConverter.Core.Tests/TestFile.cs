@@ -11,6 +11,7 @@
         LightQueryCobertura,
         LightQueryDotCover,
         LightQueryOpenCover,
-        NestedClassesDotCover
+        NestedClassesDotCover,
+        RegressionDotCoverMethodInfoExtractor
     }
 }

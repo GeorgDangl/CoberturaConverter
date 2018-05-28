@@ -43,6 +43,10 @@ namespace CoberturaConverter.Core.Tests
                     fileName = "NestedClasses.DotCover.xml";
                     break;
 
+                case TestFile.RegressionDotCoverMethodInfoExtractor:
+                    fileName = "Regression.DotCoverMethodInfoExtractor.xml";
+                    break;
+
                 default:
                     throw new NotImplementedException();
             }
