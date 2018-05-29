@@ -28,7 +28,7 @@ namespace CoberturaConverter.Core.DotCover
 
             _coberturaReport.Complexity = 0;
 
-            _coberturaReport.LinesValid = _report.CoveredStatements;
+            _coberturaReport.LinesValid = _report.TotalStatements;
             _coberturaReport.LineRate = _report.CoveragePercent * 0.01m;
             _coberturaReport.LinesCovered = _report.CoveredStatements;
 

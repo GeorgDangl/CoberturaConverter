@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v1.1.3:
+- Bugfix: dotCover to Cobertura reported covered statements for total statements (see #2)
+
 ## v1.1.2:
 - Bugfix: dotCover failed when method did contain double colons `::` (see #1)
 
