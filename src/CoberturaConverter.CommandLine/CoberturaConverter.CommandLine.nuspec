@@ -11,7 +11,7 @@
     <copyright>$copyright$</copyright>
   </metadata>
   <files>
-    <file src="$publishdir$\net471\**\*" target="tools/net471/" />
+    <file src="$publishdir$\net461\**\*" target="tools/net461/" />
     <file src="$publishdir$\netcoreapp2.0\**\*" target="tools/netcoreapp2.0/" />
   </files>
 </package>

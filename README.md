@@ -32,7 +32,7 @@ All builds are available on MyGet:
 ## CLI Usage
 
 You can use the converter from the command line, it is available in the `CoberturaConverter.CommandLine`
-NuGet package under `/tools` both for **net471** and **netcoreapp2.0**.
+NuGet package under `/tools` both for **net461** and **netcoreapp2.0**.
 
     CoberturaConverter.CommandLine.exe -i <InputFile> -o <OutputFile> -s <DotCover | OpenCover>
 
