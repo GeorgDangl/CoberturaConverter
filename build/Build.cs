@@ -141,6 +141,8 @@ class Build : NukeBuild
                     .SetOutputFile(OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"));
             }
 
+            PrependFrameworkToTestresults();
+
             var snapshots = testProjects.Select((t, i) => OutputDirectory / $"coverage{i:00}.snapshot")
                 .Select(p => p.ToString())
                 .Aggregate((c, n) => c + ";" + n);
