@@ -16,6 +16,12 @@ line tool via `CoberturaConverter.CommandLine`.
 This project is based on [Daniel Palmes OpenCoverToCobertura Converter](https://github.com/danielpalme/OpenCoverToCoberturaConverter),
 which is licensed under the [Apache License](./src/CoberturaConverter.Core/OpenCoverToCoberturaConverterLicense.md).
 
+## dotCover Report Types
+
+Because the `filename` attribute is mandatory in the Cobertura format, dotCover reports should always be generated with the
+`DetailedXml` setting instead of the regular `Xml` to output filenames. Otherwise, all classes in the dotCover report that do
+not have a source file specified are ignored.
+
 ## Referencing
 
 If this is used in full .Net framework 4.6.1 and earlier, please add a reference to
