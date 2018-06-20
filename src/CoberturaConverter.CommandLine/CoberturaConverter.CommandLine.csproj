@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <!--
       See https://www.natemcmaster.com/blog/2017/11/11/build-tools-in-nuget/
@@ -7,7 +7,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp2.0;net471</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
     <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Copyright>(c) $([System.DateTime]::Now.Year) Georg Dangl</Copyright>

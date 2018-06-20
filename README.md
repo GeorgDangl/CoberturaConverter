@@ -1,6 +1,6 @@
 # CoberturaConverter
 
-[![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=CoberturaConverter.Tests)](https://jenkins.dangl.me/job/CoberturaConverter.Tests/)  
+[![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=CoberturaConverter/develop)](https://jenkins.dangl.me/job/CoberturaConverter/job/develop/)  
 [![Built with Nuke](http://nuke.build/rounded)](https://www.nuke.build)  
 [![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)](https://www.nuget.org/packages/CoberturaConverter.Core)
 [![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)](https://www.myget.org/feed/dangl/package/nuget/CoberturaConverter.Core)
@@ -15,6 +15,12 @@ line tool via `CoberturaConverter.CommandLine`.
 
 This project is based on [Daniel Palmes OpenCoverToCobertura Converter](https://github.com/danielpalme/OpenCoverToCoberturaConverter),
 which is licensed under the [Apache License](./src/CoberturaConverter.Core/OpenCoverToCoberturaConverterLicense.md).
+
+## dotCover Report Types
+
+Because the `filename` attribute is mandatory in the Cobertura format, dotCover reports should always be generated with the
+`DetailedXml` setting instead of the regular `Xml` to output filenames. Otherwise, all classes in the dotCover report that do
+not have a source file specified are ignored.
 
 ## Referencing
 
@@ -32,7 +38,7 @@ All builds are available on MyGet:
 ## CLI Usage
 
 You can use the converter from the command line, it is available in the `CoberturaConverter.CommandLine`
-NuGet package under `/tools` both for **net471** and **netcoreapp2.0**.
+NuGet package under `/tools` both for **net461** and **netcoreapp2.0**.
 
     CoberturaConverter.CommandLine.exe -i <InputFile> -o <OutputFile> -s <DotCover | OpenCover>
 

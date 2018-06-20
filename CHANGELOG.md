@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v1.1.4:
+- Downgrade CLI tool from `net471` to `net461` for broaded compatibility (see #3)
+
 ## v1.1.3:
 - Bugfix: dotCover to Cobertura reported covered statements for total statements (see #2)
 

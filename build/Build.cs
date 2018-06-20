@@ -48,6 +48,7 @@ class Build : NukeBuild
 
     [Parameter] string MyGetSource;
     [Parameter] string MyGetApiKey;
+    [Parameter] string NuGetApiKey;
     [Parameter] string DocuApiKey;
     [Parameter] string DocuApiEndpoint;
     [Parameter] string GitHubAuthenticationToken;
@@ -101,7 +102,7 @@ class Build : NukeBuild
             foreach (var testProject in testProjects)
             {
                 var projectDirectory = Path.GetDirectoryName(testProject);
-                string testFile = OutputDirectory / $"test_{testRun++}.testresults";
+                string testFile = OutputDirectory / $"test_{testRun++}.testresults.xml";
                 // This is so that the global dotnet is used instead of the one that comes with NUKE
                 var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
 
@@ -130,7 +131,7 @@ class Build : NukeBuild
                 var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
                 var snapshotIndex = i;
 
-                string xUnitOutputDirectory = OutputDirectory / $"test_{snapshotIndex:00}.testresults";
+                string xUnitOutputDirectory = OutputDirectory / $"test_{snapshotIndex:00}.testresults.xml";
                 DotCoverCover(c => c
                     .SetTargetExecutable(dotnetPath)
                     .SetTargetWorkingDirectory(projectDirectory)
@@ -139,6 +140,8 @@ class Build : NukeBuild
                     .SetAttributeFilters("System.CodeDom.Compiler.GeneratedCodeAttribute")
                     .SetOutputFile(OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"));
             }
+
+            PrependFrameworkToTestresults();
 
             var snapshots = testProjects.Select((t, i) => OutputDirectory / $"coverage{i:00}.snapshot")
                 .Select(p => p.ToString())
@@ -173,6 +176,7 @@ class Build : NukeBuild
         .DependsOn(Pack)
         .Requires(() => MyGetSource)
         .Requires(() => MyGetApiKey)
+        .Requires(() => NuGetApiKey)
         .Requires(() => Configuration.EqualsOrdinalIgnoreCase("Release"))
         .Executes(() =>
         {
@@ -184,6 +188,15 @@ class Build : NukeBuild
                         .SetTargetPath(x)
                         .SetSource(MyGetSource)
                         .SetApiKey(MyGetApiKey));
+
+                    if (GitVersion.BranchName.Equals("master") || GitVersion.BranchName.Equals("origin/master"))
+                    {
+                        // Stable releases are published to NuGet
+                        DotNetNuGetPush(s => s
+                            .SetTargetPath(x)
+                            .SetSource("https://api.nuget.org/v3/index.json")
+                            .SetApiKey(NuGetApiKey));
+                    }
                 });
         });
 
@@ -277,7 +290,7 @@ class Build : NukeBuild
 
     void PrependFrameworkToTestresults()
     {
-        var testResults = GlobFiles(OutputDirectory, "*.testresults");
+        var testResults = GlobFiles(OutputDirectory, "*.testresults*.xml");
         foreach (var testResultFile in testResults)
         {
             var frameworkName = GetFrameworkNameFromFilename(testResultFile);
@@ -300,7 +313,7 @@ class Build : NukeBuild
     string GetFrameworkNameFromFilename(string filename)
     {
         var name = Path.GetFileName(filename);
-        name = name.Substring(0, name.Length - ".testresults".Length);
+        name = name.Substring(0, name.Length - ".xml".Length);
         var startIndex = name.LastIndexOf('-');
         name = name.Substring(startIndex + 1);
         return name;
