@@ -23,6 +23,7 @@
     <PackageReference Include="docfx.console" Version="2.37.2">
       <ExcludeAssets>build</ExcludeAssets>
     </PackageReference>
+    <PackageReference Include="Nuke.Azure.KeyVault" Version="0.2.0" />
   </ItemGroup>
 
   <ItemGroup>
