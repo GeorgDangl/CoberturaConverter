@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v1.2.0:
+- Update NUKE to 0.6.0
+
 ## v1.1.4:
 - Downgrade CLI tool from `net471` to `net461` for broaded compatibility (see #3)
 
