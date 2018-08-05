@@ -32,26 +32,29 @@ using static Nuke.Common.Tooling.ProcessTasks;
 using static Nuke.GitHub.ChangeLogExtensions;
 using static Nuke.GitHub.GitHubTasks;
 using static Nuke.WebDocu.WebDocuTasks;
+using Nuke.Azure.KeyVault;
 
+[KeyVaultSettings(
+    VaultBaseUrlParameterName = nameof(KeyVaultBaseUrl),
+    ClientIdParameterName = nameof(KeyVaultClientId),
+    ClientSecretParameterName = nameof(KeyVaultClientSecret))]
 class Build : NukeBuild
 {
     // Console application entry. Also defines the default target.
     public static int Main() => Execute<Build>(x => x.Compile);
 
-    // Auto-injection fields:
-
+    [Parameter] string KeyVaultBaseUrl;
+    [Parameter] string KeyVaultClientId;
+    [Parameter] string KeyVaultClientSecret;
     [GitVersion] readonly GitVersion GitVersion;
-    // Semantic versioning. Must have 'GitVersion.CommandLine' referenced.
-
     [GitRepository] readonly GitRepository GitRepository;
-    // Parses origin, branch name and head from git config.
 
-    [Parameter] string MyGetSource;
-    [Parameter] string MyGetApiKey;
-    [Parameter] string NuGetApiKey;
-    [Parameter] string DocuApiKey;
-    [Parameter] string DocuApiEndpoint;
-    [Parameter] string GitHubAuthenticationToken;
+    [KeyVaultSecret] string DocuApiEndpoint;
+    [KeyVaultSecret] string GitHubAuthenticationToken;
+    [KeyVaultSecret] string PublicMyGetSource;
+    [KeyVaultSecret] string PublicMyGetApiKey;
+    [KeyVaultSecret("CoberturaConverter-DocuApiKey")] string DocuApiKey;
+    [KeyVaultSecret] string NuGetApiKey;
 
     string DocFxFile => SolutionDirectory / "docfx.json";
 
@@ -174,8 +177,8 @@ class Build : NukeBuild
 
     Target Push => _ => _
         .DependsOn(Pack)
-        .Requires(() => MyGetSource)
-        .Requires(() => MyGetApiKey)
+        .Requires(() => PublicMyGetSource)
+        .Requires(() => PublicMyGetApiKey)
         .Requires(() => NuGetApiKey)
         .Requires(() => Configuration.EqualsOrdinalIgnoreCase("Release"))
         .Executes(() =>
@@ -186,8 +189,8 @@ class Build : NukeBuild
                 {
                     DotNetNuGetPush(s => s
                         .SetTargetPath(x)
-                        .SetSource(MyGetSource)
-                        .SetApiKey(MyGetApiKey));
+                        .SetSource(PublicMyGetSource)
+                        .SetApiKey(PublicMyGetApiKey));
 
                     if (GitVersion.BranchName.Equals("master") || GitVersion.BranchName.Equals("origin/master"))
                     {

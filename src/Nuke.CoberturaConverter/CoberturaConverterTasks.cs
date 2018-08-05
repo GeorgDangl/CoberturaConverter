@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using Nuke.Core.Tooling;
+using Nuke.Common.Tooling;
 using static CoberturaConverter.Core.CoberturaConverter;
 
 namespace Nuke.CoberturaConverter

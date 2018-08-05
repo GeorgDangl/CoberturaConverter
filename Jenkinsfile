@@ -6,12 +6,9 @@ pipeline {
 		}
 	}
     environment {
-        MyGetSource = credentials('MyGetPushSource')
-        MyGetApiKey = credentials('MyGetApiKey')
-        NuGetApiKey = credentials('NuGetApiKey')
-        DocuApiKey = credentials('CoberturaConverter.Docu_ApiKey')
-        DocuApiEndpoint = credentials('docu_api_upload_endpoint')
-        GitHubAuthenticationToken = credentials('GitHubAuthenticationToken')
+        KeyVaultBaseUrl = credentials('AzureCiKeyVaultBaseUrl')
+        KeyVaultClientId = credentials('AzureCiKeyVaultClientId')
+        KeyVaultClientSecret = credentials('AzureCiKeyVaultClientSecret')
     }
     stages {
         stage ('Test') {
