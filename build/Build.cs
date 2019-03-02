@@ -1,6 +1,5 @@
 ﻿using Nuke.CoberturaConverter;
 using Nuke.Common.Git;
-using Nuke.Common.Tools.DocFx;
 using Nuke.Common.Tools.DotCover;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
@@ -21,7 +20,8 @@ using System.Xml.XPath;
 using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
 using static Nuke.Common.ChangeLog.ChangelogTasks;
-using static Nuke.Common.Tools.DocFx.DocFxTasks;
+using static Nuke.DocFX.DocFXTasks;
+using Nuke.DocFX;
 using static Nuke.Common.Tools.DotCover.DotCoverTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
@@ -34,14 +34,18 @@ using static Nuke.GitHub.GitHubTasks;
 using static Nuke.WebDocu.WebDocuTasks;
 using Nuke.Azure.KeyVault;
 
-[KeyVaultSettings(
-    VaultBaseUrlParameterName = nameof(KeyVaultBaseUrl),
-    ClientIdParameterName = nameof(KeyVaultClientId),
-    ClientSecretParameterName = nameof(KeyVaultClientSecret))]
 class Build : NukeBuild
 {
     // Console application entry. Also defines the default target.
     public static int Main() => Execute<Build>(x => x.Compile);
+
+    [KeyVaultSettings(
+        BaseUrlParameterName = nameof(KeyVaultBaseUrl),
+        ClientIdParameterName = nameof(KeyVaultClientId),
+        ClientSecretParameterName = nameof(KeyVaultClientSecret))]
+    readonly KeyVaultSettings KeyVaultSettings;
+
+    [Parameter] readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
 
     [Parameter] string KeyVaultBaseUrl;
     [Parameter] string KeyVaultClientId;
@@ -49,24 +53,25 @@ class Build : NukeBuild
     [GitVersion] readonly GitVersion GitVersion;
     [GitRepository] readonly GitRepository GitRepository;
 
-    [KeyVaultSecret] string DocuApiEndpoint;
+    [KeyVaultSecret] string DocuBaseUrl;
     [KeyVaultSecret] string GitHubAuthenticationToken;
     [KeyVaultSecret] string PublicMyGetSource;
     [KeyVaultSecret] string PublicMyGetApiKey;
     [KeyVaultSecret("CoberturaConverter-DocuApiKey")] string DocuApiKey;
     [KeyVaultSecret] string NuGetApiKey;
 
-    string DocFxFile => SolutionDirectory / "docfx.json";
+    string DocFxFile => RootDirectory / "docfx.json";
 
-    // This is used to to infer which dotnet sdk version to use when generating DocFX metadata
-    string DocFxDotNetSdkVersion = "2.1.4";
     string ChangeLogFile => RootDirectory / "CHANGELOG.md";
+    AbsolutePath OutputDirectory => RootDirectory / "output";
+    AbsolutePath SourceDirectory => RootDirectory / "src";
+    AbsolutePath TestsDirectory => RootDirectory / "test";
 
     Target Clean => _ => _
         .Executes(() =>
         {
-            DeleteDirectories(GlobDirectories(SourceDirectory, "**/bin", "**/obj"));
-            DeleteDirectories(GlobDirectories(RootDirectory / "test", "**/bin", "**/obj"));
+            SourceDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
+            TestsDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
             EnsureCleanDirectory(OutputDirectory);
         });
 
@@ -74,16 +79,19 @@ class Build : NukeBuild
         .DependsOn(Clean)
         .Executes(() =>
         {
-            DotNetRestore(s => DefaultDotNetRestore);
+            DotNetRestore();
         });
 
     Target Compile => _ => _
         .DependsOn(Restore)
         .Executes(() =>
         {
-            DotNetBuild(s => DefaultDotNetBuild
+            DotNetBuild(x => x
+                .SetConfiguration(Configuration)
+                .EnableNoRestore()
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
-                .SetAssemblyVersion(GitVersion.AssemblySemVer));
+                .SetAssemblyVersion(GitVersion.AssemblySemVer)
+                .SetInformationalVersion(GitVersion.InformationalVersion));
         });
 
     Target Pack => _ => _
@@ -92,30 +100,35 @@ class Build : NukeBuild
         {
             var changeLog = GetCompleteChangeLog(ChangeLogFile)
                 .EscapeStringPropertyForMsBuild();
-            DotNetPack(s => DefaultDotNetPack
-                .SetPackageReleaseNotes(changeLog));
+
+            DotNetPack(x => x
+                .SetConfiguration(Configuration)
+                .SetPackageReleaseNotes(changeLog)
+                .EnableNoBuild()
+                .SetOutputDirectory(OutputDirectory)
+                .SetVersion(GitVersion.NuGetVersion));
         });
 
     Target Test => _ => _
         .DependsOn(Compile)
         .Executes(() =>
         {
-            var testProjects = GlobFiles(SolutionDirectory / "test", "*.csproj");
+            var testProjects = GlobFiles(RootDirectory / "test", "*.csproj");
             var testRun = 1;
             foreach (var testProject in testProjects)
             {
                 var projectDirectory = Path.GetDirectoryName(testProject);
-                string testFile = OutputDirectory / $"test_{testRun++}.testresults.xml";
-                // This is so that the global dotnet is used instead of the one that comes with NUKE
-                var dotnetPath = ToolPathResolver.GetPathExecutable("dotnet");
 
-                StartProcess(dotnetPath, "xunit " +
-                                         "-nobuild " +
-                                         $"-xml {testFile.DoubleQuoteIfNeeded()}",
-                        workingDirectory: projectDirectory)
-                    // AssertWairForExit() instead of AssertZeroExitCode()
-                    // because we want to continue all tests even if some fail
-                    .AssertWaitForExit();
+
+                DotNetTest(x => x
+                .SetNoBuild(true)
+                .SetProjectFile(testProject)
+                .SetTestAdapterPath(".")
+                .SetLogger($"xunit;LogFilePath={OutputDirectory / $"test_{testRun++}.testresults.xml"}"));
+
+
+                // TODO TEST FRAMEWORK
+                throw new NotImplementedException();
             }
 
             PrependFrameworkToTestresults();
@@ -125,7 +138,7 @@ class Build : NukeBuild
         .DependsOn(Compile)
         .Executes(() =>
         {
-            var testProjects = GlobFiles(SolutionDirectory / "test", "*.csproj").ToList();
+            var testProjects = GlobFiles(RootDirectory / "test", "*.csproj").ToList();
             for (var i = 0; i < testProjects.Count; i++)
             {
                 var testProject = testProjects[i];
@@ -180,7 +193,7 @@ class Build : NukeBuild
         .Requires(() => PublicMyGetSource)
         .Requires(() => PublicMyGetApiKey)
         .Requires(() => NuGetApiKey)
-        .Requires(() => Configuration.EqualsOrdinalIgnoreCase("Release"))
+        .Requires(() => Configuration == Configuration.Release)
         .Executes(() =>
         {
             GlobFiles(OutputDirectory, "*.nupkg").NotEmpty()
@@ -207,12 +220,7 @@ class Build : NukeBuild
         .DependsOn(Restore)
         .Executes(() =>
         {
-            // So it uses a fixed, known version of MsBuild to generate the metadata. Otherwise,
-            // updates of dotnet or Visual Studio could introduce incompatibilities and generation failures
-            var dotnetPath = Path.GetDirectoryName(ToolPathResolver.GetPathExecutable("dotnet.exe"));
-            var msBuildPath = Path.Combine(dotnetPath, "sdk", DocFxDotNetSdkVersion, "MSBuild.dll");
-            SetVariable("MSBUILD_EXE_PATH", msBuildPath);
-            DocFxMetadata(DocFxFile, s => s.SetLogLevel(DocFxLogLevel.Warning));
+            DocFXMetadata(x => x.AddProjects(DocFxFile));
         });
 
     Target BuildDocumentation => _ => _
@@ -221,33 +229,31 @@ class Build : NukeBuild
         .Executes(() =>
         {
             // Using README.md as index.md
-            if (File.Exists(SolutionDirectory / "index.md"))
+            if (File.Exists(RootDirectory / "index.md"))
             {
-                File.Delete(SolutionDirectory / "index.md");
+                File.Delete(RootDirectory / "index.md");
             }
 
-            File.Copy(SolutionDirectory / "README.md", SolutionDirectory / "index.md");
+            File.Copy(RootDirectory / "README.md", RootDirectory / "index.md");
 
-            DocFxBuild(DocFxFile, s => s
-                .ClearXRefMaps()
-                .SetLogLevel(DocFxLogLevel.Warning));
+            DocFXBuild(x => x.SetConfigFile(DocFxFile));
 
-            File.Delete(SolutionDirectory / "index.md");
-            Directory.Delete(SolutionDirectory / "core", true);
-            Directory.Delete(SolutionDirectory / "cli", true);
-            Directory.Delete(SolutionDirectory / "nuke", true);
-            Directory.Delete(SolutionDirectory / "obj", true);
+            File.Delete(RootDirectory / "index.md");
+            Directory.Delete(RootDirectory / "core", true);
+            Directory.Delete(RootDirectory / "cli", true);
+            Directory.Delete(RootDirectory / "nuke", true);
+            Directory.Delete(RootDirectory / "obj", true);
         });
 
     Target UploadDocumentation => _ => _
         .DependsOn(Push) // To have a relation between pushed package version and published docs version
         .DependsOn(BuildDocumentation)
         .Requires(() => DocuApiKey)
-        .Requires(() => DocuApiEndpoint)
+        .Requires(() => DocuBaseUrl)
         .Executes(() =>
         {
             WebDocu(s => s
-                .SetDocuApiEndpoint(DocuApiEndpoint)
+                .SetDocuBaseUrl(DocuBaseUrl)
                 .SetDocuApiKey(DocuApiKey)
                 .SetSourceDirectory(OutputDirectory)
                 .SetVersion(GitVersion.NuGetVersion)
@@ -257,7 +263,7 @@ class Build : NukeBuild
     Target PublishGitHubRelease => _ => _
         .DependsOn(Pack)
         .Requires(() => GitHubAuthenticationToken)
-        .OnlyWhen(() => GitVersion.BranchName.Equals("master") || GitVersion.BranchName.Equals("origin/master"))
+        .OnlyWhenDynamic(() => GitVersion.BranchName.Equals("master") || GitVersion.BranchName.Equals("origin/master"))
         .Executes<Task>(async () =>
         {
             var releaseTag = $"v{GitVersion.MajorMinorPatch}";
@@ -270,7 +276,7 @@ class Build : NukeBuild
             var repositoryInfo = GetGitHubRepositoryInfo(GitRepository);
             var nuGetPackages = GlobFiles(OutputDirectory, "*.nupkg").NotEmpty().ToArray();
 
-            await PublishRelease(new GitHubReleaseSettings()
+            await PublishRelease(x => x
                 .SetArtifactPaths(nuGetPackages)
                 .SetCommitSha(GitVersion.Sha)
                 .SetReleaseNotes(completeChangeLog)
@@ -286,8 +292,8 @@ class Build : NukeBuild
         {
             GenerateCode(
                 specificationDirectory: RootDirectory / "src" / "Nuke.CoberturaConverter",
-                generationBaseDirectory: RootDirectory / "src" / "Nuke.CoberturaConverter",
-                baseNamespace: "Nuke.CoberturaConverter"
+                namespaceProvider: x => "Nuke.CoberturaConverter",
+                outputFileProvider: x => RootDirectory / "src" / "Nuke.CoberturaConverter" / "CoberturaConverterTasks.Generated.cs"
             );
         });
 
