@@ -17,8 +17,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Nuke.Common" Version="0.19.0" />
-    <PackageReference Include="Nuke.CodeGeneration" Version="0.19.0" />
+    <PackageReference Include="Nuke.Common" Version="0.19.1" />
+    <PackageReference Include="Nuke.CodeGeneration" Version="0.19.1" />
     <PackageReference Include="Nuke.WebDocu" Version="1.4.0" />
     <PackageReference Include="Nuke.GitHub" Version="1.5.0" />
     <PackageReference Include="JetBrains.dotCover.CommandLineTools" Version="2019.1.1">

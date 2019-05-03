@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2019.1.1" />
-    <PackageReference Include="Nuke.Common" Version="0.19.0" />
+    <PackageReference Include="Nuke.Common" Version="0.19.1" />
   </ItemGroup>
 
 </Project>
