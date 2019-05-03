@@ -113,7 +113,7 @@ class Build : NukeBuild
         .DependsOn(Compile)
         .Executes(() =>
         {
-            var testProjects = GlobFiles(RootDirectory / "test", "*.csproj");
+            var testProjects = GlobFiles(RootDirectory / "test", "**/*.csproj");
             var testRun = 1;
             foreach (var testProject in testProjects)
             {
@@ -125,20 +125,14 @@ class Build : NukeBuild
                 .SetProjectFile(testProject)
                 .SetTestAdapterPath(".")
                 .SetLogger($"xunit;LogFilePath={OutputDirectory / $"test_{testRun++}.testresults.xml"}"));
-
-
-                // TODO TEST FRAMEWORK
-                throw new NotImplementedException();
             }
-
-            PrependFrameworkToTestresults();
         });
 
     Target Coverage => _ => _
         .DependsOn(Compile)
         .Executes(() =>
         {
-            var testProjects = GlobFiles(RootDirectory / "test", "*.csproj").ToList();
+            var testProjects = GlobFiles(RootDirectory / "test", "**/*.csproj").ToList();
             for (var i = 0; i < testProjects.Count; i++)
             {
                 var testProject = testProjects[i];
@@ -151,13 +145,11 @@ class Build : NukeBuild
                 DotCoverCover(c => c
                     .SetTargetExecutable(dotnetPath)
                     .SetTargetWorkingDirectory(projectDirectory)
-                    .SetTargetArguments($"xunit -nobuild -xml {xUnitOutputDirectory.DoubleQuoteIfNeeded()}")
+                    .SetTargetArguments($"test --no-build --test-adapter-path:. \"--logger:xunit;LogFilePath={xUnitOutputDirectory}\"")
                     .SetFilters("+:CoberturaConverter.Core")
                     .SetAttributeFilters("System.CodeDom.Compiler.GeneratedCodeAttribute")
                     .SetOutputFile(OutputDirectory / $"coverage{snapshotIndex:00}.snapshot"));
             }
-
-            PrependFrameworkToTestresults();
 
             var snapshots = testProjects.Select((t, i) => OutputDirectory / $"coverage{i:00}.snapshot")
                 .Select(p => p.ToString())
