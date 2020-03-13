@@ -50,6 +50,14 @@ namespace CoberturaConverter.Core.Tests.DotCover
             },
             new object[]
             {
+                string.Empty, new[]
+                {
+                    "C:\\Build\\StringEncryptionExtensions.cs",
+                    "C:\\XUnit\\XUnit.cs"
+                }
+            },
+            new object[]
+            {
                 string.Empty, new string[0]
             }
         };
