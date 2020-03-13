@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v1.3.1:
+- Fixed a bug that caused an exception when converting from dotCover format and the base path was a drive root. Thanks to GitHub user @sjmelia!
+
 ## v1.3.0:
 - Update NUKE to 0.19.1
 
