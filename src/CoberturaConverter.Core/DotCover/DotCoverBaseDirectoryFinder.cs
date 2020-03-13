@@ -44,6 +44,11 @@ namespace CoberturaConverter.Core.DotCover
 
             commonStart = Path.GetDirectoryName(commonStart);
 
+            if (string.IsNullOrWhiteSpace(commonStart))
+            {
+                return string.Empty;
+            }
+
             return commonStart
                 .TrimEnd('/')
                 .TrimEnd('\\');
