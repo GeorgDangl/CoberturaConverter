@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net471</TargetFrameworks>
-    <!-- Required, otherwise multiple 2.0.x frameworks lead to xUnit not discovering the framework to run in -->
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">2.0.5</RuntimeFrameworkVersion>
+    <TargetFrameworks>netcoreapp3.1;net471</TargetFrameworks>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
