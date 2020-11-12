@@ -12,6 +12,6 @@
   </metadata>
   <files>
     <file src="$publishdir$\net461\**\*" target="tools/net461/" />
-    <file src="$publishdir$\netcoreapp2.0\**\*" target="tools/netcoreapp2.0/" />
+    <file src="$publishdir$\netcoreapp3.1\**\*" target="tools/netcoreapp3.1/" />
   </files>
 </package>
