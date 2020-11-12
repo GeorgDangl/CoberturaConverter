@@ -1,6 +1,6 @@
 # CoberturaConverter
 
-[![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=CoberturaConverter/develop)](https://jenkins.dangl.me/job/CoberturaConverter/job/develop/)  
+[![Build Status](https://jenkins.dangl.me/buildStatus/icon?job=GeorgDangl%2FCoberturaConverter%2Fdevelop)](https://jenkins.dangl.me/job/GeorgDangl/job/CoberturaConverter/job/develop/)  
 [![Built with Nuke](http://nuke.build/rounded)](https://www.nuke.build)  
 [![NuGet](https://img.shields.io/nuget/v/CoberturaConverter.Core.svg)](https://www.nuget.org/packages/CoberturaConverter.Core)
 [![MyGet](https://img.shields.io/myget/dangl/v/CoberturaConverter.Core.svg)](https://www.myget.org/feed/dangl/package/nuget/CoberturaConverter.Core)
