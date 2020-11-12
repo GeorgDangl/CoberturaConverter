@@ -20,8 +20,8 @@ using System.Xml.XPath;
 using static Nuke.CoberturaConverter.CoberturaConverterTasks;
 using static Nuke.CodeGeneration.CodeGenerator;
 using static Nuke.Common.ChangeLog.ChangelogTasks;
-using static Nuke.DocFX.DocFXTasks;
-using Nuke.DocFX;
+using static Nuke.Common.Tools.DocFX.DocFXTasks;
+using Nuke.Common.Tools.DocFX;
 using static Nuke.Common.Tools.DotCover.DotCoverTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 using static Nuke.Common.Tools.ReportGenerator.ReportGeneratorTasks;
@@ -32,7 +32,9 @@ using static Nuke.Common.Tooling.ProcessTasks;
 using static Nuke.GitHub.ChangeLogExtensions;
 using static Nuke.GitHub.GitHubTasks;
 using static Nuke.WebDocu.WebDocuTasks;
-using Nuke.Azure.KeyVault;
+using Nuke.Common.Tools.AzureKeyVault;
+using Nuke.Common.Tools.AzureKeyVault.Attributes;
+using Nuke.Common.IO;
 
 class Build : NukeBuild
 {
@@ -45,12 +47,12 @@ class Build : NukeBuild
         ClientSecretParameterName = nameof(KeyVaultClientSecret))]
     readonly KeyVaultSettings KeyVaultSettings;
 
-    [Parameter] readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
+    [Parameter] readonly string Configuration = IsLocalBuild ? "Debug" : "Release";
 
     [Parameter] string KeyVaultBaseUrl;
     [Parameter] string KeyVaultClientId;
     [Parameter] string KeyVaultClientSecret;
-    [GitVersion] readonly GitVersion GitVersion;
+    [GitVersion(Framework = "netcoreapp3.1")] readonly GitVersion GitVersion;
     [GitRepository] readonly GitRepository GitRepository;
 
     [KeyVaultSecret] string DocuBaseUrl;
@@ -89,7 +91,7 @@ class Build : NukeBuild
             DotNetBuild(x => x
                 .SetConfiguration(Configuration)
                 .EnableNoRestore()
-                .SetFileVersion(GitVersion.GetNormalizedFileVersion())
+                .SetFileVersion(GitVersion.AssemblySemFileVer)
                 .SetAssemblyVersion(GitVersion.AssemblySemVer)
                 .SetInformationalVersion(GitVersion.InformationalVersion));
         });
@@ -166,6 +168,7 @@ class Build : NukeBuild
 
             // This is the report that's pretty and visualized in Jenkins
             ReportGenerator(c => c
+                .SetFramework("netcoreapp3.0")
                 .SetReports(OutputDirectory / "coverage.xml")
                 .SetTargetDirectory(OutputDirectory / "CoverageReport"));
 
@@ -185,7 +188,7 @@ class Build : NukeBuild
         .Requires(() => PublicMyGetSource)
         .Requires(() => PublicMyGetApiKey)
         .Requires(() => NuGetApiKey)
-        .Requires(() => Configuration == Configuration.Release)
+        .Requires(() => Configuration == "Release")
         .Executes(() =>
         {
             GlobFiles(OutputDirectory, "*.nupkg").NotEmpty()

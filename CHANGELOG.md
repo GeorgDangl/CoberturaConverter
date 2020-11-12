@@ -2,6 +2,10 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v2.0.0
+- The .NET Core framework targets were set to v3.1 for the CLI tools
+- The NUKE package was updated to be compatible with NUKE 5.0.0
+
 ## v1.3.1:
 - Fixed a bug that caused an exception when converting from dotCover format and the base path was a drive root. Thanks to GitHub user @sjmelia!
 

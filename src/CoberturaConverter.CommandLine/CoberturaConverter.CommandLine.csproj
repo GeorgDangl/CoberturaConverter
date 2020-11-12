@@ -7,7 +7,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net461</TargetFrameworks>
     <RepositoryUrl>https://github.com/GeorgDangl/CoberturaConverter.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Copyright>(c) $([System.DateTime]::Now.Year) Georg Dangl</Copyright>
@@ -39,7 +39,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.5.0" />
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -38,7 +38,7 @@ namespace Nuke.CoberturaConverter
         /// </summary>
         public virtual string OutputFile { get; internal set; }
 
-        public override Action<OutputType, string> CustomLogger => DotCoverTasks.DotCoverLogger;
+        public override Action<OutputType, string> ProcessCustomLogger => DotCoverTasks.DotCoverLogger;
     }
     #endregion
     #region OpenCoverConversionSettings
@@ -59,7 +59,7 @@ namespace Nuke.CoberturaConverter
         /// </summary>
         public virtual string OutputFile { get; internal set; }
 
-        public override Action<OutputType, string> CustomLogger => OpenCoverTasks.OpenCoverLogger;
+        public override Action<OutputType, string> ProcessCustomLogger => OpenCoverTasks.OpenCoverLogger;
     }
     #endregion
     #region DotCoverConversionSettingsExtensions
