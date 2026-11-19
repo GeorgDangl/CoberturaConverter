@@ -2,6 +2,9 @@
 
 All notable changes to **CoberturaConverter** are documented here.
 
+## v2.0.1
+- **CoberturaConverter** now also produces Markdown documentation. This can be easily accessed by AI agents via the MCP server implementation in **Dangl**Docu.
+
 ## v2.0.0
 - The .NET Core framework targets were set to v3.1 for the CLI tools
 - The NUKE package was updated to be compatible with NUKE 5.0.0
