@@ -53,6 +53,63 @@
       "properties": {
         "TargetFramework": "netcoreapp2.0"
       }
+    },
+    {
+      "src": [
+        {
+          "src": "./src",
+          "files": [
+            "CoberturaConverter.Core/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        }
+      ],
+      "dest": "output/docs-markdown/core",
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      },
+      "outputFormat": "markdown"
+    },
+    {
+      "src": [
+        {
+          "src": "./src",
+          "files": [
+            "Nuke.CoberturaConverter/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        }
+      ],
+      "dest": "output/docs-markdown/nuke",
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      },
+      "outputFormat": "markdown"
+    },
+    {
+      "src": [
+        {
+          "src": "./src",
+          "files": [
+            "CoberturaConverter.CommandLine/*.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        }
+      ],
+      "dest": "output/docs-markdown/cli",
+      "properties": {
+        "TargetFramework": "netcoreapp2.0"
+      },
+      "outputFormat": "markdown"
     }
   ],
   "build": {
@@ -85,7 +142,7 @@
       "_enableSearch": true,
       "_gitUrlPattern": "github"
     },
-    "dest": "./output",
+    "dest": "./output/docs",
     "template": [
       "default",
       "docs/template"
